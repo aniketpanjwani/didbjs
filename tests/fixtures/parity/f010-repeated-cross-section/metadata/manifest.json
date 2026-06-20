@@ -1,0 +1,26 @@
+{
+  "commands": {
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F010",
+  "generated_at": "2026-06-20T02:16:41Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f010-repeated-cross-section/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f010-repeated-cross-section/expected/stata/covariance.csv": "267b74ce6af55bd8b7cf6b14103e0f27b3298b44c5657c35f21d95db81d0a79f",
+    "tests/fixtures/parity/f010-repeated-cross-section/expected/stata/diagnostics.json": "1a732e7e284d6a84193b42c91628e0cca8402af3e44de773e947ab2c12ab4e4c",
+    "tests/fixtures/parity/f010-repeated-cross-section/expected/stata/estimates.csv": "ffa7dbc31947d259c8dfb78ba0e787f836ef7652c9a566169e408dcc66a92833",
+    "tests/fixtures/parity/f010-repeated-cross-section/expected/stata/imputation-weights.csv": "a614cc065dcd1fe93ce0713be473e63a2488ffd324f4d00c123d29354d389204",
+    "tests/fixtures/parity/f010-repeated-cross-section/expected/stata/run.log": "aa13084703c063b642d5798833abef9c15bbf6cf1d5cdd8124c694ee1ef078f0",
+    "tests/fixtures/parity/f010-repeated-cross-section/expected/stata/sample-mask.csv": "60a2078be58d6ab264ab306e1a61323754e6fab7ca849c699db8c4d0daa7334c",
+    "tests/fixtures/parity/f010-repeated-cross-section/inputs/panel.csv": "2a21907de135970209b4f779a4454cecb58842d77d2915755cc66706878dec51",
+    "tools/parity/generators/f010-repeated-cross-section/stata-export.do": "7cae9dede3f30a835c7cf6aed3bbf7d9b08b94a15ad5035f72a467af145333e9"
+  },
+  "terminal_status": {
+    "stata": "success"
+  }
+}

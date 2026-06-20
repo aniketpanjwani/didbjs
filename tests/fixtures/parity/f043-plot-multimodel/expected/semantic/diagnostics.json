@@ -1,0 +1,47 @@
+{
+  "critical_value": 1.9599639845400534,
+  "fixture_id": "F043",
+  "legend_order": [
+    "Spec A",
+    "Spec B",
+    "Spec C",
+    "Spec D",
+    "Spec E",
+    "Spec F",
+    "Spec G",
+    "Spec H"
+  ],
+  "max_supported_models": 8,
+  "model_count": 8,
+  "perturb": [
+    -0.28,
+    -0.2,
+    -0.12,
+    -0.04,
+    0.04,
+    0.12,
+    0.2,
+    0.28
+  ],
+  "rows": 32,
+  "scalar_arguments_recycled": [
+    "stub_lag",
+    "stub_lead",
+    "trimlag",
+    "trimlead"
+  ],
+  "shift": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "status": "success",
+  "style_recycling_scope": "D013 semantic R plot-data and scalar option recycling; literal Stata graph styles are excluded.",
+  "trimlag": 1,
+  "trimlead": 2
+}

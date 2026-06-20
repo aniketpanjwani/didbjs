@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "base_command": "did_imputation Y unit t Ei [aw=w], minn(0) cluster(unit)",
+  "scaled_command": "did_imputation Y unit t Ei [aw=w_scaled], minn(0) cluster(unit)",
+  "stata_version": "14.2",
+  "base_estimate":      2.32428467365966185,
+  "scaled_estimate":      2.32428467365967384,
+  "base_variance":      0.04200964026767200,
+  "scaled_variance":      0.04200964026767230,
+  "estimate_scale_abs_diff":      0.00000000000001199,
+  "variance_scale_abs_diff":      0.00000000000000031,
+  "missing_weight_row_id": "2_3",
+  "missing_weight_row_excluded":                     1,
+  "missing_weight_estimate":      2.36653695689556809
+}

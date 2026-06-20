@@ -1,0 +1,9 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "source": "pinned Stata did_imputation horizon boundary probes",
+  "input_file": "panel.csv",
+  "success_scenarios": "unsorted,sparse,absent,duplicate,empty",
+  "failure_scenarios": "negative,horizons_allhorizons",
+  "scenario_count":                     7
+}

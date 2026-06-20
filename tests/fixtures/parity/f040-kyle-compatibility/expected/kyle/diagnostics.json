@@ -1,0 +1,27 @@
+{
+  "status": "success",
+  "commands": {
+    "named_default": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", cluster_var = \"unit\")",
+    "positional_dynamic_pretrends": "did_imputation(panel, \"Y\", \"Ei\", \"t\", \"unit\", NULL, \"w\", NULL, 0:1, c(-2, -1), \"unit\")",
+    "first_stage_formula": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", first_stage = ~ x1 + x2 | unit + t, wname = \"w\", cluster_var = \"unit\")",
+    "first_stage_string": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", first_stage = \"x1 + x2 | unit + t\", wname = \"w\", cluster_var = \"unit\")",
+    "wtr": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", wtr = c(\"wtr_early\", \"wtr_late\"), cluster_var = \"unit\")",
+    "multi": "did_imputation(data = panel, yname = \"c(Y, Y2)\", gname = \"Ei\", tname = \"t\", idname = \"unit\", first_stage = ~ x1 + x2 | unit + t, wname = \"w\", cluster_var = \"unit\")",
+    "id_collision": "did_imputation(data = collision, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"i\", wname = \"w\", cluster_var = \"i\")",
+    "id_collision_alias": "did_imputation(data = within(transform(collision, unit_id = i), rm(i)), yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit_id\", wname = \"w\", cluster_var = \"unit_id\")"
+  },
+  "r_version": "4.4.1",
+  "didimputation_version": "0.5.0",
+  "data_table_version": "1.18.2.1",
+  "matrix_version": "1.7.0",
+  "fixest_version": "0.14.0",
+  "input_hashes": {
+    "panel": "a17465f6d23570490d1d8d9f1d374d65af36f4fa3cc77bb135bdc34483e7c199",
+    "id_collision": "6ec2202b37719f99f4fd085545c46e4b4e9263e8c634c088ee1db1846aded769"
+  },
+  "generator_sha256": "44ec5f36b871bbd55f974555b89af4a157075004fe00d3248776528f6035a221",
+  "id_collision_status": "reference_error",
+  "id_collision_error_message": "subscript out of bounds",
+  "id_collision_alias_status": "success",
+  "first_stage_formula_string_match": true
+}

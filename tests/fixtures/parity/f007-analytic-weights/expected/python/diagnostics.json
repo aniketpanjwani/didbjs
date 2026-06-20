@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", minn=0)",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "9b7fd13a86ca4fd0ff27f7a1f071a88b5abcc5f7bdbc6a443c9f4c152595981a",
+  "generator_sha256": "e60a6bfb647be25ce155bff7996e19c70f69009ec35f36784ce5f9317d0a4d68",
+  "warning_text": "F007_PYTHON_INPUT=tests/fixtures/parity/f007-analytic-weights/inputs/panel.csv\nF007_PYTHON_OUTPUT=tests/fixtures/parity/f007-analytic-weights/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF007_PYTHON_EXPORT_OK=1\n",
+  "treated_weight_sum": 13.8,
+  "normalized_weight_sum": 1.0,
+  "tol001_abs": 1e-10,
+  "estimate": 2.32428505996499,
+  "std_error": 0.20496252718595137,
+  "V": 0.04200963755045185,
+  "unweighted_estimate": 2.1050004822900448,
+  "weighted_unweighted_abs_diff": 0.21928457767494525
+}

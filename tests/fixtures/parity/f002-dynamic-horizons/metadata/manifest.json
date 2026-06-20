@@ -1,0 +1,42 @@
+{
+  "commands": {
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f002-dynamic-horizons/kyle-export.R tests/fixtures/parity/f002-dynamic-horizons/inputs/panel.csv tests/fixtures/parity/f002-dynamic-horizons/expected/kyle",
+    "python": ".venv/bin/python tools/parity/generators/f002-dynamic-horizons/python_export.py tests/fixtures/parity/f002-dynamic-horizons/inputs/panel.csv tests/fixtures/parity/f002-dynamic-horizons/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F002",
+  "generated_at": "2026-06-20T02:20:46Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f002-dynamic-horizons/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/kyle/diagnostics.json": "c2a46b5bb0dc54496157b44d566257abf833afb5f33fa7115f2dcaa46efa118f",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/kyle/estimates.csv": "9b2f921e8addb2c65a7efa2042b8c9289f0058290fafa2067df160f27e0a4f8f",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/kyle/output-schema.json": "f182a40d8c0db91584fede50629131ce57f4f42303e7000ed4f35c17da5f0d8d",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/kyle/run.log": "9649cd4f97b7e565dd9ff227dabb599725146aa3432c7a121e66d0ad4cbcdbca",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/python/covariance.csv": "55e8f314ec901a61b47ef8a1a646551f10844cc0c6843dcb499d937fc2379f60",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/python/diagnostics.json": "0a31ffe18e633de97b57714b5fc626a7719dc8c26c1cb89c2e20e3b56d655642",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/python/estimates.csv": "428692a6a337df6e889c7339023e809552d329c165133bc00363e5fcab33b9be",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/python/object-schema.json": "8030fe9e09d063a8c821cb9fe4cefee6a16d34dbbcb657523c705a8b7e1e6550",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/python/run.log": "13b632ff0616a251cd87a9439f13ada637f673d411029132af70d64a1f8412f5",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/stata/covariance.csv": "ae3b6ea9ef2d6e104172822c9acaf7de80c8efda0db4ff6f92b38b48075d30d1",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/stata/diagnostics.json": "ba0308c41545006e5df5a4db6914f7f5f781511368e2f07fd011054c871f1fcf",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/stata/estimates.csv": "94adb240938f9edbc1a9fce0180613df23742839e052ae1fc769cc3f3eced3aa",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/stata/run.log": "7741563d1490f06372898fb76167044d9597f5f95ab7bfbe5e58d6c075de5e95",
+    "tests/fixtures/parity/f002-dynamic-horizons/expected/stata/sample-mask.csv": "29e8196525020187096fdc9072341eec8dd701f7e2693bb8153f7d796a5bba3d",
+    "tests/fixtures/parity/f002-dynamic-horizons/inputs/panel.csv": "c6f0c3bfcf99a7238d1ec8f666e644a566be94e4fb2570e6d0999b8421cb9e37",
+    "tools/parity/generators/f002-dynamic-horizons/kyle-export.R": "4ac13c6b961c0a3517337cd6a5de9b180fd44feb0d78ad65fc4187fa547cd3c3",
+    "tools/parity/generators/f002-dynamic-horizons/python_export.py": "9f8ffe3980d7ef63279d593c3e185d3cfb737e9bacdfb560d63d91abc0b8fa8c",
+    "tools/parity/generators/f002-dynamic-horizons/stata-export.do": "effe3aa54195f45611f34e7b8b5b9bb085f5e96e6d1a58e586dff290755c9e37"
+  },
+  "terminal_status": {
+    "kyle": "success",
+    "python": "success_tol001_false",
+    "stata": "success"
+  }
+}

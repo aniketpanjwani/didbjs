@@ -1,0 +1,105 @@
+{
+  "nested_fe": {
+    "status": "reference_success",
+    "fe": [
+      "group",
+      "unit",
+      "t"
+    ],
+    "controls": [],
+    "n_input_rows": 24,
+    "terms": [
+      "tau_ate"
+    ],
+    "estimates": {
+      "tau_ate": 2.0000001099393168
+    },
+    "std_errors": {
+      "tau_ate": 4.9015803498540664e-08
+    },
+    "n_obs": 24
+  },
+  "duplicate_fe": {
+    "status": "reference_success",
+    "fe": [
+      "group",
+      "group_dup",
+      "t"
+    ],
+    "controls": [],
+    "n_input_rows": 24,
+    "terms": [
+      "tau_ate"
+    ],
+    "estimates": {
+      "tau_ate": 1.0682352983355177
+    },
+    "std_errors": {
+      "tau_ate": 0.18202960250190217
+    },
+    "n_obs": 24
+  },
+  "singleton_fe": {
+    "status": "reference_success",
+    "fe": [
+      "singleton_fe",
+      "t"
+    ],
+    "controls": [],
+    "n_input_rows": 24,
+    "terms": [
+      "tau_ate"
+    ],
+    "estimates": {
+      "tau_ate": 1.1120003275425827
+    },
+    "std_errors": {
+      "tau_ate": 0.2096091243820302
+    },
+    "n_obs": 24
+  },
+  "disconnected_fe": {
+    "status": "reference_success",
+    "fe": [
+      "unit",
+      "disc_time"
+    ],
+    "controls": [],
+    "n_input_rows": 12,
+    "prefilter": "disc_keep",
+    "terms": [
+      "tau_ate"
+    ],
+    "estimates": {
+      "tau_ate": 2.0000004095550032
+    },
+    "std_errors": {
+      "tau_ate": 2.895990796977978e-07
+    },
+    "n_obs": 12
+  },
+  "absorbed_control": {
+    "status": "reference_error",
+    "fe": [
+      "group",
+      "t"
+    ],
+    "controls": [
+      "x_absorbed"
+    ],
+    "n_input_rows": 24,
+    "error": "ValueError: Could not run imputation for some observations because some controls are collinear in the D==0 subsample"
+  },
+  "untreated_rank": {
+    "status": "reference_error",
+    "fe": [
+      "unit",
+      "t"
+    ],
+    "controls": [
+      "x_treated_only"
+    ],
+    "n_input_rows": 24,
+    "error": "ValueError: Could not run imputation for some observations because some controls are collinear in the D==0 subsample"
+  }
+}

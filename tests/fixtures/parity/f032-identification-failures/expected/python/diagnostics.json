@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "74aa6feed0363f4ef34ae287d5b9a197bc4552059bf366ac2543e38a3f5b4f15",
+  "generator_sha256": "4f0f2fce3f224c0c7a5acc83e1d5bf265e4ee0008b51b0e0f3b149266ac6cb90",
+  "scenario_status": {
+    "no_untreated": "reference_error",
+    "no_treated": "reference_error",
+    "one_cohort": "reference_error",
+    "all_post_treated": "reference_error",
+    "no_supported_horizon": "reference_success"
+  },
+  "source": "pinned Python did_imputation identification-failure probes"
+}

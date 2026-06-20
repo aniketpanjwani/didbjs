@@ -1,0 +1,39 @@
+{
+  "commands": {
+    "focused_test": "R_LIBS_USER=.r-lib Rscript -e 'testthat::test_local(filter = \"f040\", reporter = \"summary\", stop_on_failure = TRUE)'",
+    "inputs": "python3 tools/parity/generators/f040-kyle-compatibility/make-inputs.py tests/fixtures/parity/f015-pretrends/inputs/panel.csv tests/fixtures/parity/f040-kyle-compatibility/inputs",
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f040-kyle-compatibility/kyle-export.R tests/fixtures/parity/f040-kyle-compatibility/inputs tests/fixtures/parity/f040-kyle-compatibility/expected/kyle"
+  },
+  "decision_record_id": "D014+D016+D018",
+  "fixture_id": "F040",
+  "generated_at": "2026-06-20T09:28:08Z",
+  "host": "local development host",
+  "input_dir": "tests/fixtures/parity/f040-kyle-compatibility/inputs",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/diagnostics.json": "6efa81ba4dae21301fe090243b61d54ef0ed348d74e10abd39eab4395fc80df6",
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/first-stage-formula-estimates.csv": "10821b5f0a79871503902cb7385a97f86933577db1f68d5f6b06b3445f0e921f",
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/first-stage-string-estimates.csv": "10821b5f0a79871503902cb7385a97f86933577db1f68d5f6b06b3445f0e921f",
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/id-collision-alias-estimates.csv": "20fdd082ab8ea64ae438b6300a49e0e767a95badc15afccad3b626862859d391",
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/id-collision-estimates.csv": "b52b1c466c4378ac1131c7ac59db1ad0590441eff6e2ba4402b1ccd4fede3538",
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/multi-estimates.csv": "ac299e3f9c23e1c066d1d60802986931d196401cc4f44418fe6414c62ca67203",
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/named-default-estimates.csv": "20fdd082ab8ea64ae438b6300a49e0e767a95badc15afccad3b626862859d391",
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/output-schema.json": "bf55f0cdfb0b06b336b4674ac34692b6a4c3e82bcfab5255c31313fd5a3c0497",
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/pos-dyn-pre-estimates.csv": "9f89d58cd6f548cceba557917412d4b25fc216c6532750881ae07d8b020c8e02",
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/run.log": "b0bbccb5e97e102fd8d3a6d7675bcab264db422dfecf0dcd5fde8fd99ee0856f",
+    "tests/fixtures/parity/f040-kyle-compatibility/expected/kyle/wtr-estimates.csv": "c47995fc53b6998938d9a66703f93e15ea5725a877ebf97985fa9f56ce1b8be6",
+    "tests/fixtures/parity/f040-kyle-compatibility/inputs/id-collision.csv": "6ec2202b37719f99f4fd085545c46e4b4e9263e8c634c088ee1db1846aded769",
+    "tests/fixtures/parity/f040-kyle-compatibility/inputs/panel.csv": "a17465f6d23570490d1d8d9f1d374d65af36f4fa3cc77bb135bdc34483e7c199",
+    "tests/testthat/test-f040-kyle-compatibility.R": "0a3c80ffb1d8df075bca1b530888bcbc8fecdc6cfc5135ab23f80c6c2b7ef9fd",
+    "tools/parity/generators/f040-kyle-compatibility/kyle-export.R": "44ec5f36b871bbd55f974555b89af4a157075004fe00d3248776528f6035a221",
+    "tools/parity/generators/f040-kyle-compatibility/make-inputs.py": "1d133e879e7d7a53d71029181b00d8113edb9b0e89d3ac6c4af5de9eb233e287"
+  },
+  "terminal_status": {
+    "focused_test": "success",
+    "inputs": "success",
+    "kyle": "success_with_d016_reference_error_evidence"
+  }
+}

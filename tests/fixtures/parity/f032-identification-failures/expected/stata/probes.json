@@ -1,0 +1,7 @@
+{
+  "no_untreated": {"status": "reference_error", "return_code":                   459, "cannot_impute_count": null, "command": "did_imputation Y unit t Ei, minn(0) cluster(unit)"},
+  "no_treated": {"status": "reference_success", "return_code":                     0, "cannot_impute_count": null, "command": "did_imputation Y unit t Ei, minn(0) cluster(unit)"},
+  "one_cohort": {"status": "reference_error", "return_code":                   198, "cannot_impute_count":                     8, "command": "did_imputation Y unit t Ei, minn(0) cluster(unit)"},
+  "all_post_treated": {"status": "reference_error", "return_code":                   198, "cannot_impute_count":                     8, "command": "did_imputation Y unit t Ei, minn(0) cluster(unit)"},
+  "no_supported_horizon": {"status": "reference_success", "return_code":                     0, "cannot_impute_count": null, "command": "did_imputation Y unit t Ei, horizons(1) minn(0) cluster(unit)"}
+}

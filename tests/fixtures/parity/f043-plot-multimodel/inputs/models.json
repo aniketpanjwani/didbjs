@@ -1,0 +1,195 @@
+{
+  "description": "Eight-model Stata-like event_plot overlay fixture with scalar stubs/trims and per-model shifts/perturbations.",
+  "fixture_id": "F043",
+  "model_names": [
+    "Spec A",
+    "Spec B",
+    "Spec C",
+    "Spec D",
+    "Spec E",
+    "Spec F",
+    "Spec G",
+    "Spec H"
+  ],
+  "models": [
+    {
+      "estimates": {
+        "pre1": -0.13,
+        "pre2": -0.32,
+        "pre3": -0.475,
+        "tau0": 0.84,
+        "tau1": 1.18,
+        "tau2": 1.46
+      },
+      "name": "Spec A",
+      "std_errors": {
+        "pre1": 0.075,
+        "pre2": 0.064,
+        "pre3": 0.053,
+        "tau0": 0.106,
+        "tau1": 0.127,
+        "tau2": 0.158
+      }
+    },
+    {
+      "estimates": {
+        "pre1": -0.14,
+        "pre2": -0.34,
+        "pre3": -0.5,
+        "tau0": 0.98,
+        "tau1": 1.36,
+        "tau2": 1.67
+      },
+      "name": "Spec B",
+      "std_errors": {
+        "pre1": 0.08,
+        "pre2": 0.068,
+        "pre3": 0.056,
+        "tau0": 0.112,
+        "tau1": 0.134,
+        "tau2": 0.166
+      }
+    },
+    {
+      "estimates": {
+        "pre1": -0.15,
+        "pre2": -0.36,
+        "pre3": -0.525,
+        "tau0": 1.12,
+        "tau1": 1.54,
+        "tau2": 1.88
+      },
+      "name": "Spec C",
+      "std_errors": {
+        "pre1": 0.085,
+        "pre2": 0.072,
+        "pre3": 0.059,
+        "tau0": 0.118,
+        "tau1": 0.141,
+        "tau2": 0.174
+      }
+    },
+    {
+      "estimates": {
+        "pre1": -0.16,
+        "pre2": -0.38,
+        "pre3": -0.55,
+        "tau0": 1.26,
+        "tau1": 1.72,
+        "tau2": 2.09
+      },
+      "name": "Spec D",
+      "std_errors": {
+        "pre1": 0.09,
+        "pre2": 0.076,
+        "pre3": 0.062,
+        "tau0": 0.124,
+        "tau1": 0.148,
+        "tau2": 0.182
+      }
+    },
+    {
+      "estimates": {
+        "pre1": -0.17,
+        "pre2": -0.4,
+        "pre3": -0.575,
+        "tau0": 1.4,
+        "tau1": 1.9,
+        "tau2": 2.3
+      },
+      "name": "Spec E",
+      "std_errors": {
+        "pre1": 0.095,
+        "pre2": 0.08,
+        "pre3": 0.065,
+        "tau0": 0.13,
+        "tau1": 0.155,
+        "tau2": 0.19
+      }
+    },
+    {
+      "estimates": {
+        "pre1": -0.18,
+        "pre2": -0.42,
+        "pre3": -0.6,
+        "tau0": 1.54,
+        "tau1": 2.08,
+        "tau2": 2.51
+      },
+      "name": "Spec F",
+      "std_errors": {
+        "pre1": 0.1,
+        "pre2": 0.084,
+        "pre3": 0.068,
+        "tau0": 0.136,
+        "tau1": 0.162,
+        "tau2": 0.198
+      }
+    },
+    {
+      "estimates": {
+        "pre1": -0.19,
+        "pre2": -0.44,
+        "pre3": -0.625,
+        "tau0": 1.68,
+        "tau1": 2.26,
+        "tau2": 2.72
+      },
+      "name": "Spec G",
+      "std_errors": {
+        "pre1": 0.105,
+        "pre2": 0.088,
+        "pre3": 0.071,
+        "tau0": 0.142,
+        "tau1": 0.169,
+        "tau2": 0.206
+      }
+    },
+    {
+      "estimates": {
+        "pre1": -0.2,
+        "pre2": -0.46,
+        "pre3": -0.65,
+        "tau0": 1.82,
+        "tau1": 2.44,
+        "tau2": 2.93
+      },
+      "name": "Spec H",
+      "std_errors": {
+        "pre1": 0.11,
+        "pre2": 0.092,
+        "pre3": 0.074,
+        "tau0": 0.148,
+        "tau1": 0.176,
+        "tau2": 0.214
+      }
+    }
+  ],
+  "perturb": [
+    -0.28,
+    -0.2,
+    -0.12,
+    -0.04,
+    0.04,
+    0.12,
+    0.2,
+    0.28
+  ],
+  "plot_type": "rcap",
+  "shift": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "significance_level": 0.05,
+  "stub_lag": "tau#",
+  "stub_lead": "pre#",
+  "together": false,
+  "trimlag": 1,
+  "trimlead": 2
+}

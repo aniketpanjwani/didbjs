@@ -1,0 +1,83 @@
+{
+  "unsorted": {
+    "status": "reference_success",
+    "command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", horizon = c(2, 0), cluster_var = \"unit\")",
+    "terms": ["0", "2"],
+    "estimates": {
+      "0": 1,
+      "2": 3
+    },
+    "std_errors": {
+      "0": 0.0632,
+      "2": 0.0632
+    }
+  },
+  "sparse": {
+    "status": "reference_success",
+    "command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", horizon = c(0, 2), cluster_var = \"unit\")",
+    "terms": ["0", "2"],
+    "estimates": {
+      "0": 1,
+      "2": 3
+    },
+    "std_errors": {
+      "0": 0.0632,
+      "2": 0.0632
+    }
+  },
+  "absent": {
+    "status": "reference_success",
+    "command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", horizon = c(0, 3), cluster_var = \"unit\")",
+    "terms": ["0", "3"],
+    "estimates": {
+      "0": 1,
+      "3": "NA"
+    },
+    "std_errors": {
+      "0": 0.0632,
+      "3": "NA"
+    }
+  },
+  "duplicate": {
+    "status": "reference_error",
+    "command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", horizon = c(0, 0), cluster_var = \"unit\")",
+    "error_class": ["simpleError", "error", "condition"],
+    "error_message": "Can't assign to the same column twice in the same query (duplicates detected)."
+  },
+  "negative": {
+    "status": "reference_error",
+    "command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", horizon = -1, cluster_var = \"unit\")",
+    "error_class": ["simpleError", "error", "condition"],
+    "error_message": "Some items of .SDcols are not column names: [zz000wtr]"
+  },
+  "empty": {
+    "status": "reference_success",
+    "command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", horizon = integer(0), cluster_var = \"unit\")",
+    "terms": ["0", "1", "2"],
+    "estimates": {
+      "0": 1,
+      "1": 2,
+      "2": 3
+    },
+    "std_errors": {
+      "0": 0.0632,
+      "1": 0.0632,
+      "2": 0.0632
+    }
+  },
+  "all_horizons_true": {
+    "status": "reference_success",
+    "command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", horizon = TRUE, cluster_var = \"unit\")",
+    "terms": ["0", "1", "2"],
+    "estimates": {
+      "0": 1,
+      "1": 2,
+      "2": 3
+    },
+    "std_errors": {
+      "0": 0.0632,
+      "1": 0.0632,
+      "2": 0.0632
+    }
+  }
+}

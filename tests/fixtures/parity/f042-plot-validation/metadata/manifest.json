@@ -1,0 +1,27 @@
+{
+  "commands": {
+    "focused_test": "R_LIBS_USER=.r-lib Rscript -e 'testthat::test_local(filter = \"f042\", reporter = \"summary\", stop_on_failure = TRUE)'",
+    "python": ".venv/bin/python tools/parity/generators/f042-plot-validation/python_export.py tests/fixtures/parity/f042-plot-validation/inputs/manual.json tests/fixtures/parity/f042-plot-validation/expected/python"
+  },
+  "decision_record_id": "D013",
+  "fixture_id": "F042",
+  "generated_at": "2026-06-20T09:35:20Z",
+  "host": "local development host",
+  "input_dir": "tests/fixtures/parity/f042-plot-validation/inputs",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata_semantic_inputs": "covered by F022/F023 savecoef fixtures under D013"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f042-plot-validation/expected/python/diagnostics.json": "bf7de330509e46e727e647917b9641f43173098dfb3ae78980f9d2fb868901d9",
+    "tests/fixtures/parity/f042-plot-validation/expected/python/probes.json": "b57e87d825deda9e95f4570e8ad1c20c6ccba4230aa47864192f1ccd1f4c1763",
+    "tests/fixtures/parity/f042-plot-validation/inputs/manual.json": "c1e20ac8f483f5f175eaf00de45b92782d0bc174fb3e9e874a289cf4f06a96d4",
+    "tests/testthat/test-f042-plot-input-validation.R": "5164680dbfeca074baf60a73b12ddc5cd6ab2d151d0b971e0e7e7467aad5fbe1",
+    "tools/parity/generators/f042-plot-validation/python_export.py": "f450ce5c11f1adf37493ef44d13eaa16cdeeff004f7110b1565ef59772b70670"
+  },
+  "terminal_status": {
+    "focused_test": "success",
+    "python": "success_with_upstream_permissive_and_raw_error_evidence"
+  }
+}

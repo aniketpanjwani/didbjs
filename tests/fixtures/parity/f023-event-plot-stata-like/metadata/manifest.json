@@ -1,0 +1,24 @@
+{
+  "commands": {
+    "stata": "/usr/local/bin/stata -b do stata-export.do stata ${STATA_ADO_ROOT} on licensed-stata-host"
+  },
+  "fixture_id": "F023",
+  "generated_at": "2026-06-20T05:22:23Z",
+  "host": "licensed Stata host Stata 14.2 plus local macOS R 4.4.1 tests",
+  "input_file": "tests/fixtures/parity/f023-event-plot-stata-like/inputs/models.json",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f023-event-plot-stata-like/expected/stata/diagnostics.json": "5487ce278843303b981444bb2ae0bbca356e37208ea32b73190f688b3d3feefe",
+    "tests/fixtures/parity/f023-event-plot-stata-like/expected/stata/plot-data.csv": "35ba0eecb1aa0a19d492f120143bb9d039bd0082be8d9f8ba6b0b1823e3e13bf",
+    "tests/fixtures/parity/f023-event-plot-stata-like/expected/stata/run.log": "bb2e3c68b73ef07c3e374f9784b7f1ed2b0ffc10906c5dc2d8421537ba6e27f5",
+    "tests/fixtures/parity/f023-event-plot-stata-like/inputs/models.json": "9ea8e241fdd4c90251fb8f4df004ab49f592d232f2f645c2d0db796f302accc1",
+    "tests/testthat/test-f023-event-plot-stata-like.R": "81d722a752b1628774b401b70aefffb92ffa127ecb49822e028466ea8b553980",
+    "tools/parity/generators/f023-event-plot-stata-like/stata-export.do": "e85126e1f8153d0a8b188dee3483625363fd2bf39155c95a6e3ccda8ddf5627d"
+  },
+  "terminal_status": {
+    "stata": "success"
+  }
+}

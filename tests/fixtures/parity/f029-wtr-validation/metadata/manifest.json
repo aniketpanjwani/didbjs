@@ -1,0 +1,30 @@
+{
+  "commands": {
+    "stata": "/usr/local/bin/stata -b do stata-export.do panel.csv expected-stata ${STATA_ADO_ROOT} on licensed-stata-host"
+  },
+  "fixture_id": "F029",
+  "generated_at": "2026-06-20T06:50:48Z",
+  "host": "licensed Stata host Stata 14.2 reference job plus local macOS R 4.4.1 offline tests",
+  "input_file": "tests/fixtures/parity/f029-wtr-validation/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f029-wtr-validation/expected/stata/covariance.csv": "d0743cd16195b086618c86b3127dad0142ba80b834c63da92acc85150847ace2",
+    "tests/fixtures/parity/f029-wtr-validation/expected/stata/diagnostics.json": "59b8506d2eaf6eed82bd0e5cf1416e5b691c2d2df533b5dcfcd2e564c79f090a",
+    "tests/fixtures/parity/f029-wtr-validation/expected/stata/estimates.csv": "e5b16cf4c6cd0c6d1e43d5a891a950b761c87548ed2704b0a20827981916d63d",
+    "tests/fixtures/parity/f029-wtr-validation/expected/stata/invalid-probes.json": "e777ead8cf71a3581aeddfe539e6b3ff1720c89f552e0c20fa36d1be7728a437",
+    "tests/fixtures/parity/f029-wtr-validation/expected/stata/run.log": "b561f21e72be2d8c2a67e781dbf1915e8bf00385ce2e10ffe4a398ac2af414bd",
+    "tests/fixtures/parity/f029-wtr-validation/expected/stata/sample-mask-base.csv": "760a9564202f579fa858be5fa220356b364ffc171d1ba7869eb2900616538b3b",
+    "tests/fixtures/parity/f029-wtr-validation/expected/stata/sample-mask-missing.csv": "9330b86f614f387e171b4d2964c08673da227e71f3546f24ebebadeda51839e8",
+    "tests/fixtures/parity/f029-wtr-validation/expected/stata/sample-mask-untreated-support.csv": "760a9564202f579fa858be5fa220356b364ffc171d1ba7869eb2900616538b3b",
+    "tests/fixtures/parity/f029-wtr-validation/expected/stata/sample-mask-zero.csv": "af5836f6aab6330177c9b92eb3d5424c45591949e6074a592cb1c99b092bb20c",
+    "tests/fixtures/parity/f029-wtr-validation/inputs/panel.csv": "530db7337f4927893b19ede92b839d941e80c2e81720cc9b60de34c319d0a1b5",
+    "tests/testthat/test-f029-wtr-validation.R": "1e5cd181866a9e06f213abd270b4a727b63e8856aa3e7cb93d990f0b292e08b3",
+    "tools/parity/generators/f029-wtr-validation/stata-export.do": "de5e21e67cbe7c0b332144ddc4f93ceb7925acc4883ccf98e6392e608514c069"
+  },
+  "terminal_status": {
+    "stata": "success"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "command": "did_imputation Y unit t Ei [aw=w], horizons(0/2) hbalance minn(0) cluster(unit)",
+  "stata_version": "14.2",
+  "horizons": [0, 1, 2],
+  "hbalance_included_units": [1, 2, 3],
+  "hbalance_excluded_units": [4],
+  "n_obs":                    45,
+  "n_control":                    36,
+  "n_treated_tau0":                     3,
+  "n_treated_tau1":                     3,
+  "n_treated_tau2":                     3
+}

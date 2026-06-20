@@ -1,0 +1,13 @@
+{
+  "schema_version": "f049.object-methods.v1",
+  "object_version": "didbjs.result.v1",
+  "result_names": ["estimates", "controls", "covariance", "sample_mask", "artifacts", "diagnostics", "call"],
+  "estimate_columns": ["term", "estimate", "std.error", "conf.low", "conf.high", "n_obs", "n_control", "n_treated"],
+  "control_columns": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+  "sample_mask_columns": ["row_id", "sample", "cannot_impute", "subset", "missing_required"],
+  "summary_names": ["estimates", "controls", "diagnostics"],
+  "glance_columns": ["n_terms", "n_obs", "n_control", "n_treated", "n_controls", "has_artifacts", "has_pretrends", "object_version"],
+  "coef_names": ["tau"],
+  "print_header": "<didbjs>",
+  "summary_header": "<summary.didbjs>"
+}

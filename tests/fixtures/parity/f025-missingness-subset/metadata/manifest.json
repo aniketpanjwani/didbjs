@@ -1,0 +1,44 @@
+{
+  "commands": {
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f025-missingness-subset/kyle-export.R tests/fixtures/parity/f025-missingness-subset/inputs/panel.csv tests/fixtures/parity/f025-missingness-subset/expected/kyle",
+    "python": ".venv/bin/python tools/parity/generators/f025-missingness-subset/python_export.py tests/fixtures/parity/f025-missingness-subset/inputs/panel.csv tests/fixtures/parity/f025-missingness-subset/expected/python",
+    "stata": "/usr/local/bin/stata -b do stata-export.do stata ${STATA_ADO_ROOT} on licensed-stata-host"
+  },
+  "fixture_id": "F025",
+  "generated_at": "2026-06-20T05:55:02Z",
+  "host": "licensed Stata host Stata 14.2 plus local macOS R 4.4.1 and Python 3.12.11 reference jobs",
+  "input_file": "tests/fixtures/parity/f025-missingness-subset/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f025-missingness-subset/expected/kyle/diagnostics.json": "bf31b7067f5cf1c6dc99f48c55a5d5d5b0b089596e3324c27c1fcc4e4e0a0ab4",
+    "tests/fixtures/parity/f025-missingness-subset/expected/kyle/estimates.csv": "893970ffed5c25fc6beca52495b4d0d814e8458e15ce11fec25ff3d65189051a",
+    "tests/fixtures/parity/f025-missingness-subset/expected/kyle/output-schema.json": "638bb53b07fcb450c26b186af402475a5ea161ca7537d47593f83595a846e704",
+    "tests/fixtures/parity/f025-missingness-subset/expected/kyle/run.log": "473f5db1d99ac34c2e0010d082cd0e91cb5165900934e114c07783dacfa99adb",
+    "tests/fixtures/parity/f025-missingness-subset/expected/python/controls.csv": "153262c1642d5b5bc3d89f65770841bb1553ad9230c852e7767572ff4bd5d5fb",
+    "tests/fixtures/parity/f025-missingness-subset/expected/python/covariance.csv": "77ebcf1782e5d8f824ee8b662df8f407520cdc0bb74aca6854925fae13e319a4",
+    "tests/fixtures/parity/f025-missingness-subset/expected/python/diagnostics.json": "877975f76188445c5e126781f3acc40a252646dc50003f6449c49c768cc775f5",
+    "tests/fixtures/parity/f025-missingness-subset/expected/python/estimates.csv": "f495e66354e9e5b02c3a6bfbad2bef29844e730c387fa765a186299a8efc3dcc",
+    "tests/fixtures/parity/f025-missingness-subset/expected/python/object-schema.json": "2f87aa5136237f6b32b0a51b5a497654aeb6cb2aed344a0589e1d31e567ab2b0",
+    "tests/fixtures/parity/f025-missingness-subset/expected/python/run.log": "ea12c31ed64219c76efc175daf70d591d00c7f842a503b65545ff4cde54a0142",
+    "tests/fixtures/parity/f025-missingness-subset/expected/stata/covariance.csv": "7277dc7466a329f95c5faf8c556d1ef6385fca60f6f9c957b61a4ad42260b528",
+    "tests/fixtures/parity/f025-missingness-subset/expected/stata/diagnostics.json": "82776b4c1761beff9ac4c8fb8a8a4530f329753c95417be4f3e69b87e565b8e0",
+    "tests/fixtures/parity/f025-missingness-subset/expected/stata/estimates.csv": "4b9c4ea982e72755c1f624467ff2e55c15601f5c907c3807ef8e44c136ff463d",
+    "tests/fixtures/parity/f025-missingness-subset/expected/stata/run.log": "2a42b3f9ff411053f225bb4d12a8a0490a14c4e17e4545e2b1a8553ae5d62487",
+    "tests/fixtures/parity/f025-missingness-subset/expected/stata/sample-mask.csv": "fef407bd8957c0563ad0ba049c2e4cd6e4c8011d4506d4ad03b024eabc716d26",
+    "tests/fixtures/parity/f025-missingness-subset/inputs/panel.csv": "7cbbe997b12f4e5dd1258d29df6538d0b0fe5523b320b8f04ab23b340b40e8ad",
+    "tests/testthat/test-f025-missingness-subset.R": "90d7a742e44be362b436afe4a2eeadd50ac89ab56f52c8778112a1e12c69b371",
+    "tools/parity/generators/f025-missingness-subset/kyle-export.R": "a66e31cd954f13d87433f586dbe58de8dd5b906146638f82eb661c8655596e08",
+    "tools/parity/generators/f025-missingness-subset/python_export.py": "63ed053f52bbacd8e66e0dbee3032f1cb5d35498e11c6cfe2a64350b719c1535",
+    "tools/parity/generators/f025-missingness-subset/stata-export.do": "7d95ad0c4a432dcd776bb9e3316b81b9e76e4e78120a2656c1ead2737077f0db"
+  },
+  "terminal_status": {
+    "kyle": "success",
+    "python": "success",
+    "stata": "success"
+  }
+}

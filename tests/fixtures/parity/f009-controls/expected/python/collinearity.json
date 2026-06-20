@@ -1,0 +1,5 @@
+{
+  "status": "error",
+  "type": "ValueError",
+  "message": "Could not run imputation for some observations because some controls are collinear in the D==0 subsample"
+}

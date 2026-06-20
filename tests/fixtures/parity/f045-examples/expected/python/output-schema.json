@@ -1,0 +1,100 @@
+{
+  "readme_allhorizons": {
+    "class": "DIDImputationOutput",
+    "estimate_terms": [
+      "tau0",
+      "tau1",
+      "tau2",
+      "tau3",
+      "tau4",
+      "tau5"
+    ],
+    "has_controls": false,
+    "has_estimates": true,
+    "has_pretrends": false,
+    "has_std_errors": true,
+    "has_v": true,
+    "has_weights": false,
+    "n_obs": 4500,
+    "pretrend_terms": []
+  },
+  "readme_event_plot": {
+    "axes_count": 1,
+    "figure_class": "Figure",
+    "saved": true,
+    "sha256": "82e519e3f61d9953f9a3eeae2e64fc25f14606044e6d1a92b64e2ba33bb92ec6",
+    "size": 24197
+  },
+  "readme_horizons_0_5": {
+    "class": "DIDImputationOutput",
+    "estimate_terms": [
+      "tau0",
+      "tau1",
+      "tau2",
+      "tau3",
+      "tau4"
+    ],
+    "has_controls": false,
+    "has_estimates": true,
+    "has_pretrends": false,
+    "has_std_errors": true,
+    "has_v": true,
+    "has_weights": false,
+    "n_obs": 4467,
+    "pretrend_terms": []
+  },
+  "readme_pretrends_3": {
+    "class": "DIDImputationOutput",
+    "estimate_terms": [
+      "tau0",
+      "tau1",
+      "tau2",
+      "tau3",
+      "tau4",
+      "tau5"
+    ],
+    "has_controls": false,
+    "has_estimates": true,
+    "has_pretrends": true,
+    "has_std_errors": true,
+    "has_v": true,
+    "has_weights": false,
+    "n_obs": 4500,
+    "pretrend_terms": [
+      "pre1",
+      "pre2",
+      "pre3"
+    ]
+  },
+  "readme_sparse_horizons": {
+    "class": "DIDImputationOutput",
+    "estimate_terms": [
+      "tau0",
+      "tau1",
+      "tau2",
+      "tau5"
+    ],
+    "has_controls": false,
+    "has_estimates": true,
+    "has_pretrends": false,
+    "has_std_errors": true,
+    "has_v": true,
+    "has_weights": false,
+    "n_obs": 4313,
+    "pretrend_terms": []
+  },
+  "readme_static": {
+    "class": "DIDImputationOutput",
+    "estimate_terms": [
+      "tau_ate"
+    ],
+    "has_controls": false,
+    "has_estimates": true,
+    "has_pretrends": false,
+    "has_std_errors": true,
+    "has_v": true,
+    "has_weights": false,
+    "n_obs": 4500,
+    "pretrend_terms": []
+  }
+}

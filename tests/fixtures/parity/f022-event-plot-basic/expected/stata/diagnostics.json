@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "command": "regress coef; event_plot f022_b#f022_V, stub_lag(tau#) stub_lead(pre#) savecoef noplot alpha(0.05)",
+  "eclass_seed": "regress coef",
+  "coef_sentinel": true,
+  "savecoef": true,
+  "noplot": true,
+  "row_count":                     5
+}

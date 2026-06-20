@@ -1,0 +1,29 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", controls=[\"x1\", \"x2\"], aw=\"w\", fe=[\"unit\", \"t\"], minn=0)",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "ea9b8cf4ecfd991177d4183e478290764e6ad7ef231a52614bd11c9f6f2f0249",
+  "generator_sha256": "1988fa58af3a5a421ecc62330b905b200d9b59da57e84aac9ee574165ad05c0b",
+  "warning_text": "F009_PYTHON_INPUT=tests/fixtures/parity/f009-controls/inputs/panel.csv\nF009_PYTHON_OUTPUT=tests/fixtures/parity/f009-controls/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF009_PYTHON_EXPORT_OK=1\n",
+  "controls": [
+    "x1",
+    "x2"
+  ],
+  "estimates": {
+    "tau_ate": 2.1181853013254304
+  },
+  "std_errors": {
+    "tau_ate": 0.22942870126032505
+  },
+  "controls_estimates": {
+    "x1": 0.7283186978441224,
+    "x2": 0.003434023166176192
+  },
+  "controls_std_errors": {
+    "x1": 0.18188967585543744,
+    "x2": 0.43334332121662517
+  },
+  "n_obs": 40,
+  "V": 0.2735078171878508
+}

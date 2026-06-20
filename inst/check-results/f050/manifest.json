@@ -1,0 +1,55 @@
+{
+  "schema_version": "f050.package-checks.v1",
+  "fixture_id": "F050",
+  "profile": "conformance-profile-v1",
+  "status": "success",
+  "generated_at": "2026-06-20T17:35:13Z",
+  "package": {
+    "name": "didbjs",
+    "version": "0.0.1.9000",
+    "license": "MIT + file LICENSE"
+  },
+  "platform": {
+    "r_version": "4.4.1",
+    "platform": "aarch64-apple-darwin20",
+    "os": "Darwin 25.2.0"
+  },
+  "commands": {
+    "build": "R_LIBS_USER=.r-lib R CMD build .",
+    "check": "R_LIBS_USER=.r-lib R CMD check --no-manual --no-build-vignettes didbjs_0.0.1.9000.tar.gz",
+    "clean_install_smoke": "R_LIBS_USER=<temp-lib> R CMD INSTALL --library=<temp-lib> didbjs_0.0.1.9000.tar.gz && Rscript package load/smoke check",
+    "default_tests": "R CMD check testthat suite from source tarball"
+  },
+  "gates": {
+    "source_build": "success",
+    "clean_install_smoke": "success",
+    "r_cmd_check": "success",
+    "default_tests_offline": "success",
+    "no_mandatory_test_skips": true,
+    "no_check_errors": true,
+    "no_check_warnings": true,
+    "no_testthat_failures": true,
+    "no_testthat_warnings": true,
+    "no_network_required_by_default": true,
+    "no_stata_python_ssh_required_by_default": true
+  },
+  "testthat": {
+    "assertions": 6436,
+    "fail": 0,
+    "warn": 0,
+    "skip": 0
+  },
+  "artifacts": {
+    "check_log": "didbjs.Rcheck/00check.log",
+    "testthat_log": "didbjs.Rcheck/tests/testthat.Rout",
+    "summary": "check-results/f050/check-summary.txt"
+  },
+  "sha256": {
+    "check-results/f050/manifest.json": "f3875ab3b5a493128a571ce2b8e1de90fcfc5b069b979f84ecb9d0784da3b6c6",
+    "check-results/f050/check-summary.txt": "d6950881846d6d018eda1c74804ad5241eeb31008660fb7eef9b98052590a216",
+    "inst/check-results/f050/manifest.json": "f3875ab3b5a493128a571ce2b8e1de90fcfc5b069b979f84ecb9d0784da3b6c6",
+    "inst/check-results/f050/check-summary.txt": "d6950881846d6d018eda1c74804ad5241eeb31008660fb7eef9b98052590a216",
+    "tools/package/write-f050-check-results.R": "457b7e98fc99444b47bd5cfc90adec506417b853ff764a92c2f711c371349394",
+    "tests/testthat/test-f050-package-check-gates.R": "8a3646dd3212a3be2c8a5fb6342aa737524647deb138e8b24a2daf4cf6f61d26"
+  }
+}

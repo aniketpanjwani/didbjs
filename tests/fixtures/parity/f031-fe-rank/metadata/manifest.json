@@ -1,0 +1,41 @@
+{
+  "commands": {
+    "python": ".venv/bin/python tools/parity/generators/f031-fe-rank/python_export.py tests/fixtures/parity/f031-fe-rank/inputs/panel.csv tests/fixtures/parity/f031-fe-rank/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv expected-stata ${STATA_ADO_ROOT}"
+  },
+  "decision_record_id": "D007+D024",
+  "fixture_id": "F031",
+  "generated_at": "2026-06-20T07:23:06Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f031-fe-rank/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f031-fe-rank/expected/python/covariance.csv": "9cb4e2b6add5eb16016ec722703dff7d34154225dfc3ecccf78a44f1109e174c",
+    "tests/fixtures/parity/f031-fe-rank/expected/python/diagnostics.json": "b464ce4cd38d774dff637b0aba7477847695d02e51e752404fb61d68b0ee08f2",
+    "tests/fixtures/parity/f031-fe-rank/expected/python/estimates.csv": "b92cbb6ad234cc8f1ecf777f2db03426237288f62143d4c9d78b770fe1556305",
+    "tests/fixtures/parity/f031-fe-rank/expected/python/object-schema.json": "fac11c3838fb8c5199fea5de719a77292f10f783598c800cd455acdc7a607455",
+    "tests/fixtures/parity/f031-fe-rank/expected/python/probes.json": "2cfadcc7ff427e0cb6cec6aaf0fc207438f8370891db00204dcb2fb903140ba8",
+    "tests/fixtures/parity/f031-fe-rank/expected/python/run.log": "feff01f70781db87c9082a012f0ae0fee248fa8ed6666161a0ee7583d8d36408",
+    "tests/fixtures/parity/f031-fe-rank/expected/stata/covariance.csv": "d943246656434ac6db9a492b2795cda793dc35d58eed711ac79e40b85bdee580",
+    "tests/fixtures/parity/f031-fe-rank/expected/stata/diagnostics.json": "ad4ce6ddd5921089e3c9545dd09d6f6c705df525dea84a4aab400194a72d9b07",
+    "tests/fixtures/parity/f031-fe-rank/expected/stata/estimates.csv": "491fc2b171c9b7d048e3c88a9830380f71985f99223cd0234244c8b0801ce677",
+    "tests/fixtures/parity/f031-fe-rank/expected/stata/probes.json": "58dd38c2d6eba50c8eec5de4581100f72f7900a7b80c30a0e4a393186dff6e15",
+    "tests/fixtures/parity/f031-fe-rank/expected/stata/run.log": "38eaab65b8106e0e3a0508bbc7801ee0d657e6873a8c27569ebcbefbbc210dcf",
+    "tests/fixtures/parity/f031-fe-rank/expected/stata/sample-mask-absorbed_control.csv": "760a9564202f579fa858be5fa220356b364ffc171d1ba7869eb2900616538b3b",
+    "tests/fixtures/parity/f031-fe-rank/expected/stata/sample-mask-disconnected_fe.csv": "83ee3330849f7a67f60ace8b9c7e73aecaf16540d9a6a07fdf60630b59528619",
+    "tests/fixtures/parity/f031-fe-rank/expected/stata/sample-mask-duplicate_fe.csv": "760a9564202f579fa858be5fa220356b364ffc171d1ba7869eb2900616538b3b",
+    "tests/fixtures/parity/f031-fe-rank/expected/stata/sample-mask-nested_fe.csv": "760a9564202f579fa858be5fa220356b364ffc171d1ba7869eb2900616538b3b",
+    "tests/fixtures/parity/f031-fe-rank/expected/stata/sample-mask-singleton_fe.csv": "760a9564202f579fa858be5fa220356b364ffc171d1ba7869eb2900616538b3b",
+    "tests/fixtures/parity/f031-fe-rank/inputs/panel.csv": "bedb7f1fb3272415366e26d44498356a3bb4bcb65185d5eeb0dcae25ef7ae225",
+    "tools/parity/generators/f031-fe-rank/python_export.py": "b2589ae6f6a8ba873d629625e7aea6d611321264f2034ecb5e8659a7cfa5302f",
+    "tools/parity/generators/f031-fe-rank/stata-export.do": "a7becf9814034752f19f5a1299bd4b8deb89f61b7ca74a6e7501568bbfff569e"
+  },
+  "terminal_status": {
+    "python": "success_with_reference_errors_and_d024_divergence_evidence",
+    "stata": "success_with_reference_error_and_d024_divergence_evidence"
+  }
+}

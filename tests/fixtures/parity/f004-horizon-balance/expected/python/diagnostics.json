@@ -1,0 +1,46 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", horizons=[0, 1, 2], hbalance=True, minn=0)",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "22d93e84e3bc5a09ddb1ec689c8c0f10d6c961325ef3873172dabc93c367c312",
+  "generator_sha256": "d66bb26d0e7f8c873b8e7c46aa6be1c25db8383fe78e9fae52682900cdfc72f4",
+  "warning_text": "F004_PYTHON_INPUT=tests/fixtures/parity/f004-horizon-balance/inputs/panel.csv\nF004_PYTHON_OUTPUT=tests/fixtures/parity/f004-horizon-balance/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities for 'wtr0' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr1' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr2' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF004_PYTHON_EXPORT_OK=1\n",
+  "algebraic_horizon_att": {
+    "tau0": 1.0,
+    "tau1": 2.0,
+    "tau2": 3.0
+  },
+  "hbalance_included_units": [
+    1,
+    2,
+    3
+  ],
+  "hbalance_excluded_units": [
+    4
+  ],
+  "tol001_abs": 1e-10,
+  "estimates": {
+    "tau0": 1.0000003632158045,
+    "tau1": 2.0000003632158045,
+    "tau2": 3.0000003632158045
+  },
+  "std_errors": {
+    "tau0": 1.3870531243152048e-07,
+    "tau1": 1.3870531243152048e-07,
+    "tau2": 1.3870531243152048e-07
+  },
+  "V": 5.771749109017712e-14,
+  "algebraic_abs_diff": {
+    "tau0": 3.6321580454412583e-07,
+    "tau1": 3.6321580454412583e-07,
+    "tau2": 3.6321580454412583e-07
+  },
+  "tol001_pass_by_term": {
+    "tau0": false,
+    "tau1": false,
+    "tau2": false
+  },
+  "tol001_pass": false,
+  "root_cause_probe": "Same fixed-effect recovery drift as D017/F001-F003: pinned Python recover_fixed_effects_iterative() leaves hbalance horizon estimates outside TOL001 while preserving public object shape and hbalance unit selection."
+}

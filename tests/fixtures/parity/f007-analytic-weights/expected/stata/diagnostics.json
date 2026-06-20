@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "command": "did_imputation Y unit t Ei [aw=w], minn(0) cluster(unit)",
+  "stata_version": "14.2",
+  "terms": ["tau"],
+  "treated_weight_sum":    13.800000000000001,
+  "normalized_weight_sum":                     1,
+  "weighted_estimate":    2.3242846736596618,
+  "unweighted_estimate":     2.104999999999996,
+  "weighted_unweighted_abs_diff":   0.21928467365966589,
+  "n_obs":                    24,
+  "n_control":                    18,
+  "n_treated":                     6
+}

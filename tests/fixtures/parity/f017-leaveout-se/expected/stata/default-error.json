@@ -1,0 +1,8 @@
+{
+  "status": "error",
+  "command": "did_imputation Y unit t Ei, minn(0) cluster(unit) leaveout",
+  "return_code":                   498,
+  "error_message": "Cannot compute leave-out standard errors because of 10 observations for coefficient \"tau\"",
+  "guidance_1": "This most likely happened because there are cohorts with only one unit or cluster (and the default value for avgeffectsby  is used).",
+  "guidance_2": "Consider using the avgeffectsby option with broader observation groups. Do not address this problem by using non-leave-out standard errors, as they may be downward biased for the same reason."
+}

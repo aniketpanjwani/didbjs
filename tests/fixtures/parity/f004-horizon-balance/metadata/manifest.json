@@ -1,0 +1,36 @@
+{
+  "commands": {
+    "python": ".venv/bin/python tools/parity/generators/f004-horizon-balance/python_export.py tests/fixtures/parity/f004-horizon-balance/inputs/panel.csv tests/fixtures/parity/f004-horizon-balance/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F004",
+  "generated_at": "2026-06-20T02:41:45Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f004-horizon-balance/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f004-horizon-balance/expected/python/covariance.csv": "8257dca0057652e9752c322c41cceb12ca995f2eb502b18c0a0b773c7027fc37",
+    "tests/fixtures/parity/f004-horizon-balance/expected/python/diagnostics.json": "9b42abd13441905830781ee1d88de00dc937b095768951e1eaa0d4734bf84cdd",
+    "tests/fixtures/parity/f004-horizon-balance/expected/python/estimates.csv": "f93b846d1ec7729b1c97c0c3b636a1b86202ba5c2f26387910f791e9c6498614",
+    "tests/fixtures/parity/f004-horizon-balance/expected/python/hbalance-units.csv": "3f22320300eec149f7ac46e7a03812ff5e74e7af656f06609d4762a967d5587d",
+    "tests/fixtures/parity/f004-horizon-balance/expected/python/object-schema.json": "8030fe9e09d063a8c821cb9fe4cefee6a16d34dbbcb657523c705a8b7e1e6550",
+    "tests/fixtures/parity/f004-horizon-balance/expected/python/run.log": "a66c4b7cc59a307d385cb9dd9a49522387eeec9bc4d32cb6797dbc0ea2743b5b",
+    "tests/fixtures/parity/f004-horizon-balance/expected/stata/covariance.csv": "e05241ff5c7ea222430b25a7552f3bafba2a2dfe94cb4d9b7bbdf05ca874f3f7",
+    "tests/fixtures/parity/f004-horizon-balance/expected/stata/diagnostics.json": "eaf93e63fc6b710ecc73d3f88bca16beb05cc311bb9cd7774bec9066c47d9747",
+    "tests/fixtures/parity/f004-horizon-balance/expected/stata/estimates.csv": "e4863f571ca159af6741513174375336b0f3901962e8dc40be9a5330d693ba2b",
+    "tests/fixtures/parity/f004-horizon-balance/expected/stata/hbalance-units.csv": "cc4893c0cf061747a112518408f527793b694eef0a15c657dcfa8174f67f2c5e",
+    "tests/fixtures/parity/f004-horizon-balance/expected/stata/run.log": "ebcb85a1a48bd519b7284dc7048b9beb67f98b3e4eaf49c2ae58ba1b5afdd8a0",
+    "tests/fixtures/parity/f004-horizon-balance/expected/stata/sample-mask.csv": "0327c72d73fac9084c6189baadf0631d6f25fe6f3808b67f0e531b8a3d3db650",
+    "tests/fixtures/parity/f004-horizon-balance/inputs/panel.csv": "22d93e84e3bc5a09ddb1ec689c8c0f10d6c961325ef3873172dabc93c367c312",
+    "tools/parity/generators/f004-horizon-balance/python_export.py": "d66bb26d0e7f8c873b8e7c46aa6be1c25db8383fe78e9fae52682900cdfc72f4",
+    "tools/parity/generators/f004-horizon-balance/stata-export.do": "ea4d8ceb5e45224a3c959375554b6f4c0e56a38e9c463fb33b28542cfeee1d6e"
+  },
+  "terminal_status": {
+    "python": "success_tol001_false",
+    "stata": "success"
+  }
+}

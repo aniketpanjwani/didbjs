@@ -1,0 +1,30 @@
+{
+  "device_policy": "successful saves and validation failures must leave R device state unchanged",
+  "dimensions": {
+    "dpi": 72,
+    "expected_png_pixels": [
+      288,
+      216
+    ],
+    "figsize": [
+      4,
+      3
+    ]
+  },
+  "file_type": "PNG output uses the PNG magic bytes and configured dimensions",
+  "fixture_id": "F044",
+  "headless_rendering": "event_plot returns a ggplot object without requiring an interactive device",
+  "invalid_paths": {
+    "directory": "structured didbjs_contract_error",
+    "empty": "structured didbjs_contract_error",
+    "missing_parent": "structured didbjs_contract_error"
+  },
+  "noplot_policy": "noplot returns plot_data with plot = NULL and cannot be combined with save_path",
+  "overwrite_policy": {
+    "didbjs": "overwrite = FALSE fails closed before rendering",
+    "python_reference": "matplotlib savefig overwrites an existing path"
+  },
+  "policy": "D013 semantic R plotting translation",
+  "status": "success",
+  "theme_policy": "event_plot must not mutate ggplot2::theme_get()"
+}

@@ -1,0 +1,72 @@
+{
+  "missing_pretrend_se": {
+    "status": "error",
+    "error_class": "KeyError",
+    "error_message": "'pre2'",
+    "traceback_tail": [
+      "    raw_errors = [critical_value * float(_pre_se_dict[k]) for k in pre_keys]",
+      "                                         ~~~~~~~~~~~~^^^",
+      "KeyError: 'pre2'"
+    ]
+  },
+  "extra_effect_se": {
+    "status": "success",
+    "figure_class": "Figure",
+    "axes_count": 1
+  },
+  "std_without_estimates": {
+    "status": "success",
+    "figure_class": "Figure",
+    "axes_count": 1
+  },
+  "bad_term_name": {
+    "status": "error",
+    "error_class": "ValueError",
+    "error_message": "invalid literal for int() with base 10: 'bad0'",
+    "traceback_tail": [
+      "    raw_x      = [int(k.replace('tau', '')) for k in hor_keys]",
+      "                  ^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "ValueError: invalid literal for int() with base 10: 'bad0'"
+    ]
+  },
+  "nan_estimate": {
+    "status": "success",
+    "figure_class": "Figure",
+    "axes_count": 1
+  },
+  "inf_std_error": {
+    "status": "success",
+    "figure_class": "Figure",
+    "axes_count": 1
+  },
+  "alpha_zero": {
+    "status": "success",
+    "figure_class": "Figure",
+    "axes_count": 1
+  },
+  "alpha_one": {
+    "status": "success",
+    "figure_class": "Figure",
+    "axes_count": 1
+  },
+  "unsupported_kwarg": {
+    "status": "error",
+    "error_class": "AttributeError",
+    "error_message": "Line2D.set() got an unexpected keyword argument 'definitely_not_supported_by_matplotlib'",
+    "traceback_tail": [
+      "  File \"<local-checkout>/.venv/lib/python3.12/site-packages/matplotlib/artist.py\", line 1271, in _update_props",
+      "    raise AttributeError(",
+      "AttributeError: Line2D.set() got an unexpected keyword argument 'definitely_not_supported_by_matplotlib'"
+    ]
+  },
+  "object_plus_manual": {
+    "status": "error",
+    "error_class": "AttributeError",
+    "error_message": "'object' object has no attribute 'pretrends_estimates'",
+    "traceback_tail": [
+      "    pretrends_est    = results_obj.pretrends_estimates",
+      "                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "AttributeError: 'object' object has no attribute 'pretrends_estimates'"
+    ]
+  }
+}

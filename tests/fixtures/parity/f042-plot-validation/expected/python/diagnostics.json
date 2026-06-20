@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "matplotlib_version": "3.11.0",
+  "input_sha256": "c1e20ac8f483f5f175eaf00de45b92782d0bc174fb3e9e874a289cf4f06a96d4",
+  "generator_sha256": "f450ce5c11f1adf37493ef44d13eaa16cdeeff004f7110b1565ef59772b70670",
+  "probe_count": 10,
+  "notes": {
+    "duplicate_terms": "Python dictionaries cannot represent duplicate term names; didbjs validates duplicate named R vectors directly.",
+    "extra_effect_se": "Pinned Python ignores extra SE names because it indexes only estimate keys; didbjs fails closed under D013/F042.",
+    "alpha_limits": "Pinned Python accepts alpha boundary values and produces degenerate/non-finite intervals; didbjs fails closed under D013/F042."
+  }
+}

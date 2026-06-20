@@ -1,0 +1,25 @@
+F050 package-check summary
+package: didbjs
+version: 0.0.1.9000
+r_version: 4.4.1
+platform: aarch64-apple-darwin20
+r_cmd_check_status_ok: true
+r_cmd_check_errors: false
+r_cmd_check_warnings: false
+testthat_failures: 0
+testthat_warnings: 0
+mandatory_test_skips: false
+testthat_assertions: 6436
+check_log_tail:
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... NONE
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+  Running ‘testthat.R’
+* DONE
+Status: OK

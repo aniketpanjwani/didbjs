@@ -1,0 +1,52 @@
+name: Leak scan
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  git-leak-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scan tracked files for private tokens
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import subprocess
+          from pathlib import Path
+
+          tokens = [
+              "/" + "Users" + "/" + "aniket",
+              "/" + "Users" + "/" + "aniketpanjwani",
+              "/" + "home" + "/" + "aniket",
+              "het" + "zner",
+              "95." + "216." + "14." + "40",
+              "ssh " + "het" + "zner",
+              "did" + "-" + "kirill",
+              "did" + "_" + "kirill",
+              "did" + "-" + "kirill" + "-" + "stata",
+              "/" + "tmp" + "/" + "did" + "-" + "kirill" + "-" + "refs",
+              "MacBook" + "-" + "Pro",
+              "aniket@" + "contentquant.io",
+              "oracle" + "-" + "review",
+              "/" + "goal",
+          ]
+          paths = subprocess.check_output(["git", "ls-files"], text=True).splitlines()
+          hits = []
+          for rel in paths:
+              path = Path(rel)
+              data = path.read_bytes()
+              if b"\x00" in data:
+                  continue
+              text = data.decode("utf-8", errors="replace")
+              for token in tokens:
+                  if token in text:
+                      hits.append(f"{rel}: {token!r}")
+          if hits:
+              raise SystemExit("Private token leak(s):\n" + "\n".join(hits))
+          PY

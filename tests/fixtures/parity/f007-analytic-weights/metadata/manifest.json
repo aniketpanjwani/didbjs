@@ -1,0 +1,43 @@
+{
+  "commands": {
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f007-analytic-weights/kyle-export.R tests/fixtures/parity/f007-analytic-weights/inputs/panel.csv tests/fixtures/parity/f007-analytic-weights/expected/kyle",
+    "python": ".venv/bin/python tools/parity/generators/f007-analytic-weights/python_export.py tests/fixtures/parity/f007-analytic-weights/inputs/panel.csv tests/fixtures/parity/f007-analytic-weights/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F007",
+  "generated_at": "2026-06-20T01:20:58Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f007-analytic-weights/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f007-analytic-weights/expected/kyle/diagnostics.json": "5f7038ab988f672e1d5cc9b10073c2d0001e73db2fffd8cd805d863bc11009c6",
+    "tests/fixtures/parity/f007-analytic-weights/expected/kyle/estimates.csv": "0fede25cedbe6c7c0f80b3e463909b9c466421fb958966b00fa306d9cf5f669a",
+    "tests/fixtures/parity/f007-analytic-weights/expected/kyle/output-schema.json": "8f5fcdc654227a4eb2a9ee81d689599bced88a9390cee59d01da1c999d5a4cf0",
+    "tests/fixtures/parity/f007-analytic-weights/expected/kyle/run.log": "f9009a19f38b0a1065b6deafc32d91711a5b863fb2b6fd1a0293f4be50a4c18a",
+    "tests/fixtures/parity/f007-analytic-weights/expected/python/covariance.csv": "d3e7df4811bedc734e2b4c3b55c5f0a8bb681c50b02cd7179d871ee212f28234",
+    "tests/fixtures/parity/f007-analytic-weights/expected/python/diagnostics.json": "538e9b6479a591d77b8675898fd5af0c54cedb9b3ebf727614461bdf643e03b5",
+    "tests/fixtures/parity/f007-analytic-weights/expected/python/estimates.csv": "4599d2256116c2fb665291161d01147b205371c8af041d93311eb200412eba71",
+    "tests/fixtures/parity/f007-analytic-weights/expected/python/object-schema.json": "8030fe9e09d063a8c821cb9fe4cefee6a16d34dbbcb657523c705a8b7e1e6550",
+    "tests/fixtures/parity/f007-analytic-weights/expected/python/run.log": "ecfdedf36d0256447cae9637f5ae350ff3fc51a7a2289e980b679b04eeb5837f",
+    "tests/fixtures/parity/f007-analytic-weights/expected/stata/covariance.csv": "3e5ff4e3a3985018436167d8e39fb6859446c826a53fb5572ab5064134ab327f",
+    "tests/fixtures/parity/f007-analytic-weights/expected/stata/diagnostics.json": "d33d77aca7dcd55dbe1f15daa6d1e60be5f2181d783f1b7984d85e2f89e1965f",
+    "tests/fixtures/parity/f007-analytic-weights/expected/stata/estimates.csv": "a90efe225b9ee3e0d588db7f263f1701aba60219b6943fc2ce4df05f118f8c17",
+    "tests/fixtures/parity/f007-analytic-weights/expected/stata/normalized-weights.csv": "9349800711475ee532680475fd96dc7f8943e18a720a919a5d32cb7946cc45f2",
+    "tests/fixtures/parity/f007-analytic-weights/expected/stata/run.log": "8f33f8622f45b8edb2ddc41e72ab2bd4da2e364b80a73effce5714ccb099bff0",
+    "tests/fixtures/parity/f007-analytic-weights/expected/stata/sample-mask.csv": "760a9564202f579fa858be5fa220356b364ffc171d1ba7869eb2900616538b3b",
+    "tests/fixtures/parity/f007-analytic-weights/inputs/panel.csv": "9b7fd13a86ca4fd0ff27f7a1f071a88b5abcc5f7bdbc6a443c9f4c152595981a",
+    "tools/parity/generators/f007-analytic-weights/kyle-export.R": "c23f3342e9599d8861a30e678cf3d1943abedca7404adfb1bc172a1e733bd99c",
+    "tools/parity/generators/f007-analytic-weights/python_export.py": "e60a6bfb647be25ce155bff7996e19c70f69009ec35f36784ce5f9317d0a4d68",
+    "tools/parity/generators/f007-analytic-weights/stata-export.do": "5c4c819f6ae5cfed288432505ee6a755b5aee5fa7953daa14c46e4066a13e0f0"
+  },
+  "terminal_status": {
+    "kyle": "success_se_diverges_from_stata",
+    "python": "success_d017_drift",
+    "stata": "success"
+  }
+}

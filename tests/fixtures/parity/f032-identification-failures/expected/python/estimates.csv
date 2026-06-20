@@ -1,0 +1,2 @@
+scenario,term,estimate,std_error,n_obs
+no_supported_horizon,tau1,0,0,10

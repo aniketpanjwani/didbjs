@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "base_command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", cluster_var = \"unit\")",
+  "scaled_command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w_scaled\", cluster_var = \"unit\")",
+  "r_version": "4.4.1",
+  "didimputation_version": "0.5.0",
+  "data_table_version": "1.18.2.1",
+  "matrix_version": "1.7.0",
+  "fixest_version": "0.14.0",
+  "input_sha256": "317200f7542ca05f1fce78a7ead1ebb0f862e5406859f6c78aa1ece714a201d1",
+  "generator_sha256": "547551aa4a63d99aa88f2cbbd2b171b2315b85f7ca97f30abf98ec8073b2e158",
+  "base_estimate": 2.3243,
+  "scaled_estimate": 2.3243,
+  "base_std_error": 0.2075,
+  "scaled_std_error": 0.2075,
+  "estimate_scale_abs_diff": 1.199e-14,
+  "std_error_scale_abs_diff": 8.6042e-16
+}

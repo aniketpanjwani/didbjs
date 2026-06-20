@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "source_example": "five_estimators_example.do BJS did_imputation/event_plot excerpt",
+  "command": "did_imputation Y i t Ei, allhorizons pretrend(5); event_plot, savecoef noplot alpha(0.05)",
+  "seed": 10,
+  "units": 300,
+  "periods": 15,
+  "observations": 4500,
+  "treated_rows": 839,
+  "control_rows": 3661,
+  "terms": 11,
+  "plot_rows": 11,
+  "third_party_estimators_in_source": "did_multiplegt,csdid,eventstudyinteract,reghdfe"
+}

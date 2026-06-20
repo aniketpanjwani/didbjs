@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "command": "did_imputation Y unit t Ei if keep == 1 [aw=w], controls(x1 x2) fe(group t) minn(0) cluster(clust) maxit(1000)",
+  "stata_version": "14.2",
+  "terms": ["tau", "x1", "x2"],
+  "n_obs":                    34,
+  "n_control":                    24,
+  "n_treated":                    10,
+  "subset_excluded":                     1,
+  "missing_excluded":                     5
+}

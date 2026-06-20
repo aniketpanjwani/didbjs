@@ -1,0 +1,35 @@
+{
+  "commands": {
+    "python": ".venv/bin/python tools/parity/generators/f014-minn/python_export.py tests/fixtures/parity/f014-minn/inputs/panel.csv tests/fixtures/parity/f014-minn/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F014",
+  "generated_at": "2026-06-20T03:00:17Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f014-minn/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f014-minn/expected/python/covariance.csv": "1ec1ec2908ece715fef703591a05e91dfcabe4e2c4d0f1e2f7b36e097a93297a",
+    "tests/fixtures/parity/f014-minn/expected/python/diagnostics.json": "7a0597d9bc26e75bf02820d968ffa7699a1494d06681dc326a514c631a7031be",
+    "tests/fixtures/parity/f014-minn/expected/python/estimates.csv": "ca01ed8ec08337c8d7be951bd4fb3ee0a5f71a9135956d62b2ac6cae1ef2cafb",
+    "tests/fixtures/parity/f014-minn/expected/python/object-schema.json": "828cf63255c80c861de1b9aecdca7cf8834b11ca21bd4770e5f5f33504399988",
+    "tests/fixtures/parity/f014-minn/expected/python/run.log": "49b94e450f83da2e2da0015138beeb75112ad43dce21ec4076ecb38f6e6414c7",
+    "tests/fixtures/parity/f014-minn/expected/stata/covariance.csv": "319e1b559f2fe72ebadfa371d0a0890be8100921bdb0d9c164e071ea887604bd",
+    "tests/fixtures/parity/f014-minn/expected/stata/diagnostics.json": "a3b1bedd2ce4c634b36108096731aacabc0864da569d4a5370bc0c9cd9303b53",
+    "tests/fixtures/parity/f014-minn/expected/stata/estimates.csv": "195a04b6e04116789dddffb27a57e73ed85de7324c35b7481c4bc4c28ac62128",
+    "tests/fixtures/parity/f014-minn/expected/stata/imputation-weights.csv": "bda62613dd37bf35777546f23e9eb8d4d6a48d0c63390bb3d3207c6a5a5934a4",
+    "tests/fixtures/parity/f014-minn/expected/stata/run.log": "af7cb2457a2325e492446c61cfedc594c96c8556d52b2dcca18e79f2dfbf4384",
+    "tests/fixtures/parity/f014-minn/expected/stata/sample-mask.csv": "10503a42d9dd2ad3b2854482a387dd63afad3c2cfb85c0dcfedb1b833f58e52b",
+    "tests/fixtures/parity/f014-minn/inputs/panel.csv": "5c66b154210d4c740e0796a306e5cfa704dc5fe124204a47ebb4e2b68ba0f175",
+    "tools/parity/generators/f014-minn/python_export.py": "189f150b60ecaacd4560bd4a7e1d0a00cd043898e9710c5cf0c4565c4cb5fd8e",
+    "tools/parity/generators/f014-minn/stata-export.do": "43f68de183527f2d14b8ea74d63d3d3299b0e8f7a64856ecf75a598249a26915"
+  },
+  "terminal_status": {
+    "python": "success",
+    "stata": "success"
+  }
+}

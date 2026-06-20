@@ -1,0 +1,30 @@
+{
+  "commands": {
+    "stata": "ssh <licensed-stata-host>; /usr/local/bin/stata -b do stata-export.do panel.csv output ${STATA_ADO_ROOT}"
+  },
+  "decision_record_id": "D009",
+  "fixture_id": "F035",
+  "generated_at": "2026-06-20T08:17:31Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f035-covariance-ordering/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f035-covariance-ordering/expected/stata/covariance.csv": "a50844b09dbdeb0b0d31f88f603034bd86c42f763641dd11b4eee40f5b388c69",
+    "tests/fixtures/parity/f035-covariance-ordering/expected/stata/diagnostics.json": "cc9ac6c4d29f707cd445b0a0945dd5a1808d9bc7c3ba0c065c865fcac2f83376",
+    "tests/fixtures/parity/f035-covariance-ordering/expected/stata/estimates.csv": "19121cf7ec063de0bf4e202ec32934a0bcdcb3aa8ce4441fa2ce8fb8344975fc",
+    "tests/fixtures/parity/f035-covariance-ordering/expected/stata/matrix-order.csv": "a3751df29bcab34d9469822d8a33e95f715986cbc5a3f5631c0b306cc0e051ff",
+    "tests/fixtures/parity/f035-covariance-ordering/expected/stata/probes.json": "c0b54563bf8a1e7daa041f48511d197f276535f8fae68834dd43674093749bce",
+    "tests/fixtures/parity/f035-covariance-ordering/expected/stata/run.log": "8291d453699213b5e55428431c315855dddde840f218ab86f8a75dac489e769a",
+    "tests/fixtures/parity/f035-covariance-ordering/expected/stata/sample-full_order.csv": "b4303a54497b44e8d00b9ff44f7b122bcaf6bedcf7bf77b4e4f2615333ffb350",
+    "tests/fixtures/parity/f035-covariance-ordering/expected/stata/sample-singular_pretrend.csv": "b4303a54497b44e8d00b9ff44f7b122bcaf6bedcf7bf77b4e4f2615333ffb350",
+    "tests/fixtures/parity/f035-covariance-ordering/inputs/panel.csv": "e17bd4c8c041d38a76342a1cc3ef66e3aeca665a25ba5c6067e035a5175317b6",
+    "tests/testthat/test-f035-covariance-ordering.R": "810f80192e406a82508c5f7195394992d6606e7ae65d892e6207a90e786b11e4",
+    "tools/parity/generators/f035-covariance-ordering/stata-export.do": "cfb36ac5102d2ed4884c150949bdb308d869f7c2a46f7a563fa28229085607c1"
+  },
+  "terminal_status": {
+    "stata": "success"
+  }
+}

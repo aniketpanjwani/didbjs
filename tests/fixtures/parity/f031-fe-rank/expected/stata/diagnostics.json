@@ -1,0 +1,8 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "source": "pinned Stata did_imputation FE rank probes",
+  "success_scenarios": "nested_fe,duplicate_fe,singleton_fe,disconnected_fe,absorbed_control",
+  "failure_scenarios": "untreated_rank",
+  "scenario_count":                     6
+}

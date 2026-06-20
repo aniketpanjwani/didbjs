@@ -1,0 +1,33 @@
+{
+  "dpi": 72,
+  "effects": {
+    "tau0": 0.74,
+    "tau1": 1.08
+  },
+  "effects_std": {
+    "tau0": 0.1,
+    "tau1": 0.12
+  },
+  "expected_png_pixels": [
+    288,
+    216
+  ],
+  "figsize": [
+    4,
+    3
+  ],
+  "fixture_id": "F044",
+  "plot_type": "rcap",
+  "pretrends": {
+    "pre1": -0.11,
+    "pre2": -0.32
+  },
+  "pretrends_std": {
+    "pre1": 0.07,
+    "pre2": 0.08
+  },
+  "significance_level": 0.05,
+  "title": "F044 filesystem probe",
+  "xlabel": "Relative time",
+  "ylabel": "Estimate"
+}

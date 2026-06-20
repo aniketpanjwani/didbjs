@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "save_command": "did_imputation Y unit t Ei, minn(0) cluster(unit) saveweights",
+  "load_command": "did_imputation Y2 unit t Ei, minn(0) cluster(unit) loadweights(saved_tau)",
+  "schema_version": "stata.__w_tau",
+  "y_estimate":    1.7000000000000071,
+  "y_std_error":    0.09428090415820629,
+  "weighted_y_estimate":     1.699997608515502,
+  "y2_load_estimate":    3.9000000128030039,
+  "y2_load_std_error":    0.18856180831641170,
+  "treated_weight_sum":                     1,
+  "max_abs_unit_sum":  2.65720500048000e-08,
+  "max_abs_time_sum":  5.55111512313000e-17,
+  "n_obs":                    30,
+  "n_control":                    21,
+  "n_treated":                     9
+}

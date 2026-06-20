@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "command": "did_imputation Y person t Ei, fe(region t) minn(0) cluster(region) saveweights",
+  "unit_var": "person",
+  "fe": ["region", "t"],
+  "cluster": "region",
+  "total_rows":                    48,
+  "unique_persons":                    48,
+  "unique_regions":                     6,
+  "algebraic_att":   1.25833333333333397,
+  "tau_estimate":   1.25833333898076094,
+  "tau_std_error":   0.05559026693385970,
+  "algebraic_gap":   0.00000000564742697,
+  "n_obs":                    48,
+  "n_control":                    36,
+  "n_treated":                    12
+}

@@ -1,0 +1,27 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", minn=0)",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_hashes": {
+    "base": "8d32d2977cf203815e007e56dd21fb22807c8f91cae51accc46497094f6b8f21",
+    "row_permuted": "d04084058676447ec987514f2043d529c0c04737956ef090e2dee8a3917dd4cc",
+    "unit_relabel": "ccbbf9a66da927ed7323fee4f8c68f8e0353f59902fc5f913473a4ecb34eec61",
+    "time_shift": "2246bbfbb8057fe6f69550a2669d0c8bdd8d8a4d8ab265911b3f826ef4a1bbc5",
+    "outcome_scaled": "8016b847aedb6da556d522a760a75253dff84e78d21b0c2d14c8c485c0131788",
+    "constant_shift": "a16fca970850b745363d4deb9bdd9fde31cc5bebc435b4e948301401401a6072",
+    "weight_scaled": "93acbd8ae572fde00b95675f9e16584c94e7d8c32346d33c03112e9b8e5372b6"
+  },
+  "generator_sha256": "4421228bfc55885333d92f74b1003901eb88506d35866d33c7d86d5b84967cc6",
+  "warning_text": "F037_PYTHON_INPUT_DIR=tests/fixtures/parity/f037-invariance/inputs\nF037_PYTHON_OUTPUT=tests/fixtures/parity/f037-invariance/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF037_PYTHON_EXPORT_OK=1\n",
+  "base_estimate": 2.0000003632157988,
+  "row_permutation_abs_diff": 4.440892098500626e-15,
+  "unit_relabel_abs_diff": 0.0,
+  "time_shift_abs_diff": 0.0,
+  "constant_shift_abs_diff": 8.881784197001252e-16,
+  "weight_scale_abs_diff": 0.0,
+  "outcome_scale": 3.5,
+  "outcome_scaled_estimate_ratio": 3.4999995232793446,
+  "outcome_scaled_se_ratio": 3.4999999999944222,
+  "outcome_scaled_variance_ratio": 12.249999999960954
+}

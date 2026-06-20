@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "command": "did_imputation Y unit t Ei, minn(0) cluster(unit) saveestimates(tau_hat) saveresid(eps)",
+  "saveestimates": "tau_hat",
+  "saveresid": "eps",
+  "tau_estimate":    1.7000000000000071,
+  "tau_std_error":    0.09428090415820629,
+  "n_obs":                    30,
+  "n_control":                    21,
+  "n_treated":                     9
+}

@@ -1,0 +1,48 @@
+{
+  "commands": {
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f026-treatment-timing/kyle-export.R tests/fixtures/parity/f026-treatment-timing/inputs/kyle-zero.csv tests/fixtures/parity/f026-treatment-timing/expected/kyle",
+    "python": ".venv/bin/python tools/parity/generators/f026-treatment-timing/python_export.py tests/fixtures/parity/f026-treatment-timing/inputs/encodings.csv tests/fixtures/parity/f026-treatment-timing/expected/python",
+    "stata": "/usr/local/bin/stata -b do stata-export.do encodings.csv expected-stata ${STATA_ADO_ROOT} on licensed-stata-host"
+  },
+  "fixture_id": "F026",
+  "generated_at": "2026-06-20T06:05:10Z",
+  "host": "licensed Stata host Stata 14.2 plus local macOS R 4.4.1 and Python 3.12.11 reference jobs",
+  "input_files": [
+    "tests/fixtures/parity/f026-treatment-timing/inputs/encodings.csv",
+    "tests/fixtures/parity/f026-treatment-timing/inputs/kyle-zero.csv"
+  ],
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f026-treatment-timing/expected/kyle/diagnostics.json": "3fcf9adf3453b382cade880868ca90ebe1edbea9c87ef8c1226eff582cd6aad9",
+    "tests/fixtures/parity/f026-treatment-timing/expected/kyle/estimates.csv": "1d789e33a76b9c4c2da61f6ddf5ec19b850e71dd90c3a7b9e6b83caed2664fa7",
+    "tests/fixtures/parity/f026-treatment-timing/expected/kyle/output-schema.json": "638bb53b07fcb450c26b186af402475a5ea161ca7537d47593f83595a846e704",
+    "tests/fixtures/parity/f026-treatment-timing/expected/kyle/run.log": "5dccde2ead41655df097ec236d0f1bf44754fe4f360683c8860560ded614cc94",
+    "tests/fixtures/parity/f026-treatment-timing/expected/python/covariance.csv": "d0c47e104a207150c3ab2fa1958697e2198bb14941a84e6fa16dd88803f06c4e",
+    "tests/fixtures/parity/f026-treatment-timing/expected/python/diagnostics.json": "ca10e632172425388775ddb2b5c719013e70bf9e39a4fb7195e8bc5f674aaee1",
+    "tests/fixtures/parity/f026-treatment-timing/expected/python/estimates.csv": "e91bb81ecc114ff773f9bf0905f15e4e529ac339e4a3358b5eb452e1be94e291",
+    "tests/fixtures/parity/f026-treatment-timing/expected/python/object-schema.json": "8030fe9e09d063a8c821cb9fe4cefee6a16d34dbbcb657523c705a8b7e1e6550",
+    "tests/fixtures/parity/f026-treatment-timing/expected/python/run.log": "cb684867128e1d7ebaab6a0fdab21e467392d5addc9682e5d0cb1c7f4c4eb958",
+    "tests/fixtures/parity/f026-treatment-timing/expected/stata/covariance.csv": "8a9a1e942e6427bd1cb459409ab941247cf380e4c7cf0c62c06765f44581f957",
+    "tests/fixtures/parity/f026-treatment-timing/expected/stata/diagnostics.json": "eb655bd978193fc7c99b09ec2793b05dc87205af46e7035496851d0a93e68e2b",
+    "tests/fixtures/parity/f026-treatment-timing/expected/stata/estimates.csv": "fd6f9a42febe0239d5a102db05350f5fadbc000c476bd42d065830f625915908",
+    "tests/fixtures/parity/f026-treatment-timing/expected/stata/run.log": "9414da909c8bf992f5cbe169bcd44f42c92945443624b85b246778233be746c7",
+    "tests/fixtures/parity/f026-treatment-timing/expected/stata/sample-mask.csv": "f2f66c07272ad3dfadbea7cab0bf421a7733fb0f4b364c0b18de21301f7a8eeb",
+    "tests/fixtures/parity/f026-treatment-timing/expected/stata/timing-classification.csv": "c8cee9dc9a7d122f4b20f066a3fda68df27337d902ac3df0b439c5e38c604951",
+    "tests/fixtures/parity/f026-treatment-timing/inputs/encodings.csv": "e7d3e53b8a084e021bc9c6c7783fbe99d56be9e54d5621cb16413434b1ac7761",
+    "tests/fixtures/parity/f026-treatment-timing/inputs/kyle-zero.csv": "2af0713ebe8f12fffcfcfa1d89bdea0d00263ff1af63d74939c282801c2a8770",
+    "tests/testthat/test-f026-treatment-timing.R": "4e31a8e2da96a8baa4cd0a258c98b0787cff829d64d3dcbc2a4e36453b42fb82",
+    "tools/parity/generators/f026-treatment-timing/kyle-export.R": "fb0a04babce7c85961ab47637cba7140bf34490f0a0660d4b80200d28db2e907",
+    "tools/parity/generators/f026-treatment-timing/python_export.py": "b35246efee637532d0b4888fecff705065de594aeba74cbbc72a9bfd15c301ba",
+    "tools/parity/generators/f026-treatment-timing/stata-export.do": "e2c96d5f20a514603f3f9725086c357ecc0ea3bcb5613504743e79ab401f9801"
+  },
+  "terminal_status": {
+    "kyle": "success",
+    "python": "success",
+    "stata": "success"
+  }
+}

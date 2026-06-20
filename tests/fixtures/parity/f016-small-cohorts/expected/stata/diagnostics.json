@@ -1,0 +1,38 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "specs": ["default", "avgeffectsby_D"],
+  "commands": {
+    "default": "did_imputation Y unit t Ei, minn(0) cluster(unit)",
+    "avgeffectsby_D": "did_imputation Y unit t Ei, minn(0) cluster(unit) avgeffectsby(D)"
+  },
+  "avgeffectsby": {
+    "default": ["Ei", "t"],
+    "avgeffectsby_D": ["D"]
+  },
+  "small_cohort_warning_text": "",
+  "estimates": {
+    "default":   1.96999999926345892,
+    "avgeffectsby_D":   1.96999999782167090
+  },
+  "std_errors": {
+    "default":   0.00000000067029402,
+    "avgeffectsby_D":   0.36875805058747602
+  },
+  "variances": {
+    "default":   0.00000000000000000,
+    "avgeffectsby_D":   0.13598249987307551
+  },
+  "n_obs": {
+    "default":                    60,
+    "avgeffectsby_D":                    60
+  },
+  "n_control": {
+    "default":                    50,
+    "avgeffectsby_D":                    50
+  },
+  "n_treated": {
+    "default":                    10,
+    "avgeffectsby_D":                    10
+  }
+}

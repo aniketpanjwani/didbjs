@@ -1,0 +1,5 @@
+scenario,row_term,col_term,value
+nested_fe,python_V_total,python_V_total,2.4025489926075511e-15
+duplicate_fe,python_V_total,python_V_total,0.03313477618700051
+singleton_fe,python_V_total,python_V_total,0.043935985024201402
+disconnected_fe,python_V_total,python_V_total,8.386762696181145e-14

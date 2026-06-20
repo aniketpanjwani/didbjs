@@ -1,0 +1,27 @@
+{
+  "commands": {
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F019",
+  "generated_at": "2026-06-20T04:16:00Z",
+  "host": "licensed Stata host stata 14.2",
+  "input_file": "tests/fixtures/parity/f019-save-estimates-residuals/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f019-save-estimates-residuals/expected/stata/covariance.csv": "ce5da90266e7b6a4ecdcaf151c02d122855128e78a7f7fbf685f0497a1b9e32f",
+    "tests/fixtures/parity/f019-save-estimates-residuals/expected/stata/diagnostics.json": "464e6516024fee5efa0085434f9f6f4f7f6e0b51dcdb2725dfee5cfd7d74d1f0",
+    "tests/fixtures/parity/f019-save-estimates-residuals/expected/stata/estimates.csv": "47dd17383554d5f9730fcc8017bf90e6d25a5d970095194b7908e3532d7f4bd6",
+    "tests/fixtures/parity/f019-save-estimates-residuals/expected/stata/run.log": "26719cd8737b6d7a67a73733af875753afe3777757ed31ec4798930c2748524d",
+    "tests/fixtures/parity/f019-save-estimates-residuals/expected/stata/sample-mask.csv": "6278def04209218b978c69137d5b46d45184f854c2d375e2593de7e2af89e68d",
+    "tests/fixtures/parity/f019-save-estimates-residuals/expected/stata/saved-estimates.csv": "e03ab3d0778e8db47e7ebaa7dae5d88620dbf07eaf2af14da544cd6c640fa52a",
+    "tests/fixtures/parity/f019-save-estimates-residuals/expected/stata/saved-residuals.csv": "41df775b0f251eb2eb897289e971bcfe5307ab413bcd20ac37f15cf51b24ce79",
+    "tests/fixtures/parity/f019-save-estimates-residuals/inputs/panel.csv": "5378ea6f014b4ebfe1b5f477b35b988e52b637a400394589bca8e06beb078a43",
+    "tools/parity/generators/f019-save-estimates-residuals/stata-export.do": "def84030e0fcdc8b9a5b2f398318b1a8751b156203e8f65d8e2b47345533c4cd"
+  },
+  "terminal_status": {
+    "stata": "success"
+  }
+}

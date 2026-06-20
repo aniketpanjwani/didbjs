@@ -1,0 +1,4 @@
+term,event_time,treated_count,treated_tau_sum,effect
+tau0,0,5,5.0,1.00
+tau1,1,5,10.0,2.00
+tau2,2,5,15.0,3.00

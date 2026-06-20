@@ -1,0 +1,31 @@
+{
+  "missing_weight": {
+    "status": "reference_success",
+    "estimate": 2.3665,
+    "std_error": 0.212,
+    "nrow": 1
+  },
+  "zero_weight": {
+    "status": "reference_success",
+    "estimate": 2.375,
+    "std_error": 0.1914,
+    "nrow": 1
+  },
+  "negative_weight": {
+    "status": "reference_success",
+    "estimate": 2.4479,
+    "std_error": 0.1904,
+    "nrow": 1
+  },
+  "infinite_weight": {
+    "status": "reference_success",
+    "estimate": "NaN",
+    "std_error": "NaN",
+    "nrow": 1
+  },
+  "all_zero_weight": {
+    "status": "reference_error",
+    "error_class": ["simpleError", "error", "condition"],
+    "error_message": "in fixest::feols(formula, se = \"standard\", data[zz00...: \nAll observations are 0-weight. Estimation cannot be done."
+  }
+}

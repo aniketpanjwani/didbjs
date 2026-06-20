@@ -1,0 +1,6 @@
+{
+  "class": ["data.table", "data.frame"],
+  "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+  "nrow": 3,
+  "public_call_status": "success"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], horizons=[0, 1], minn=30, cluster=\"unit\")",
+  "minn": 30,
+  "warning_text": "WARNING: suppressing wtr1, consider lower minn or minn=0.",
+  "n_obs": 71,
+  "terms": [
+    "tau0",
+    "tau1"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "dpi": 72,
+  "figure_class": "Figure",
+  "figure_inches": [
+    4.0,
+    3.0
+  ],
+  "fixture_id": "F044",
+  "invalid_parent_error": {
+    "class": "FileNotFoundError",
+    "message": "[Errno 2] No such file or directory: '/var/folders/f9/zyvrkzg56lv5qk84ptw52qyw0000gn/T/tmp25nx1a27/missing-parent/plot.png'"
+  },
+  "matplotlib_backend": "Agg",
+  "open_figures_after_close": [],
+  "open_figures_before_close": [
+    1,
+    2,
+    3
+  ],
+  "overwrite_existing_path": true,
+  "overwrite_sha256": "2d3f1937ef6857cec7eb7245272fc4a50aa16604c48b3ee9e06e05c13707d5b4",
+  "overwrite_size": 11748,
+  "png_dimensions": [
+    272,
+    209
+  ],
+  "png_exists": true,
+  "png_magic": "89504e470d0a1a0a",
+  "png_sha256": "e664f24eab5198d36ef6411316388b395771a19ea492db4476e44167a551c156",
+  "png_size": 10989,
+  "status": "success"
+}

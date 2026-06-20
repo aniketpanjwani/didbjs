@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "source": "pinned Stata covariance row/column stripe and singular pretrend probes",
+  "full_order_command": "did_imputation Y unit t Ei [aw=w], controls(x1 x2) horizons(0/1) pretrends(2) minn(0) cluster(unit) maxit(1000)",
+  "singular_pretrend_command": "did_imputation Y unit t Ei [aw=w], controls(x1 x2) horizons(0/1) pretrends(2) minn(0) cluster(cluster_pair) maxit(1000)",
+  "expected_order": ["tau0", "tau1", "pre1", "pre2", "x1", "x2"],
+  "full_pre_F":      2.46566206070790717,
+  "full_pre_p":      0.15467954539074749,
+  "full_pre_df":                     7,
+  "singular_pre_F":    148.02922709012199221,
+  "singular_pre_p":      0.05220730687227810,
+  "singular_pre_df":                     1
+}

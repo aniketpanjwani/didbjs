@@ -1,0 +1,13 @@
+{
+  "blocked_if": "replication count drops below 1000 per design, bands are changed without a behavior decision, or tests skip the estimator loop",
+  "default_test": "offline; consumes committed seeds, DGP, and bands; runs 1000 known-effect and 1000 zero-effect replications locally",
+  "fixture_id": "F047",
+  "nightly_or_release": "same command as default test, plus optional persisted summary from the test output for release notes",
+  "no_external_dependencies": [
+    "Stata",
+    "Python",
+    "Kyle",
+    "internet",
+    "SSH"
+  ]
+}

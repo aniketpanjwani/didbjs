@@ -1,0 +1,52 @@
+{
+  "status": "success",
+  "command": "for each spec, did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=<spec>, minn=0)",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "6f8845afa49f57b9e4dddc0ee874f6c886aca4f1ac4b0d2c2655934736ea2005",
+  "generator_sha256": "44949b8924ba6b4ee7d861501d7dd50260cda29252c4cc16e68be08d0bccda56",
+  "warning_text": "F008_PYTHON_INPUT=tests/fixtures/parity/f008-fe-sets/inputs/panel.csv\nF008_PYTHON_OUTPUT=tests/fixtures/parity/f008-fe-sets/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF008_PYTHON_EXPORT_OK=1\n",
+  "specs": [
+    "constant_only",
+    "unit_only",
+    "time_only",
+    "arbitrary"
+  ],
+  "fe": {
+    "constant_only": null,
+    "unit_only": [
+      "unit"
+    ],
+    "time_only": [
+      "t"
+    ],
+    "arbitrary": [
+      "group",
+      "t"
+    ]
+  },
+  "estimates": {
+    "constant_only": 3.2300000000000004,
+    "unit_only": 3.9850000000000008,
+    "time_only": 1.9766666666666672,
+    "arbitrary": 1.9766666666666666
+  },
+  "std_errors": {
+    "constant_only": 0.42858825099259196,
+    "unit_only": 0.10006248048094762,
+    "time_only": 0.6691523106250288,
+    "arbitrary": 0.4228311106673067
+  },
+  "V": {
+    "constant_only": 0.183687888888889,
+    "unit_only": 0.010012500000000025,
+    "time_only": 0.447764814814815,
+    "arbitrary": 0.1787861481481482
+  },
+  "n_obs": {
+    "constant_only": 40,
+    "unit_only": 40,
+    "time_only": 40,
+    "arbitrary": 40
+  }
+}

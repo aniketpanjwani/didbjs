@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "command": "did_imputation Y unit t Ei, minn(0) cluster(unit) maxit(1000)",
+  "stata_version": "14.2",
+  "n_obs":                    26,
+  "n_control":                    19,
+  "n_treated":                     7,
+  "algebraic_att":                     2,
+  "estimate":    2.0000000033082062,
+  "std_error":  1.40922590624000e-09
+}

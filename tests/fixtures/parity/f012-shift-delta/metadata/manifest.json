@@ -1,0 +1,27 @@
+{
+  "commands": {
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F012",
+  "generated_at": "2026-06-20T02:38:59Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f012-shift-delta/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f012-shift-delta/expected/stata/covariance.csv": "e7ed04f8bb7d20c6108e2ff7768d3d75f8983846b3da243c9869cc253d3d3835",
+    "tests/fixtures/parity/f012-shift-delta/expected/stata/diagnostics.json": "84090c54517d4d5e11417f9325f53d4d5266fc73d2ad517b762ac7204165e1cc",
+    "tests/fixtures/parity/f012-shift-delta/expected/stata/estimates.csv": "636f02649ef9a17f11ff9f5d38ed1a241918f27e98af28647bb6a4bd45c4b0e7",
+    "tests/fixtures/parity/f012-shift-delta/expected/stata/imputation-weights.csv": "86c96e133dfc37b0c63e8fcd9b8b2c99ce6a9db115328c0b60a84fd7728a65aa",
+    "tests/fixtures/parity/f012-shift-delta/expected/stata/invalid-delta.json": "da528fbdfdf5713d05100f1a574eeca98efdb05d688bcbf8bd5ca81cf2a23fc0",
+    "tests/fixtures/parity/f012-shift-delta/expected/stata/run.log": "1d25fc4cad8e6b646fd6ead5fb380efdb7345c5415ab560b92820e99f4f3fe90",
+    "tests/fixtures/parity/f012-shift-delta/expected/stata/sample-mask.csv": "516fb9007f0b3d3dabdc04667bbfaeff96bb797475b14acb56f386775f47944c",
+    "tests/fixtures/parity/f012-shift-delta/inputs/panel.csv": "9c3a3f4928c00f953f8f8fa69b34c55c8fd43c3afc2e4590d4301c7201e16327",
+    "tools/parity/generators/f012-shift-delta/stata-export.do": "0dc1f227a8c0dfb9ad5d0854fc65e5f923100ba5ddb75ddd4b47be4cedadc9ac"
+  },
+  "terminal_status": {
+    "stata": "success"
+  }
+}

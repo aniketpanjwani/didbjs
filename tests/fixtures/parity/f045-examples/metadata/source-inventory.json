@@ -1,0 +1,22 @@
+{
+  "fixture_id": "F045",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "source_boundary": {
+    "kyle": "Runs pinned README/package static and explicit event-study examples; horizon = TRUE is recorded as a D023 approved divergence for didbjs RC-v1.",
+    "python": "Runs pinned README did_imputation/event_plot examples whose inputs are available offline; complex-design snippets are covered by earlier dedicated fixtures.",
+    "stata": "Curates the BJS did_imputation/event_plot portion of five_estimators_example.do; third-party estimators in that script are inventoried but not reimplemented by didbjs."
+  },
+  "source_sha256": {
+    "kyle_data_docs": "1e86d1c4c633dc4cf98856f19107e1c8e9326a6cba225db80bc55cf27ace4032",
+    "kyle_estimator": "b7cd088c3ba3c72f092841a06110ec514ca802b6bf603083024fc0dc6137dc14",
+    "kyle_readme": "f14bb7144bc7ec6cbc0a478f3e12803d74a979ecec156195b7150c016e5c5899",
+    "python_estimator": "8193919ebf201b6d524ce87a394f9a9316dc66d165fb273c8098023e36b2779a",
+    "python_event_plot": "765d0c969a466764ee0d190a543c64b14932c55d5388b92b3c7aa51d2994899d",
+    "python_readme": "f0c26511882e0031d8c4de568964d3a83b9ca42e90465d8c0b02175b249e04fe",
+    "stata_five_estimators_example": "f8307411df4f707eeb1b5ae9ab5e04ac203a9d11b2da417d8c360f451e67a86c"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "commands": {
+    "focused_test": "R_LIBS_USER=.r-lib Rscript -e 'testthat::test_local(filter = \"f043|f023|f022\", reporter = \"summary\", stop_on_failure = TRUE)'",
+    "semantic": "python3 tools/parity/generators/f043-plot-multimodel/semantic_export.py tests/fixtures/parity/f043-plot-multimodel"
+  },
+  "decision_record_id": "D013",
+  "fixture_id": "F043",
+  "generated_at": "2026-06-20T09:46:11Z",
+  "host": "local development host",
+  "input_dir": "tests/fixtures/parity/f043-plot-multimodel/inputs",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "semantic_oracle": "independent D013 translation of F023 savecoef coordinates to eight-model overlay semantics",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f043-plot-multimodel/expected/semantic/diagnostics.json": "ef785b217368db0653d3079c2a413d6ce6bb3df7609e979cb1a333a56e06ffc7",
+    "tests/fixtures/parity/f043-plot-multimodel/expected/semantic/plot-data.csv": "9947e92187d72f1295ff48495d58ae055268c9be3d8e7e720b39bcc203788953",
+    "tests/fixtures/parity/f043-plot-multimodel/inputs/models.json": "18758b011152ea3bcdc59e5dcfd22f65039202092a52e6ecd2762e69748a1c1c",
+    "tests/testthat/test-f043-plot-multimodel.R": "c1a7d673ee68f341898b77c82d9b87c3487811a0d76212c2fe9af011c84c8898",
+    "tools/parity/generators/f043-plot-multimodel/semantic_export.py": "5595e77ab138c2589986c399b542e404aab0acbe0b24c0b8ded9a386c9bd9cdf"
+  },
+  "terminal_status": {
+    "semantic": "success"
+  }
+}

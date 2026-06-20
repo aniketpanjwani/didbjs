@@ -1,0 +1,3 @@
+scenario,term,estimate,std_error,n_obs
+base,tau_ate,2.32428505996499,0.20496252718595137,24
+scaled,tau_ate,2.3242850599649949,0.20496252718595109,24

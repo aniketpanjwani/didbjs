@@ -1,0 +1,59 @@
+{
+  "commands": {
+    "focused_test": "R_LIBS_USER=.r-lib Rscript -e 'testthat::test_local(filter = \"f046\", reporter = \"summary\", stop_on_failure = TRUE)'",
+    "inputs": "python3 tools/parity/generators/f046-differential/make-inputs.py tests/fixtures/parity/f046-differential",
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f046-differential/kyle-export.R tests/fixtures/parity/f046-differential/inputs tests/fixtures/parity/f046-differential/expected/kyle",
+    "manifest": "python3 tools/parity/generators/f046-differential/write-manifest.py tests/fixtures/parity/f046-differential",
+    "python": ".venv/bin/python tools/parity/generators/f046-differential/python_export.py tests/fixtures/parity/f046-differential/inputs tests/fixtures/parity/f046-differential/expected/python",
+    "stata": "ssh <licensed-stata-host> 'cd <remote_tmp> && /usr/local/bin/stata -b do stata-export.do <input_dir> <output_dir> ${STATA_ADO_ROOT}'"
+  },
+  "decision_record_ids": [
+    "D015",
+    "D017",
+    "D026"
+  ],
+  "fixture_id": "F046",
+  "generated_at": "2026-06-20T10:58:43Z",
+  "host": "local development host",
+  "input_dir": "tests/fixtures/parity/f046-differential/inputs",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "scenario_count": 200,
+  "sha256": {
+    "tests/fixtures/parity/f046-differential/expected/kyle/diagnostics.json": "0b62c3190ebfdd6b60ac6a69c0f414fee2ba05b81cd29cb8175f6ba28ba0fef1",
+    "tests/fixtures/parity/f046-differential/expected/kyle/estimates.csv": "c3d09e471ec41778b8e1c007fd921591e58d55514b8223505549f18f8412ea60",
+    "tests/fixtures/parity/f046-differential/expected/kyle/failures.csv": "74feb15665dfdd21a1addbe14e9779a35771ea75b45c4f5e091f4c59552d61c5",
+    "tests/fixtures/parity/f046-differential/expected/kyle/run.log": "6bca839c3a5190734de1b0bb755dcba9d6bb042712e44675cfa5cb274e0d0dcb",
+    "tests/fixtures/parity/f046-differential/expected/python/covariance.csv": "5f1519c93d1cc35c5cd69a3bc9df96ffffb7ad1501602a0316e26735748e8d0c",
+    "tests/fixtures/parity/f046-differential/expected/python/diagnostics.json": "016bc916dda6df492be5ec06bbe978bd7eed2833a477c8c14e922c5705cdee35",
+    "tests/fixtures/parity/f046-differential/expected/python/estimates.csv": "71ee6a8b4df8d049f8b9a5cbaceb46a5ab0d9507cb673c1743ddd6b3f00b1803",
+    "tests/fixtures/parity/f046-differential/expected/python/failures.csv": "49c563a483797455624609808db76acdad4d00b16c5527a2ba2db209d53f91de",
+    "tests/fixtures/parity/f046-differential/expected/python/run.log": "23eb06801730ea4c8b895473bec447a7f10aeef2fdc51edf7ecefba3ae7e6860",
+    "tests/fixtures/parity/f046-differential/expected/stata/covariance.csv": "d2af01e534993ed37d5dd94f3db85413f102114cac9115d4e193e5995cd9ed41",
+    "tests/fixtures/parity/f046-differential/expected/stata/diagnostics.json": "15457ad6fdd020853535108564f6662d56d0ce89672d9ce0bce7c7156a0fe75a",
+    "tests/fixtures/parity/f046-differential/expected/stata/estimates.csv": "96b4fabd9813e7daab80cc5a45a2771ef3ef942efa3c69bbb8f2db0f5184bbb2",
+    "tests/fixtures/parity/f046-differential/expected/stata/failures.csv": "49c563a483797455624609808db76acdad4d00b16c5527a2ba2db209d53f91de",
+    "tests/fixtures/parity/f046-differential/expected/stata/run.log": "abd97a9edfb12252a8949273daadbe45779e7604bc0f7daae084bc6ea992d412",
+    "tests/fixtures/parity/f046-differential/expected/stata/sample-mask.csv": "79780bb58275b3ef9352103e69a4e6733202f88058b280369f22be095ab2814b",
+    "tests/fixtures/parity/f046-differential/inputs/panels.csv": "23217a867ac2041b48f047b0426949322dfd5bcd1a3bf83fe9b2db628483ef24",
+    "tests/fixtures/parity/f046-differential/inputs/scenarios.csv": "3609dbb51e3cf685530447daa720f7d7c35ab546e438b984bc858aab2ada0860",
+    "tests/fixtures/parity/f046-differential/metadata/minimal-failing-cases.csv": "49c563a483797455624609808db76acdad4d00b16c5527a2ba2db209d53f91de",
+    "tests/fixtures/parity/f046-differential/metadata/source-inventory.json": "30628c3a5cf2ce75097d4de20eb4c80ffd9d5dd0f82454b919007872cb629640",
+    "tests/testthat/test-f046-differential.R": "e8e7ddb465a3ae391572425c9d70d314b8d39c8447302dd00aef6f82b3aa8703",
+    "tools/parity/generators/f046-differential/kyle-export.R": "6f7044ffa4f29bf12955030e8eda15b59c461f0d10740e9ba25edcae0a25c856",
+    "tools/parity/generators/f046-differential/make-inputs.py": "b55aac7ce1399b4d479be0363968995af3d8faba5da24012fa0913abef43f5b3",
+    "tools/parity/generators/f046-differential/python_export.py": "76d258459fbc9e161b2349208c20ce941bbee017bb8dad99d6f44dd2240eb226",
+    "tools/parity/generators/f046-differential/stata-export.do": "6078d9cbad3c31f373ed95f5308818e55d3e3af263130ed7b9e54dca1ab8d637",
+    "tools/parity/generators/f046-differential/write-manifest.py": "c474d8fcd03780f938d0038635cecb3781ca675c8cc9924bc5c0d168be2ec1ab"
+  },
+  "terminal_status": {
+    "focused_test": "success",
+    "kyle": "success",
+    "python": "success_with_d017_numeric_drift_policy",
+    "stata": "success"
+  }
+}

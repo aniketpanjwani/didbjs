@@ -1,0 +1,27 @@
+{
+  "commands": {
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f021-multiple-outcomes/kyle-export.R tests/fixtures/parity/f021-multiple-outcomes/inputs/panel.csv tests/fixtures/parity/f021-multiple-outcomes/expected/kyle"
+  },
+  "fixture_id": "F021",
+  "generated_at": "2026-06-20T04:50:00Z",
+  "host": "local macOS R 4.4.1",
+  "input_file": "tests/fixtures/parity/f021-multiple-outcomes/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f021-multiple-outcomes/expected/kyle/diagnostics.json": "4f0d244501d6b332ac157a6ea90eca5632b91f041579332bd55117346113d87d",
+    "tests/fixtures/parity/f021-multiple-outcomes/expected/kyle/multi-estimates.csv": "7191210220ceb69072b36b649f55ed2d6528088fc37d71eb63ba9c96b6f5f692",
+    "tests/fixtures/parity/f021-multiple-outcomes/expected/kyle/output-schema.json": "47d304d989798ecfc025dc08106198cc45b3392f90b8f3581d553bc2e7ebeec6",
+    "tests/fixtures/parity/f021-multiple-outcomes/expected/kyle/run.log": "3ccb32fc4f57b1765d4155c8384a74745cef7518bd5123c08f75f891abe3f29c",
+    "tests/fixtures/parity/f021-multiple-outcomes/expected/kyle/single-Y-estimates.csv": "1d789e33a76b9c4c2da61f6ddf5ec19b850e71dd90c3a7b9e6b83caed2664fa7",
+    "tests/fixtures/parity/f021-multiple-outcomes/expected/kyle/single-Y2-estimates.csv": "decb40f15340dd0da9176ece74845fa393fb1257695af4fa2d4056b7efc8a3cf",
+    "tests/fixtures/parity/f021-multiple-outcomes/inputs/panel.csv": "4b30b23e8070728017c69a0f40e8434c2b17b210864a3b92c07dfeebd4e1469b",
+    "tests/testthat/test-f021-multiple-outcomes.R": "b26267626dc722fb8b383aded853db32ed934caa9bf57491d98031bfcbe809c1",
+    "tools/parity/generators/f021-multiple-outcomes/kyle-export.R": "b9590383fec41370cf509f229c681f5124f9900c9416ec8f1ccb83957b6566cc"
+  },
+  "terminal_status": {
+    "kyle": "success"
+  }
+}

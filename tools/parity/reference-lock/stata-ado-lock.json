@@ -1,0 +1,27 @@
+{
+  "profile": "conformance-profile-v1",
+  "host": "licensed-stata-host",
+  "stata_binary": "stata",
+  "stata_version": "14.2",
+  "ado_root": "${STATA_ADO_ROOT}",
+  "canonical_reference_commit": "767c8d6670a751170910d419bbafd323df92ef08",
+  "packages": {
+    "ftools": "2.50.0",
+    "require": "1.3.1",
+    "reghdfe": "6.13.1",
+    "boottest": "4.5.3",
+    "moremata": "mlib files present in isolated ado path"
+  },
+  "canonical_reference_file_hashes": "fixture manifests and regeneration logs",
+  "key_hashes_sha256": {
+    "plus/f/ftools.ado": "c7eba3272b5fcd1dfa157e65c37840a051c6e2bf327d5ee31d42df65cf330b00",
+    "plus/r/reghdfe.ado": "0c700ea38de4ed110d0cbb57acd3e24351a5ab68b61dd84fcb0e5bc8f02d941a",
+    "plus/r/require.ado": "0f5a7bad374ade6c6ba0f05973666bb06b63d4acc36ddb0e277a060249a0e6de",
+    "plus/b/boottest.ado": "d223c20776be863f9bd3c8de6e7e0694bced4bb4ecb174087480ee50a2ccf23d",
+    "plus/l/lmoremata.mlib": "5bb06c33dd0f3c1b274e0612d61c254cce0e938e92f25128f52640b8ea244574"
+  },
+  "ssh_host_alias": "licensed-stata-host",
+  "ssh_user": "<maintainer-user>",
+  "ssh_config_source": "docs/reproducing-parity-evidence.md",
+  "verification_command": "ssh <licensed-stata-host> 'find ${STATA_ADO_ROOT}/ado ${STATA_ADO_ROOT}/refs/did_imputation_stata -maxdepth 5 -type f | sort | xargs sha256sum'"
+}

@@ -1,0 +1,52 @@
+{
+  "status": "success",
+  "generated_at": "2026-06-20T11:45:58Z",
+  "budget_file": "bench/budgets.yml",
+  "benchmark_environment": {
+    "host": "local development host",
+    "os": "Darwin 25.2.0 arm64",
+    "cpu": "Apple M1 Max",
+    "ram_gb": 64,
+    "r_version": "4.4.1",
+    "python_version": "3.12.11",
+    "blas": "/Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRblas.0.dylib",
+    "threads": {
+      "r": 1,
+      "python": 1
+    },
+    "warmup_iterations": 1,
+    "measured_iterations": 5
+  },
+  "measured_iterations": 5,
+  "warmup_iterations": 1,
+  "rss_method": "/usr/bin/time -l maximum resident set size on single-call child Rscript",
+  "runtime_method": "bench::mark median and p90 after one explicit warmup",
+  "saveweights_pathology": {
+    "controls": 5,
+    "horizons": 6,
+    "fixed_effects": ["unit", "t"],
+    "saved_weight_dense_rows_expected": 517500,
+    "kyle_baseline": "Kyle didimputation with matching controls, unit/time FE, horizons, and clustered SE. For peak RSS only, the child process also materializes an equivalent-size dense/sparse saved-weight artifact because upstream Kyle has no saveweights artifact API."
+  },
+  "sparse_controls_probe": {
+    "status": "success",
+    "rows": 100000,
+    "units": 5000,
+    "periods": 20,
+    "treated_units": 750,
+    "treated_unit_share": 0.15,
+    "controls": 5,
+    "horizons": 6,
+    "saveweights": true,
+    "didbjs_elapsed_seconds": 2.662,
+    "saved_dense_rows": 575250,
+    "saved_sparse_rows": 552750,
+    "max_abs_estimate_error_from_one": 0
+  },
+  "plotting_overlay": {
+    "models": 8,
+    "terms_per_model": 21,
+    "plot_data_rows": 168,
+    "renders_ggplot": true
+  }
+}

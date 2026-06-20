@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", horizons=[0, 1, 2], minn=0, saveweights=True)",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_hashes": {
+    "base": "e27182969dde7aa408f9c4360b535be4269be9bc56262344047c4350add2f15c",
+    "reordered": "d96faa7820775b0e96d5a0fe6bf4ca923b656857c82328110feb277c00951f26"
+  },
+  "generator_sha256": "8c3cab3b4fd8037e2da42f43a7f6af6cc23988115b8f129ed1de7dc9a4d51da1",
+  "dense_row_count": 360,
+  "dense_nonzero_count": 200,
+  "sparse_row_count": 200,
+  "warning_text": "F039_PYTHON_INPUT_DIR=tests/fixtures/parity/f039-artifact-row-mapping/inputs\nF039_PYTHON_OUTPUT=tests/fixtures/parity/f039-artifact-row-mapping/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities for 'wtr0' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr1' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr2' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr0' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr1' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr2' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF039_PYTHON_EXPORT_OK=1\n"
+}

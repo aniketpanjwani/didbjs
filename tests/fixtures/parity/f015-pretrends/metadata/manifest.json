@@ -1,0 +1,44 @@
+{
+  "commands": {
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f015-pretrends/kyle-export.R tests/fixtures/parity/f015-pretrends/inputs/panel.csv tests/fixtures/parity/f015-pretrends/expected/kyle",
+    "python": ".venv/bin/python tools/parity/generators/f015-pretrends/python_export.py tests/fixtures/parity/f015-pretrends/inputs/panel.csv tests/fixtures/parity/f015-pretrends/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F015",
+  "generated_at": "2026-06-20T03:22:24Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f015-pretrends/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f015-pretrends/expected/kyle/diagnostics.json": "36de8493bf3ccb74749f72b2538164b2c99546e43022ec9381d8e918c7afaa35",
+    "tests/fixtures/parity/f015-pretrends/expected/kyle/estimates.csv": "9f89d58cd6f548cceba557917412d4b25fc216c6532750881ae07d8b020c8e02",
+    "tests/fixtures/parity/f015-pretrends/expected/kyle/output-schema.json": "59bef8a0da25a971b21423e75742896133dafe6672691bad535c9915dc8aab6d",
+    "tests/fixtures/parity/f015-pretrends/expected/kyle/run.log": "0e5fea95bddce03d8745079b201ab016710e75288e80cada03541b56400c9788",
+    "tests/fixtures/parity/f015-pretrends/expected/python/covariance.csv": "13bda0edf6eaa438d0e1385033267508723afbb67eb776f03f6f45869717bdef",
+    "tests/fixtures/parity/f015-pretrends/expected/python/diagnostics.json": "bb4261bf750c473c05d96ea42fc8e176bd19cddcfe46fcdefc7b4e8e6e4125df",
+    "tests/fixtures/parity/f015-pretrends/expected/python/estimates.csv": "ef7a1be935651be1d5c827d3f700022eb5a39dfea7f04ced61e1c5ffd564c5da",
+    "tests/fixtures/parity/f015-pretrends/expected/python/object-schema.json": "74faba29be80d898970550d5ff3fa0dcec271e3facdd831bff07529923718361",
+    "tests/fixtures/parity/f015-pretrends/expected/python/pretrends.csv": "bfd59158731ba643e91fd455d7b5ff6a85a5578125028b42a7deac48a1356ab7",
+    "tests/fixtures/parity/f015-pretrends/expected/python/run.log": "61ab632e72e1327c11c0168a707ba4b8631a0e56f2e5cc29e25e2d0eab8f344d",
+    "tests/fixtures/parity/f015-pretrends/expected/stata/covariance.csv": "e576dc1bb90a46bb5c508c2ea36deb265021e1e26762a3096159931ffcc40a3a",
+    "tests/fixtures/parity/f015-pretrends/expected/stata/diagnostics.json": "a4d8ad3f68ad1c44a57b11fd380fa89990cad02bcc101d286183c6b61fbac0ad",
+    "tests/fixtures/parity/f015-pretrends/expected/stata/estimates.csv": "b001d10b74447cc729bad2442db09da2dfabf67b3a125cc6c10f7dc442adc80d",
+    "tests/fixtures/parity/f015-pretrends/expected/stata/imputation-weights.csv": "a18573e67568fd888dc8b09107808d7c256764c8077ad74ac56ffee0e3f48d1b",
+    "tests/fixtures/parity/f015-pretrends/expected/stata/run.log": "f8ff6f1929695507796f9d25252deabe6b829457ffb86deda1fb2fde9f904db3",
+    "tests/fixtures/parity/f015-pretrends/expected/stata/sample-mask.csv": "aa76dfcea57e1c74218938e9719a2fdfc4fb3a865bcfdb4a3c35a38d96fbb0f0",
+    "tests/fixtures/parity/f015-pretrends/inputs/panel.csv": "33e3dd4cae79798e9467574c964fed04ea64d202eebead9c76b7477e5d8a05bd",
+    "tools/parity/generators/f015-pretrends/kyle-export.R": "03382a37b03d7458599b4d44a8d56533267351ee11f55aca8d1e4c9e892d10d2",
+    "tools/parity/generators/f015-pretrends/python_export.py": "697ca1275a8a7742b3fcc81c2e2411a1aeded61a89269a3cb895c17ee82c03a8",
+    "tools/parity/generators/f015-pretrends/stata-export.do": "0211b1a65e4f430736eceb31fb1e0427e1578ffbb0f734ee82a8bf6c73768308"
+  },
+  "terminal_status": {
+    "kyle": "success",
+    "python": "success",
+    "stata": "success"
+  }
+}

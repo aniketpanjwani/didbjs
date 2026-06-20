@@ -1,0 +1,27 @@
+{
+  "commands": {
+    "algebraic": "DIDBJS_GENERATED_AT=2026-06-20T08:30:00Z python3 tools/parity/generators/f036-algebraic-oracle/algebraic-export.py tests/fixtures/parity/f001-static-att/inputs/panel.csv tests/fixtures/parity/f001-static-att/metadata"
+  },
+  "decision_record_id": "D002+D017",
+  "fixture_id": "F036",
+  "generated_at": "2026-06-20T08:30:00Z",
+  "host": "local macOS Python stdlib arithmetic",
+  "input_file": "tests/fixtures/parity/f001-static-att/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "algebraic": "not-applicable-hand-derived"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f001-static-att/inputs/panel.csv": "7347dc8bfdbcd6238fcd79befa571d67a789a480ab2f0f5e0979f9e248986cf8",
+    "tests/fixtures/parity/f001-static-att/metadata/f036-algebraic-oracle.json": "5996583f3c84ea313339755b9137ab7ab5b3cf73c4e56403637c53f9dfd7eaf6",
+    "tests/fixtures/parity/f001-static-att/metadata/f036-horizon-effects.csv": "7f83accbcf83974d3699b900e4a67a84c18f1ad329e13b60a964a78a485800a9",
+    "tests/fixtures/parity/f001-static-att/metadata/f036-treated-weights.csv": "5fc30b44a1dd956b6d21dd876952aa8f9d35a9689f2900f353c35d66da62c1d7",
+    "tests/testthat/test-f036-algebraic-oracle.R": "6037d74c173bc2e8b72394b717b0ebb0c982c2859df165487f00e68dc6e14a1c",
+    "tests/testthat/test-m001-static-att.R": "592e35c798c4697877cb1d84eef4267eb6d0b72fa829bd542c1384c30fec4555",
+    "tools/parity/generators/f036-algebraic-oracle/algebraic-export.py": "8423f21e2a4b48116ca9c118b18695aedb0b0892a86862544fa6c38a09be7b9c"
+  },
+  "source_fixture_id": "F001",
+  "terminal_status": {
+    "algebraic": "success"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "command": "regress coef; event_plot m1_b#m1_V m2_b#m2_V, stub_lag(m1tau# lag_#) stub_lead(m1pre# lead_#) trimlag(1 1) trimlead(2 2) shift(0 1) perturb(0 .25) savecoef noplot alpha(0.05)",
+  "eclass_seed": "regress coef",
+  "coef_sentinel": true,
+  "savecoef": true,
+  "noplot": true,
+  "models": 2,
+  "saved_rows":                     8
+}

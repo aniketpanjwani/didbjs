@@ -1,0 +1,9 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "save_command": "did_imputation Y unit t Ei [aw=w], horizons(0/2) minn(0) cluster(unit) saveweights",
+  "load_command": "did_imputation Y2 unit t Ei [aw=w], horizons(0/2) minn(0) cluster(unit) loadweights(saved_tau0 saved_tau1 saved_tau2)",
+  "dense_row_count":                   360,
+  "dense_nonzero_count":                   240,
+  "sparse_row_count":                   240
+}

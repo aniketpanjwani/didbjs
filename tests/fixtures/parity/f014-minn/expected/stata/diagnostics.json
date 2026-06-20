@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "command": "did_imputation Y unit t Ei, horizons(0/1) minn(30) cluster(unit) saveweights",
+  "terms": ["tau0", "tau1"],
+  "minn": 30,
+  "droplist": "tau1",
+  "estimates": {
+    "tau0":   0.99999999999999722,
+    "tau1":   0.00000000000000000
+  },
+  "std_errors": {
+    "tau0":   0.00000000000000639,
+    "tau1":   0.00000000000000000
+  },
+  "n_obs":                    73,
+  "n_control":                    40,
+  "n_treated": [                   31,                     0]
+}

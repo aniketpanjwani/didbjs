@@ -1,0 +1,26 @@
+{
+  "commands": {
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F006",
+  "generated_at": "2026-06-20T01:06:45Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f006-difference-estimand/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f006-difference-estimand/expected/stata/covariance.csv": "f8c13feb6907d89fe94572f1c037589fb9fbe559b3822c97a70361658f50e27d",
+    "tests/fixtures/parity/f006-difference-estimand/expected/stata/diagnostics.json": "42f9911f09efe405c492c4071f4bb2c1952d43ff7801156d1ef2b4d02d7eee66",
+    "tests/fixtures/parity/f006-difference-estimand/expected/stata/difference-weights.csv": "ecc64cb682e74bf05056fff26e374f655468a61138aed8f08ca2bce22224042b",
+    "tests/fixtures/parity/f006-difference-estimand/expected/stata/estimates.csv": "2b723d7c720e1e200e428ba696ce9fb7f30cebac0166a422df77389ce53d4b12",
+    "tests/fixtures/parity/f006-difference-estimand/expected/stata/run.log": "834470ce69c7b0f3559257f116ed83d716cc57d0c6e8b696f3b889c5763c05d6",
+    "tests/fixtures/parity/f006-difference-estimand/expected/stata/sample-mask.csv": "837906af6026da5005aaa3a94c3462eed9086c7af460d49956da4a1b9fc39e57",
+    "tests/fixtures/parity/f006-difference-estimand/inputs/panel.csv": "5772412974ca82226e8a4f93909b40979c255f00150815cf31daad47b7920b81",
+    "tools/parity/generators/f006-difference-estimand/stata-export.do": "efadbd466aa38b57cb0228ab566ebc1c7c762af74917d2462de8785adaf71d60"
+  },
+  "terminal_status": {
+    "stata": "success"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "source": "pinned Stata did_imputation cluster and finite-sample probes",
+  "success_scenarios": "two,alt,singleton,nested,missing",
+  "failure_scenarios": "one",
+  "scenario_count": 6
+}

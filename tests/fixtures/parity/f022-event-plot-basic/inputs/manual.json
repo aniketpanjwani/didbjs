@@ -1,0 +1,21 @@
+{
+  "pretrends": {
+    "pre1": -0.1,
+    "pre2": 0.2
+  },
+  "pretrends_std": {
+    "pre1": 0.05,
+    "pre2": 0.07
+  },
+  "effects": {
+    "tau0": 1.0,
+    "tau1": 2.0,
+    "tau2": 3.0
+  },
+  "effects_std": {
+    "tau0": 0.1,
+    "tau1": 0.2,
+    "tau2": 0.3
+  },
+  "significance_level": 0.05
+}

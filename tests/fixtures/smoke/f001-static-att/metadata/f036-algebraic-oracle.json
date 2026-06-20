@@ -1,0 +1,59 @@
+{
+  "status": "success",
+  "fixture_id": "F036",
+  "source_fixture_id": "F001",
+  "source": "hand algebraic oracle from the frozen F001 data-generating process; no R package code is used",
+  "generated_at": "2026-06-20T08:30:00Z",
+  "input_sha256": "7347dc8bfdbcd6238fcd79befa571d67a789a480ab2f0f5e0979f9e248986cf8",
+  "generator_sha256": "8423f21e2a4b48116ca9c118b18695aedb0b0892a86862544fa6c38a09be7b9c",
+  "data_generating_process": {
+    "rows": 60,
+    "units": 10,
+    "periods": 6,
+    "treated_units": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "never_treated_units": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "treatment_time": 4,
+    "untreated_potential_outcome": "Y0 = 10 * i + t",
+    "fixed_effect_decomposition": "unit component 10 * i plus time component t",
+    "treated_effect": "tau = 1 + event_time + (i - 3) / 10 for D == 1; tau = 0 otherwise",
+    "observed_outcome": "Y = Y0 + tau",
+    "analytic_weight": "w = 1 for every row"
+  },
+  "counts": {
+    "n_obs": 60,
+    "n_control": 45,
+    "n_treated": 15
+  },
+  "oracle": {
+    "static_att": 2.0,
+    "treated_tau_sum": 30.0,
+    "static_weight_per_treated_row": 0.06666666666666667,
+    "horizon_effects": {
+      "tau0": 1.0,
+      "tau1": 2.0,
+      "tau2": 3.0
+    },
+    "horizon_weight_per_treated_row": {
+      "tau0": 0.2,
+      "tau1": 0.2,
+      "tau2": 0.2
+    }
+  },
+  "reference_comparison_policy": {
+    "stata": "must match static_att under TOL001",
+    "kyle_alias": "must match static_att under TOL001; public idname=i reference error is governed by D016",
+    "python": "documented D017 divergence; object shape retained while didbjs core follows static_att"
+  }
+}

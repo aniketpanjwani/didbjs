@@ -1,0 +1,37 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", wtr=[\"wtr_uniform\", \"wtr_late\"], minn=0)",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "ebe12fc993af071072f4ee81a7104b8e4451c8046f0518b2fb3a0f7933ae81ee",
+  "generator_sha256": "f0ecba55d1fc8e3db2969446970e5d69de2165c9234516b95f1d69afdfcec86e",
+  "warning_text": "F005_PYTHON_INPUT=tests/fixtures/parity/f005-custom-positive-weights/inputs/panel.csv\nF005_PYTHON_OUTPUT=tests/fixtures/parity/f005-custom-positive-weights/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities for 'wtr_uniform' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr_late' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF005_PYTHON_EXPORT_OK=1\n",
+  "algebraic_att": {
+    "wtr_uniform": 2.5,
+    "wtr_late": 2.8333333333333335
+  },
+  "normalized_sums": {
+    "wtr_uniform": 1.0,
+    "wtr_late": 1.0
+  },
+  "tol001_abs": 1e-10,
+  "estimates": {
+    "wtr_uniform": 2.5000008286954762,
+    "wtr_late": 2.8333341620288097
+  },
+  "std_errors": {
+    "wtr_uniform": 0.11085526098922434,
+    "wtr_late": 0.11085526098922434
+  },
+  "V": 0.024577777777978087,
+  "algebraic_abs_diff": {
+    "wtr_uniform": 8.286954762404264e-07,
+    "wtr_late": 8.286954762404264e-07
+  },
+  "tol001_pass_by_term": {
+    "wtr_uniform": false,
+    "wtr_late": false
+  },
+  "tol001_pass": false,
+  "root_cause_probe": "Same fixed-effect recovery drift as D017/F001-F004: pinned Python recover_fixed_effects_iterative() leaves custom-wtr point estimates outside TOL001 while preserving public object shape and raw custom-weight estimate names."
+}

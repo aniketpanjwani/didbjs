@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "command": "did_imputation Y unit t Ei [aw=w], controls(x1 x2) minn(0) cluster(unit) maxit(1000) saveweights",
+  "controls": ["x1", "x2"],
+  "terms": ["tau", "x1", "x2"],
+  "estimates": {
+    "tau":   2.11818521195793696,
+    "x1":   0.72831869784412284,
+    "x2":   0.00343402316616510
+  },
+  "std_errors": {
+    "tau":   0.22942870018768519,
+    "x1":   0.18188964197593049,
+    "x2":   0.43334328941807460
+  },
+  "n_obs":                    40,
+  "n_control":                    30,
+  "n_treated":                    10,
+  "collinearity_return_code":                   481
+}

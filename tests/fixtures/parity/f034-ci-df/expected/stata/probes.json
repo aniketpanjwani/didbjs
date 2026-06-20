@@ -1,0 +1,7 @@
+{
+  "default": {"status": "reference_success", "return_code":                     0, "alpha": 0.05},
+  "alpha10": {"status": "reference_success", "return_code":                     0, "alpha": 0.10},
+  "alpha_zero": {"status": "reference_error", "return_code":                   198, "alpha": 0},
+  "alpha_one": {"status": "reference_error", "return_code":                   198, "alpha": 1},
+  "alpha_negative": {"status": "reference_error", "return_code":                   198, "alpha": -0.10}
+}

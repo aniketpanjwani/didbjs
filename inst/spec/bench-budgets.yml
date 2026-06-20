@@ -1,0 +1,84 @@
+status: frozen
+profile: conformance-profile-v1
+benchmark_environment:
+  # Provenance for the machine used to set these v1 budgets. Regeneration jobs
+  # must record their own host details; this block is not a portable CI
+  # scheduling constraint.
+  host: local development host
+  os: Darwin 25.2.0 arm64
+  cpu: Apple M1 Max
+  ram_gb: 64
+  r_version: 4.4.1
+  python_version: 3.12.11
+  blas: /Library/Frameworks/R.framework/Versions/4.4-arm64/Resources/lib/libRblas.0.dylib
+  threads:
+    r: 1
+    python: 1
+  warmup_iterations: 1
+  measured_iterations: 5
+
+global_rules:
+  parity_before_performance: true
+  fail_on_missing_baseline: true
+  fail_on_missing_budget: true
+  record_peak_rss: true
+  record_median_runtime: true
+  record_p90_runtime: true
+  no_unexplained_regression_over_percent: 20
+
+budgets:
+  small_static_overlap:
+    rows: 1000
+    units: 100
+    periods: 10
+    features: [static_att, unit_fe, time_fe, cluster_se]
+    max_median_seconds: 2.0
+    max_p90_seconds: 3.0
+    max_peak_rss_mb: 512
+    max_runtime_ratio_vs_kyle: 1.25
+    max_peak_rss_ratio_vs_kyle: 1.25
+  medium_dynamic_overlap:
+    rows: 20000
+    units: 1000
+    periods: 20
+    horizons: 6
+    features: [dynamic_horizons, unit_fe, time_fe, cluster_se]
+    max_median_seconds: 20.0
+    max_p90_seconds: 30.0
+    max_peak_rss_mb: 2048
+    max_runtime_ratio_vs_kyle: 1.25
+    max_peak_rss_ratio_vs_kyle: 1.25
+  large_many_fe:
+    rows: 250000
+    units: 10000
+    periods: 25
+    fe_levels: 10000
+    features: [static_att, many_fixed_effects, cluster_se]
+    max_median_seconds: 120.0
+    max_p90_seconds: 180.0
+    max_peak_rss_mb: 8192
+    max_runtime_ratio_vs_kyle: 1.50
+    max_peak_rss_ratio_vs_kyle: 1.50
+  saveweights_pathology:
+    rows: 100000
+    units: 5000
+    periods: 20
+    features: [saveweights, covariance]
+    max_median_seconds: 180.0
+    max_p90_seconds: 240.0
+    max_peak_rss_mb: 12288
+    max_runtime_ratio_vs_kyle: 1.75
+    max_peak_rss_ratio_vs_kyle: 1.75
+  plotting_overlay:
+    models: 8
+    terms_per_model: 21
+    features: [event_plot, overlays, perturbation, ci_coordinates]
+    max_median_seconds: 3.0
+    max_p90_seconds: 5.0
+    max_peak_rss_mb: 512
+
+release_gate:
+  all_budgets_must_pass: true
+  benchmark_result_without_parity_is_invalid: true
+  documented_bottleneck_does_not_satisfy_gate: true
+  default_tests_must_not_run_benchmarks: true

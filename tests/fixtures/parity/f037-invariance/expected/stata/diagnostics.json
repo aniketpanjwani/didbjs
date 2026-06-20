@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "base_estimate":      1.99999999999996891,
+  "row_permutation_abs_diff":      0.00000000000003908,
+  "unit_relabel_abs_diff":      0.00000000000000000,
+  "time_shift_abs_diff":      0.00000000711643322,
+  "constant_shift_abs_diff":      0.00000000000003597,
+  "weight_scale_abs_diff":      0.00000000711643322,
+  "outcome_scale": 3.5,
+  "outcome_scaled_estimate_ratio":      3.50000000404419120,
+  "outcome_scaled_se_ratio":      3.49999999999998090,
+  "outcome_scaled_variance_ratio":     12.24999999999987566
+}

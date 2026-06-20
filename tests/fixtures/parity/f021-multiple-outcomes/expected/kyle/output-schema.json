@@ -1,0 +1,7 @@
+{
+  "class": ["data.table", "data.frame"],
+  "names": ["lhs", "term", "estimate", "std.error", "conf.low", "conf.high"],
+  "nrow": 2,
+  "lhs": ["Y", "Y2"],
+  "term": ["treat", "treat"]
+}

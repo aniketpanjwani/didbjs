@@ -1,0 +1,26 @@
+{
+  "commands": {
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F017",
+  "generated_at": "2026-06-20T03:49:19Z",
+  "host": "licensed Stata host stata 14.2",
+  "input_file": "tests/fixtures/parity/f017-leaveout-se/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f017-leaveout-se/expected/stata/covariance.csv": "074c178a37a2eb88cbb03cc7fe3ef0b8686b3320658b0e9b225e4f276005704a",
+    "tests/fixtures/parity/f017-leaveout-se/expected/stata/default-error.json": "fcbcbba64081451cbd1f1cf48e268f6d0c45c8cab85f7c383544f08c04a75ef4",
+    "tests/fixtures/parity/f017-leaveout-se/expected/stata/diagnostics.json": "7ef9260647c7d5856cc26b6850d846cedb93bf13411769104a58b8d8873611e8",
+    "tests/fixtures/parity/f017-leaveout-se/expected/stata/estimates.csv": "681a8e8e75f2fb35d14e67684b81ee5f0e6e03acff323e1ec7d3e949022f52d2",
+    "tests/fixtures/parity/f017-leaveout-se/expected/stata/run.log": "f7eaa39930588d10dfb4e39eccc7986864cb0596f5f672d09868c2ddc6b9c51c",
+    "tests/fixtures/parity/f017-leaveout-se/expected/stata/sample-mask.csv": "75762bbd7717cf7c56fb797d6ab29679b110e6b9c0f2246fd2ec47d4763c7020",
+    "tests/fixtures/parity/f017-leaveout-se/inputs/panel.csv": "1003197e8901ff48417820487d0e09bf5b33c185874c0ce209000460f7795cc2",
+    "tools/parity/generators/f017-leaveout-se/stata-export.do": "c9dab608f987749a70e3971df82f854f9ffaffa800e15be02e7402674160b7e0"
+  },
+  "terminal_status": {
+    "stata": "success"
+  }
+}

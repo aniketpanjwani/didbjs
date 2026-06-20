@@ -1,0 +1,53 @@
+{
+  "commands": {
+    "focused_test": "R_LIBS_USER=.r-lib Rscript -e 'testthat::test_local(filter = \"f045\", reporter = \"summary\", stop_on_failure = TRUE)'",
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f045-examples/kyle-export.R tests/fixtures/parity/f045-examples/inputs tests/fixtures/parity/f045-examples/expected/kyle",
+    "manifest": "python3 tools/parity/generators/f045-examples/write-manifest.py tests/fixtures/parity/f045-examples",
+    "python": ".venv/bin/python tools/parity/generators/f045-examples/python-readme-export.py tests/fixtures/parity/f045-examples/inputs/stata-five-bjs-panel.csv tests/fixtures/parity/f045-examples/expected/python",
+    "stata": "ssh <licensed-stata-host> 'cd <remote_tmp> && /usr/local/bin/stata -b do stata-five-bjs.do <remote_tmp>/out ${STATA_ADO_ROOT}'"
+  },
+  "decision_record_ids": [
+    "D015",
+    "D017",
+    "D023"
+  ],
+  "fixture_id": "F045",
+  "generated_at": "2026-06-20T10:08:22Z",
+  "host": "local development host",
+  "input_dir": "tests/fixtures/parity/f045-examples/inputs",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f045-examples/expected/kyle/diagnostics.json": "397d90c15212c03ad862bfdb499dea67d69f85b6847ec364fcdfcbbbcd0c6040",
+    "tests/fixtures/parity/f045-examples/expected/kyle/estimates.csv": "92f5ed2f703c8f768c61a54301c1e85830427e45721f99badd611df9745dc767",
+    "tests/fixtures/parity/f045-examples/expected/kyle/output-schema.json": "b23f11089ce7b0713208a8a7a4a8484f1f1ecb1fe74e890fc5d6f139851da547",
+    "tests/fixtures/parity/f045-examples/expected/python/diagnostics.json": "09535a45fb8f5e4c6a40a4f1982826b569620340e0012db7dbdf2ce6aadaecad",
+    "tests/fixtures/parity/f045-examples/expected/python/estimates.csv": "412fe81cd9ce10bc218753dddfdf78edec657fe794a86e451b871c687aa9d62d",
+    "tests/fixtures/parity/f045-examples/expected/python/output-schema.json": "7ae4361bb5b044620768e7eecc07d8c567c69d3d5e1f14fa449cd2dd335643ad",
+    "tests/fixtures/parity/f045-examples/expected/python/readme-event-plot.png": "82e519e3f61d9953f9a3eeae2e64fc25f14606044e6d1a92b64e2ba33bb92ec6",
+    "tests/fixtures/parity/f045-examples/expected/stata/covariance.csv": "c121a66ebc93d8e1813b5a6f7265dda55c081ef4d4375bed492f510d59482896",
+    "tests/fixtures/parity/f045-examples/expected/stata/diagnostics.json": "b5def3ab0b887efd010c686a5ff07466f75a94ebe90295003081f330fad67740",
+    "tests/fixtures/parity/f045-examples/expected/stata/estimates.csv": "c9f13f110a288fc51b0610d9072215b2cb8a95c43b57673e4d89c206371078fd",
+    "tests/fixtures/parity/f045-examples/expected/stata/plot-data.csv": "c44e36c5b8e60f8b2699d9c6db1b8a9c91241207a79681e81cfb5f1bc34114e1",
+    "tests/fixtures/parity/f045-examples/expected/stata/run.log": "795986490815b7ebd3f163b6489113acf7061021478a23d9ef633e76cc0479ef",
+    "tests/fixtures/parity/f045-examples/expected/stata/true-effects.csv": "d69378418485b3616ce8e3bbe66fa7a4ab877dccf3f1d3d28b93d29adf1c92b7",
+    "tests/fixtures/parity/f045-examples/inputs/kyle-df-het.csv": "02aa173220c63a04efe5f34cf43fff92f4ada1a812cf7980dcf13f812cce7846",
+    "tests/fixtures/parity/f045-examples/inputs/stata-five-bjs-panel.csv": "d616153306dbe7451884834adfb4b60657a23ff070affce7ac4518da46fe9957",
+    "tests/fixtures/parity/f045-examples/metadata/source-inventory.json": "14303b4abd55a0c0738ae519ef18f2067a9631f6b16913fc7d581b9844fe6c68",
+    "tests/testthat/test-f045-examples.R": "a0e795f87c0dc55c0b6ca18fab24062022cf2edb729e58b4697f9bdd47e1a3ed",
+    "tools/parity/generators/f045-examples/kyle-export.R": "520f5356f892a89796a773d5dde4bc00385e70e3555bcf8b1603b6e3f0075416",
+    "tools/parity/generators/f045-examples/python-readme-export.py": "71349f523aa8e7d8e674ca5e010814eeb6bb0c90fe23713a18f227a7b75e190e",
+    "tools/parity/generators/f045-examples/stata-five-bjs.do": "e25b73bb1b2c260044a61875a3a766c2c4a295042661dd0d8835d725ed5bd3dd",
+    "tools/parity/generators/f045-examples/write-manifest.py": "3800626e377479d8cc053cf6d12e58a1318288545b59232507fe00043a965110"
+  },
+  "terminal_status": {
+    "focused_test": "success",
+    "kyle": "success_with_d023_horizon_true_divergence",
+    "python": "success",
+    "stata": "success"
+  }
+}

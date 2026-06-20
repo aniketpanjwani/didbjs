@@ -1,0 +1,33 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel[panel[\"keep\"] == 1], y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", controls=[\"x1\", \"x2\"], aw=\"w\", fe=[\"group\", \"t\"], minn=0, cluster=\"clust\")",
+  "subset_source": "prefilter keep == 1 because pinned Python has no subset argument",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "7cbbe997b12f4e5dd1258d29df6538d0b0fe5523b320b8f04ab23b340b40e8ad",
+  "generator_sha256": "63ed053f52bbacd8e66e0dbee3032f1cb5d35498e11c6cfe2a64350b719c1535",
+  "warning_text": "F025_PYTHON_INPUT=tests/fixtures/parity/f025-missingness-subset/inputs/panel.csv\nF025_PYTHON_OUTPUT=tests/fixtures/parity/f025-missingness-subset/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF025_PYTHON_EXPORT_OK=1\n",
+  "rows_input": 40,
+  "rows_after_subset": 39,
+  "rows_dropped_by_subset": 1,
+  "controls": [
+    "x1",
+    "x2"
+  ],
+  "estimates": {
+    "tau_ate": 1.4204821834962518
+  },
+  "std_errors": {
+    "tau_ate": 0.4689063868009842
+  },
+  "controls_estimates": {
+    "x1": -0.31591890022381247,
+    "x2": -0.2594690301227077
+  },
+  "controls_std_errors": {
+    "x1": 0.34610750424560693,
+    "x2": 0.5274948499674175
+  },
+  "n_obs": 34,
+  "V": 0.6179144208200252
+}

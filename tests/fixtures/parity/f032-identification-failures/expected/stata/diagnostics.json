@@ -1,0 +1,9 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "source": "pinned Stata did_imputation identification-failure probes",
+  "success_scenarios": "no_treated,no_supported_horizon",
+  "failure_scenarios": "no_untreated,one_cohort,all_post_treated",
+  "omitted_zero_scenarios": "no_treated,no_supported_horizon",
+  "scenario_count":                     5
+}

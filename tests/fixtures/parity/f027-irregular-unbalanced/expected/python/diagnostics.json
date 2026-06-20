@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], minn=0, cluster=\"unit\")",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "4b027111a307994dd1a618bd139490ef3d3c1517c3bad14174d340b0ea84a65a",
+  "duplicate_input_sha256": "a0654a1dbbe7b6c1b94ecb78c9f2090647bfea551e26c86ad8125ad647182fc3",
+  "generator_sha256": "df9e29840ef7a1e22a2bee850c585e82a70a9597ae5b3c7c9d374e516654acf9",
+  "warning_text": "F027_PYTHON_INPUT=tests/fixtures/parity/f027-irregular-unbalanced/inputs/irregular.csv\nF027_PYTHON_DUPLICATE_INPUT=tests/fixtures/parity/f027-irregular-unbalanced/inputs/duplicates.csv\nF027_PYTHON_OUTPUT=tests/fixtures/parity/f027-irregular-unbalanced/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF027_PYTHON_EXPORT_OK=1\n",
+  "rows_input": 26,
+  "estimates": {
+    "tau_ate": 2.000000720006255
+  },
+  "std_errors": {
+    "tau_ate": 2.662468486382743e-07
+  },
+  "n_obs": 26,
+  "V": 7.088738440981215e-14,
+  "algebraic_att": 2.0
+}

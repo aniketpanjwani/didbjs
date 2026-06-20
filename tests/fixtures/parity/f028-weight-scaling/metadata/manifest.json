@@ -1,0 +1,47 @@
+{
+  "commands": {
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f028-weight-scaling/kyle-export.R tests/fixtures/parity/f028-weight-scaling/inputs/panel.csv tests/fixtures/parity/f028-weight-scaling/expected/kyle",
+    "python": ".venv/bin/python tools/parity/generators/f028-weight-scaling/python_export.py tests/fixtures/parity/f028-weight-scaling/inputs/panel.csv tests/fixtures/parity/f028-weight-scaling/expected/python",
+    "stata": "/usr/local/bin/stata -b do stata-export.do panel.csv expected-stata ${STATA_ADO_ROOT} on licensed-stata-host"
+  },
+  "fixture_id": "F028",
+  "generated_at": "2026-06-20T06:37:46Z",
+  "host": "licensed Stata host Stata 14.2 plus local macOS R 4.4.1 and Python 3.12.11 reference jobs",
+  "input_file": "tests/fixtures/parity/f028-weight-scaling/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f028-weight-scaling/expected/kyle/diagnostics.json": "85e5e296f38d3cb60c73688673b9a72351b3e28eb41c1f8025e426034811bd2a",
+    "tests/fixtures/parity/f028-weight-scaling/expected/kyle/estimates.csv": "5d375323022bf5cf430cc5ff6dee4358622c1ca88032586023543090723d77ff",
+    "tests/fixtures/parity/f028-weight-scaling/expected/kyle/invalid-probes.json": "07813db0f0b890c150d7872d4a396a309ed63db5ddbdb44a825464f9668d5d86",
+    "tests/fixtures/parity/f028-weight-scaling/expected/kyle/output-schema.json": "8f5fcdc654227a4eb2a9ee81d689599bced88a9390cee59d01da1c999d5a4cf0",
+    "tests/fixtures/parity/f028-weight-scaling/expected/kyle/run.log": "b18c226ac1b1196581b1ba12ce57eb07b78946c184c7050c6a61a72679185339",
+    "tests/fixtures/parity/f028-weight-scaling/expected/python/covariance.csv": "76e59bfde0afaff1d606d0ab9bf2772f7cf0a5ff0bd39218ae4e628bc502ad72",
+    "tests/fixtures/parity/f028-weight-scaling/expected/python/diagnostics.json": "188d6822b36cf6903ee9fbfcb8e62dd38ed730fd865e97cbb6aecc3a3d8df669",
+    "tests/fixtures/parity/f028-weight-scaling/expected/python/estimates.csv": "d1b017f6e54841c3fe94b41477e0ae87440aca9624a8c651080fb16cdbbde1c0",
+    "tests/fixtures/parity/f028-weight-scaling/expected/python/invalid-probes.json": "3f5b4c84dd98ba16ad6cf60f070e7ab3296072d2edcfb8df39d3017e1f32f762",
+    "tests/fixtures/parity/f028-weight-scaling/expected/python/object-schema.json": "8030fe9e09d063a8c821cb9fe4cefee6a16d34dbbcb657523c705a8b7e1e6550",
+    "tests/fixtures/parity/f028-weight-scaling/expected/python/run.log": "3ecf6bfc0a42ff5caba4908d99865209338e8af2245d9f99e1e2312ac05c36fb",
+    "tests/fixtures/parity/f028-weight-scaling/expected/stata/covariance.csv": "bfc2b3841e7d323d4421b3c8214c5a95139980af797431ffdfc4cfe025c02171",
+    "tests/fixtures/parity/f028-weight-scaling/expected/stata/diagnostics.json": "3eb99299aad68de825731ca202a38bbe574e006cab8cf0bf7bbc46f1d618a3e6",
+    "tests/fixtures/parity/f028-weight-scaling/expected/stata/estimates.csv": "52e82519f6ecf5bd35e248b67e46e49cb7af6f501fc823e821959214f9d77622",
+    "tests/fixtures/parity/f028-weight-scaling/expected/stata/invalid-probes.json": "2495fad8689f1b702691d64e9fa7b6012775096c377f6eb7310920f977b920da",
+    "tests/fixtures/parity/f028-weight-scaling/expected/stata/run.log": "c3ab9a5f849551e5edcec4a10fe3e478a502fa0bc89b46cecfe21623f35ec68e",
+    "tests/fixtures/parity/f028-weight-scaling/expected/stata/sample-mask-base.csv": "760a9564202f579fa858be5fa220356b364ffc171d1ba7869eb2900616538b3b",
+    "tests/fixtures/parity/f028-weight-scaling/expected/stata/sample-mask-missing.csv": "9330b86f614f387e171b4d2964c08673da227e71f3546f24ebebadeda51839e8",
+    "tests/fixtures/parity/f028-weight-scaling/inputs/panel.csv": "317200f7542ca05f1fce78a7ead1ebb0f862e5406859f6c78aa1ece714a201d1",
+    "tests/testthat/test-f028-weight-scaling.R": "ac4f0adcfd48696f4d1779aac3b37683222dd0969ed5719c330567fe04c5009d",
+    "tools/parity/generators/f028-weight-scaling/kyle-export.R": "547551aa4a63d99aa88f2cbbd2b171b2315b85f7ca97f30abf98ec8073b2e158",
+    "tools/parity/generators/f028-weight-scaling/python_export.py": "360c12bfd986a6eeec852c863e46fa197153c9b26b212066e7edd9bb409e0fb5",
+    "tools/parity/generators/f028-weight-scaling/stata-export.do": "0414ad840f6b9812ea4741d20e01a8ec183d4c0f73a4ab7a760496d27461cad6"
+  },
+  "terminal_status": {
+    "kyle": "success",
+    "python": "success",
+    "stata": "success"
+  }
+}

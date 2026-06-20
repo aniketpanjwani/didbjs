@@ -1,0 +1,7 @@
+{
+  "status": "reference_success_with_duplicates",
+  "command": "did_imputation Y unit t Ei, minn(0) cluster(unit) maxit(1000)",
+  "return_code":                     0,
+  "duplicate_unit_time_rows":                     2,
+  "estimate":    2.0000000153663948
+}

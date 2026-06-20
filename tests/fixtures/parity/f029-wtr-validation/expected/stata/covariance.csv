@@ -1,0 +1,11 @@
+scenario,row_term,col_term,value
+base,tau,tau,     0.03769841269841230
+scaled,tau,tau,     0.03769841269841310
+untreated_support,tau,tau,     0.03769841269841310
+missing,tau,tau,     0.03889795370882310
+multiple,tau_wtr_base,tau_wtr_base,     0.03769841269841226
+multiple,tau_wtr_base,tau_wtr_alt,     0.03769841269841225
+multiple,tau_wtr_alt,tau_wtr_base,     0.03769841269841225
+multiple,tau_wtr_alt,tau_wtr_alt,     0.03769841269841225
+sum_zero,tau,tau,     0.00000000000000000
+zero,tau,tau,     0.00000000000000000

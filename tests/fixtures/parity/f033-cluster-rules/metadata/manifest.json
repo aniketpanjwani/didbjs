@@ -1,0 +1,31 @@
+{
+  "commands": {
+    "stata": "stata -b do stata-export.do panel.csv expected-stata ${STATA_ADO_ROOT}"
+  },
+  "decision_record_id": "D009",
+  "fixture_id": "F033",
+  "generated_at": "2026-06-20T07:49:13Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f033-cluster-rules/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f033-cluster-rules/expected/stata/covariance.csv": "36b8a230432041ffaf17bd62ca9d15ef6e574468aae2071af08611ca49355cd7",
+    "tests/fixtures/parity/f033-cluster-rules/expected/stata/diagnostics.json": "f4706072eb61e16f73d98c5024993a76aac13d7e4dcb9d03eaefcbb6d1cb4be2",
+    "tests/fixtures/parity/f033-cluster-rules/expected/stata/estimates.csv": "f46502f6f863ef31aeb562070e199fb7147bf38e98b9d38a13ab2c56f79b63f1",
+    "tests/fixtures/parity/f033-cluster-rules/expected/stata/probes.json": "cbec61ba4558fd4b7b684093f1b876c10dc86800f284d3f960687ee6f8139f61",
+    "tests/fixtures/parity/f033-cluster-rules/expected/stata/run.log": "6d1920bd974426dbe142a0e14d5adc4b4234717b58b1287937c505bb94f4f25f",
+    "tests/fixtures/parity/f033-cluster-rules/expected/stata/sample-alt.csv": "051c040033f852a0cd9b90fd086c932694cf0110315da3343127dec9ab5758c7",
+    "tests/fixtures/parity/f033-cluster-rules/expected/stata/sample-missing.csv": "775a63c80a6cb29107178d7516cf9bcd3cfdec2dbb3637d9437deb0480caaa0b",
+    "tests/fixtures/parity/f033-cluster-rules/expected/stata/sample-nested.csv": "051c040033f852a0cd9b90fd086c932694cf0110315da3343127dec9ab5758c7",
+    "tests/fixtures/parity/f033-cluster-rules/expected/stata/sample-singleton.csv": "051c040033f852a0cd9b90fd086c932694cf0110315da3343127dec9ab5758c7",
+    "tests/fixtures/parity/f033-cluster-rules/expected/stata/sample-two.csv": "051c040033f852a0cd9b90fd086c932694cf0110315da3343127dec9ab5758c7",
+    "tests/fixtures/parity/f033-cluster-rules/inputs/panel.csv": "68d9166ba72117032c2ccb4299a6628aefb0b608eaa7f0d5cf60286d91ebaad6",
+    "tools/parity/generators/f033-cluster-rules/stata-export.do": "7f78de4491122b89bb6c1a746d6d624c6e317fb709b4bba60e7af6cf132f9170"
+  },
+  "terminal_status": {
+    "stata": "success_with_one_cluster_reference_error"
+  }
+}

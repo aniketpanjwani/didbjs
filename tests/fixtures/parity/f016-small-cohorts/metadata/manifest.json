@@ -1,0 +1,25 @@
+{
+  "commands": {
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F016",
+  "generated_at": "2026-06-20T03:40:03Z",
+  "host": "licensed Stata host stata 14.2",
+  "input_file": "tests/fixtures/parity/f016-small-cohorts/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f016-small-cohorts/expected/stata/covariance.csv": "6866bc9e0c0305bc0e7fa46c46c3df9e7b828796cdf9191946723e9af3e0b1f4",
+    "tests/fixtures/parity/f016-small-cohorts/expected/stata/diagnostics.json": "7a50b5d00eebad9beb5143a40f5fa2cb060b7a44c8b7cbe75eda179803830337",
+    "tests/fixtures/parity/f016-small-cohorts/expected/stata/estimates.csv": "bc1d0fa0ca5f8ecc1d2c7f6412cfdaafca2c2e1cc3669383625eb5abf23be64e",
+    "tests/fixtures/parity/f016-small-cohorts/expected/stata/run.log": "c517f4aab61c9799215c63329494adc0acdc8b95cdd224b593caf800ba88e2de",
+    "tests/fixtures/parity/f016-small-cohorts/expected/stata/sample-mask.csv": "a52ace584020958a5d8f7341fdb1969fe1045cf979276c44fa1e6ae6e9dc5f54",
+    "tests/fixtures/parity/f016-small-cohorts/inputs/panel.csv": "1003197e8901ff48417820487d0e09bf5b33c185874c0ce209000460f7795cc2",
+    "tools/parity/generators/f016-small-cohorts/stata-export.do": "0d532fa0ec7a9ae660792f72555f7e828a6a2371cc829b0608f2b3282c459edc"
+  },
+  "terminal_status": {
+    "stata": "success"
+  }
+}

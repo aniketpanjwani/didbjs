@@ -1,0 +1,29 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "specs": ["constant_only", "unit_only", "time_only", "arbitrary"],
+  "commands": {
+    "constant_only": "did_imputation Y unit t Ei, fe(.) minn(0) cluster(unit)",
+    "unit_only": "did_imputation Y unit t Ei, fe(unit) minn(0) cluster(unit)",
+    "time_only": "did_imputation Y unit t Ei, fe(t) minn(0) cluster(unit)",
+    "arbitrary": "did_imputation Y unit t Ei, fe(group t) minn(0) cluster(unit)"
+  },
+  "estimates": {
+    "constant_only":   3.22999999999999998,
+    "unit_only":   3.98500000000000121,
+    "time_only":   1.97666666666666702,
+    "arbitrary":   1.97666666666666702
+  },
+  "std_errors": {
+    "constant_only":   0.42858825099259201,
+    "unit_only":   0.10006248048094760,
+    "time_only":   0.66915231062502867,
+    "arbitrary":   0.42283111066730672
+  },
+  "n_obs": {
+    "constant_only":                    40,
+    "unit_only":                    40,
+    "time_only":                    40,
+    "arbitrary":                    40
+  }
+}

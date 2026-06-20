@@ -1,0 +1,47 @@
+{
+  "commands": {
+    "inputs": "python3 tools/parity/generators/f039-artifact-row-mapping/make-inputs.py tests/fixtures/parity/f002-dynamic-horizons/inputs/panel.csv tests/fixtures/parity/f039-artifact-row-mapping/inputs",
+    "python": ".venv/bin/python tools/parity/generators/f039-artifact-row-mapping/python_export.py tests/fixtures/parity/f039-artifact-row-mapping/inputs tests/fixtures/parity/f039-artifact-row-mapping/expected/python",
+    "stata": "ssh <licensed-stata-host>; /usr/local/bin/stata -b do stata-export.do inputs output ${STATA_ADO_ROOT}"
+  },
+  "decision_record_id": "D011",
+  "fixture_id": "F039",
+  "generated_at": "2026-06-20T09:03:14Z",
+  "host": "local development host + licensed Stata host",
+  "input_dir": "tests/fixtures/parity/f039-artifact-row-mapping/inputs",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/python/covariance.csv": "dcfec8fc5d391dc6393739cbac274086f2ce96be8337e8e4a01bba80787b1e57",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/python/diagnostics.json": "846f302e77fc036d8bc8e949ceab8f836237c8c6bb82be6eb7e0c8670df2112d",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/python/estimates.csv": "ee9aec490a20c6c07c442d912a24deb130513208f3ae575053f3b5e6fefa0ea0",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/python/object-schema.json": "766cfebdf42e2801551beb3897021fa7109bcc21db5bd7b100bc052be29906e9",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/python/run.log": "139a073eeabcf33d640017bb97e46958cae7a8eddc15e8884d8137aa6f81c1bc",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/python/weights-dense.csv": "83b4088cb673d0226959222f27321bfa16b11c02b08e6baf0eb00f7b5536074f",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/python/weights-sparse.csv": "1ed0b995a5c916ab151da275ad96a6c419ceb74904e9661c264d8ddbd3ec22b2",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/stata/covariance.csv": "e9613b74019cf62738362954c2eb7f079352d2f08b9e475d66888ccd120b049b",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/stata/diagnostics.json": "a5df7f9f4f16bb0212d173d5d23f6a16e03f9050917ac1e64b5c1c90e5894d4b",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/stata/estimates.csv": "a84ea67d43209374f71836f726a1e49c2bc08a1c5d94ab15a149527663b87031",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/stata/load-estimates.csv": "c74b2364d78e6409881857ac67e45d45576f08834aab19fd2f12e83240c18ed1",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/stata/run.log": "3cd3421b6d5cae34dae8394159514eb51161deb327abe3266487d53d0392376f",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/stata/sample-base.csv": "e0dbaae5d9edd7b8545b8f7c88248f9f8a6ee59e9ee81b61c20994838f2c8bab",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/stata/sample-reordered.csv": "365bc52cf9a99e483a7bafe65e876556f595b698b2d455d9866f5e9b3d95f7ac",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/stata/weights-dense.csv": "ca21099cf1f0b08d018ade6328153b38485d6e5c1be8efef0a0bdaeaf30342c7",
+    "tests/fixtures/parity/f039-artifact-row-mapping/expected/stata/weights-sparse.csv": "ac8765b3f3891f84ac7083fd3b2ed38c08da8d35843e292c88d18b00c9b32838",
+    "tests/fixtures/parity/f039-artifact-row-mapping/inputs/base.csv": "e27182969dde7aa408f9c4360b535be4269be9bc56262344047c4350add2f15c",
+    "tests/fixtures/parity/f039-artifact-row-mapping/inputs/modified.csv": "fb6bce02f7fe4755ddabc70aded4cea6d62dc22a77be1b2b5bcbe892e6086ec4",
+    "tests/fixtures/parity/f039-artifact-row-mapping/inputs/reordered.csv": "d96faa7820775b0e96d5a0fe6bf4ca923b656857c82328110feb277c00951f26",
+    "tests/testthat/test-f039-artifact-row-mapping.R": "cc9150a9954a22c4a273b1ddfbcbf85e2affdebe606017769149c71efec95ab0",
+    "tools/parity/generators/f039-artifact-row-mapping/make-inputs.py": "b055c2c38418ff106db6fd506847aeb45cdc02d3617bed3acaa8efa8958c39fe",
+    "tools/parity/generators/f039-artifact-row-mapping/python_export.py": "8c3cab3b4fd8037e2da42f43a7f6af6cc23988115b8f129ed1de7dc9a4d51da1",
+    "tools/parity/generators/f039-artifact-row-mapping/stata-export.do": "fd84f14d1200b910292528cafaa1720928654bba66f5ec8c02eed2a2d1dcd656"
+  },
+  "terminal_status": {
+    "inputs": "success",
+    "python": "success_with_reordered_drift_evidence",
+    "stata": "success"
+  }
+}

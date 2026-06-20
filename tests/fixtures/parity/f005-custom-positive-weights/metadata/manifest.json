@@ -1,0 +1,35 @@
+{
+  "commands": {
+    "python": ".venv/bin/python tools/parity/generators/f005-custom-positive-weights/python_export.py tests/fixtures/parity/f005-custom-positive-weights/inputs/panel.csv tests/fixtures/parity/f005-custom-positive-weights/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F005",
+  "generated_at": "2026-06-20T00:59:16Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f005-custom-positive-weights/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/python/covariance.csv": "d571897bd643a47463fa5f64fbafef666438f3baf8bfc7fedc540c80c83cfccc",
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/python/diagnostics.json": "f93e598a23b86ebbec42a795b560148644c6c5a2a33224304cb498643f886986",
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/python/estimates.csv": "8d9ddbfb9157a426a790bbfea071380ee5293340216acdf0380b9a2e03b5c808",
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/python/object-schema.json": "8030fe9e09d063a8c821cb9fe4cefee6a16d34dbbcb657523c705a8b7e1e6550",
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/python/run.log": "739f9cd8022d13d98011792999e707905a29c87919a0b4e9feb03a3b7fe1164d",
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/stata/covariance.csv": "7a6d4f747c05891bd0124549038310ff684086301de43dea0bec289dbae105aa",
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/stata/diagnostics.json": "8eff06f615b8fbf6f6e1f8f98b7adcc48ba5944e199fd88598213debfbe4bb6c",
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/stata/estimates.csv": "3dcb552c5d38a1e5e8f535aa9e3851b7f1731beed4f2addaf143b7eb2e1b5b2f",
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/stata/normalized-weights.csv": "b53c9a233639c5f0a78663f0d82aa2e58102711e00b9e54eb28a319af698d595",
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/stata/run.log": "6f4b10184970a0e020924ecb16ec7b9288dc6d99ef32578fd691b4e8a6b10941",
+    "tests/fixtures/parity/f005-custom-positive-weights/expected/stata/sample-mask.csv": "b614724ddfef96abd7c19d8a625c34da35774ec9618646f1a87d9b62f1c8eba5",
+    "tests/fixtures/parity/f005-custom-positive-weights/inputs/panel.csv": "ebe12fc993af071072f4ee81a7104b8e4451c8046f0518b2fb3a0f7933ae81ee",
+    "tools/parity/generators/f005-custom-positive-weights/python_export.py": "f0ecba55d1fc8e3db2969446970e5d69de2165c9234516b95f1d69afdfcec86e",
+    "tools/parity/generators/f005-custom-positive-weights/stata-export.do": "e61c8656b04af3e6ef9f5a1c76227e798435554e85c5f2f208a1e12413d0c720"
+  },
+  "terminal_status": {
+    "python": "success_tol001_false",
+    "stata": "success"
+  }
+}

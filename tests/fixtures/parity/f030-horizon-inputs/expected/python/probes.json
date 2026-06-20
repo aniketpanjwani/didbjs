@@ -1,0 +1,91 @@
+{
+  "unsorted": {
+    "status": "reference_success",
+    "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", minn=0, horizons=[2, 0])",
+    "terms": [
+      "tau2",
+      "tau0"
+    ],
+    "estimates": {
+      "tau2": 3.0000003632157988,
+      "tau0": 1.0000003632157988
+    },
+    "std_errors": {
+      "tau2": 0.06324555320347301,
+      "tau0": 0.06324555320347301
+    },
+    "n_obs": 55
+  },
+  "sparse": {
+    "status": "reference_success",
+    "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", minn=0, horizons=[0, 2])",
+    "terms": [
+      "tau0",
+      "tau2"
+    ],
+    "estimates": {
+      "tau0": 1.0000003632157988,
+      "tau2": 3.0000003632157988
+    },
+    "std_errors": {
+      "tau0": 0.06324555320347301,
+      "tau2": 0.06324555320347301
+    },
+    "n_obs": 55
+  },
+  "absent": {
+    "status": "reference_success",
+    "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", minn=0, horizons=[0, 3])",
+    "terms": [
+      "tau0",
+      "tau3"
+    ],
+    "estimates": {
+      "tau0": 1.0000003632157988,
+      "tau3": 0.0
+    },
+    "std_errors": {
+      "tau0": 0.06324555320347301,
+      "tau3": 0.0
+    },
+    "n_obs": 50
+  },
+  "duplicate": {
+    "status": "reference_error",
+    "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", minn=0, horizons=[0, 0])",
+    "error": "ValueError: cannot reindex on an axis with duplicate labels"
+  },
+  "negative": {
+    "status": "reference_success",
+    "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", minn=0, horizons=[-1])",
+    "terms": [
+      "tau-1"
+    ],
+    "estimates": {
+      "tau-1": 0.0
+    },
+    "std_errors": {
+      "tau-1": "inf"
+    },
+    "n_obs": 45
+  },
+  "empty": {
+    "status": "reference_success",
+    "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", minn=0, horizons=[])",
+    "terms": [
+      "tau_ate"
+    ],
+    "estimates": {
+      "tau_ate": 2.0000003632157988
+    },
+    "std_errors": {
+      "tau_ate": 0.06324555320347301
+    },
+    "n_obs": 60
+  },
+  "horizons_allhorizons": {
+    "status": "reference_error",
+    "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", minn=0, horizons=[0, 1], allhorizons=True)",
+    "error": "ValueError: Options horizons and allhorizons cannot be combined"
+  }
+}

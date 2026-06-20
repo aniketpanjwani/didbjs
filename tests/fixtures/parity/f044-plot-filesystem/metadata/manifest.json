@@ -1,0 +1,28 @@
+{
+  "commands": {
+    "focused_test": "R_LIBS_USER=.r-lib Rscript -e 'testthat::test_local(filter = \"f044|f022|f042|f043\", reporter = \"summary\", stop_on_failure = TRUE)'",
+    "python": ".venv/bin/python tools/parity/generators/f044-plot-filesystem/python_export.py tests/fixtures/parity/f044-plot-filesystem"
+  },
+  "decision_record_id": "D013",
+  "fixture_id": "F044",
+  "generated_at": "2026-06-20T09:54:50Z",
+  "host": "local development host",
+  "input_dir": "tests/fixtures/parity/f044-plot-filesystem/inputs",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "semantic_profile": "D013 plus F022/F023 Stata noplot/savecoef evidence",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f044-plot-filesystem/expected/python/diagnostics.json": "c34661c51575b56c0599960c53314c3a0d576ebdd1de88fc319e88070a4b50a2",
+    "tests/fixtures/parity/f044-plot-filesystem/expected/python/python-rcap.png": "e664f24eab5198d36ef6411316388b395771a19ea492db4476e44167a551c156",
+    "tests/fixtures/parity/f044-plot-filesystem/expected/semantic/policy.json": "850c283c03a733c34930e2f5a58f32d01ec7aecd9d3a35b1eafcea394fb8320e",
+    "tests/fixtures/parity/f044-plot-filesystem/inputs/manual.json": "fe7d6f1f57383aa46444d4dbadcf416b6201c34dabd867ccbeb4d177fde871e5",
+    "tests/testthat/test-f044-plot-filesystem.R": "aeface122d0fad0ac870a67df8f8a14a439bc1596f90d301c59d41ccda709366",
+    "tools/parity/generators/f044-plot-filesystem/python_export.py": "28e9b98651c8dcf40dc66fcde7031716b65b2b4bfc144fd4c601865436107461"
+  },
+  "terminal_status": {
+    "python": "success"
+  }
+}

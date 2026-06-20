@@ -1,0 +1,26 @@
+{
+  "commands": {
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F011",
+  "generated_at": "2026-06-20T02:31:01Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f011-triple-difference/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f011-triple-difference/expected/stata/covariance.csv": "46e8752416d2220017e19d7f96e1635283ce0dbfee27935d99f7111b051cb765",
+    "tests/fixtures/parity/f011-triple-difference/expected/stata/diagnostics.json": "6bce68276f7eec22e8b6633e6e329d3a027cbb67c4c18db0166ba6fd5903ea62",
+    "tests/fixtures/parity/f011-triple-difference/expected/stata/estimates.csv": "2e5f5921c035c16f803cfe84ffce31fce182ec37e3b59a91d07f9841ea8f97e5",
+    "tests/fixtures/parity/f011-triple-difference/expected/stata/imputation-weights.csv": "5c9753b18cfa59b0a7e5205d9e5edf4e9e44c8d5e94981cf7349354b64e82986",
+    "tests/fixtures/parity/f011-triple-difference/expected/stata/run.log": "6412ee867a70443632817ea07732357f8c0112616fa0820a7acc4de1f6b1258b",
+    "tests/fixtures/parity/f011-triple-difference/expected/stata/sample-mask.csv": "4280be8192687e83ef36be2912360a6f53041517bd8e487e4edc0d8d6a118c36",
+    "tests/fixtures/parity/f011-triple-difference/inputs/panel.csv": "ec3c19cfda2c896f447ce14ce8641b739d2869c2f847cba5043ceb7945e50080",
+    "tools/parity/generators/f011-triple-difference/stata-export.do": "247b437366f37c10e8cd8988b167fbaf37fdc1a42bd4800da8031ac94fa08c04"
+  },
+  "terminal_status": {
+    "stata": "success"
+  }
+}

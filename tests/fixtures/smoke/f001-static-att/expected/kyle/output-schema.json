@@ -1,0 +1,7 @@
+{
+  "class": "error",
+  "public_call_status": "reference_error",
+  "error_class": ["simpleError", "error", "condition"],
+  "error_message": "subscript out of bounds",
+  "root_cause": "Kyle didimputation se_inner() uses for-loop variable i inside data.table NSE; F001 also has a data column named i, so v_star[, i] resolves i as the unit-id column rather than the loop counter."
+}

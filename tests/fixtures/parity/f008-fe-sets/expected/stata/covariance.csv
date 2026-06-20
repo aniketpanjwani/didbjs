@@ -1,0 +1,5 @@
+spec,row_term,col_term,value
+constant_only,tau,tau,   .18368788888888898
+unit_only,tau,tau,  .010012500000000028
+time_only,tau,tau,   .44776481481481489
+arbitrary,tau,tau,   .17878614814814814

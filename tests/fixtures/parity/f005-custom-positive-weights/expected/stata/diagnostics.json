@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "command": "did_imputation Y unit t Ei [aw=w], wtr(wtr_uniform wtr_late) minn(0) cluster(unit)",
+  "stata_version": "14.2",
+  "terms": ["tau_wtr_uniform", "tau_wtr_late"],
+  "denom_wtr_uniform":                    30,
+  "denom_wtr_late":                    60,
+  "normalized_sum_wtr_uniform":                     1,
+  "normalized_sum_wtr_late":                     1,
+  "algebraic_wtr_uniform":                   2.5,
+  "algebraic_wtr_late":     2.833333333333333,
+  "n_obs":                    54,
+  "n_control":                    39,
+  "n_treated_tau_wtr_uniform":                    15,
+  "n_treated_tau_wtr_late":                    15
+}

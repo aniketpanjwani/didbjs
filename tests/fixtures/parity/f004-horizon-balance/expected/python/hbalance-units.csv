@@ -1,0 +1,9 @@
+unit,treated_unit,requested_horizon_count,hbalance_included
+1,True,3,True
+2,True,3,True
+3,True,3,True
+4,True,2,False
+5,False,0,False
+6,False,0,False
+7,False,0,False
+8,False,0,False

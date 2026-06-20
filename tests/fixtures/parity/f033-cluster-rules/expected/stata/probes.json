@@ -1,0 +1,8 @@
+{
+  "two": {"status": "reference_success", "return_code":                     0, "cluster": "cluster_two"},
+  "alt": {"status": "reference_success", "return_code":                     0, "cluster": "cluster_alt"},
+  "singleton": {"status": "reference_success", "return_code":                     0, "cluster": "cluster_singleton"},
+  "nested": {"status": "reference_success", "return_code":                     0, "cluster": "cluster_nested"},
+  "one": {"status": "reference_error", "return_code":                  2001, "cluster": "cluster_one"},
+  "missing": {"status": "reference_success", "return_code":                     0, "cluster": "cluster_missing"}
+}

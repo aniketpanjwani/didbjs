@@ -1,0 +1,6 @@
+scenario,row_term,col_term,value
+unsorted,python_V_total,python_V_total,0.0080000000000266715
+sparse,python_V_total,python_V_total,0.0080000000000266715
+absent,python_V_total,python_V_total,0.0040000000000133358
+negative,python_V_total,python_V_total,inf
+empty,python_V_total,python_V_total,0.0040000000000133358

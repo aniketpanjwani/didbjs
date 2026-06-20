@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], horizons=[0, 1, 2], minn=0, cluster=\"unit\")",
+  "autosample_message": "Cannot impute for 3 observations. Autosample used.\nThe number of treated entities for 'wtr0' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr1' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr2' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.",
+  "n_obs": 19,
+  "terms": [
+    "tau0",
+    "tau1",
+    "tau2"
+  ]
+}

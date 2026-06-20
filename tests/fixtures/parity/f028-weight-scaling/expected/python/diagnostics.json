@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "base_command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", minn=0)",
+  "scaled_command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w_scaled\", minn=0)",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "317200f7542ca05f1fce78a7ead1ebb0f862e5406859f6c78aa1ece714a201d1",
+  "generator_sha256": "360c12bfd986a6eeec852c863e46fa197153c9b26b212066e7edd9bb409e0fb5",
+  "warning_text": "F028_PYTHON_INPUT=tests/fixtures/parity/f028-weight-scaling/inputs/panel.csv\nF028_PYTHON_OUTPUT=tests/fixtures/parity/f028-weight-scaling/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\n<local-checkout>/.venv/lib/python3.12/site-packages/pyhdfe/utilities.py:96: RuntimeWarning: invalid value encountered in divide\n  return self.sum(matrix * weights) / self.sum(weights)\nF028_PYTHON_EXPORT_OK=1\n",
+  "base_estimate": 2.32428505996499,
+  "scaled_estimate": 2.324285059964995,
+  "base_std_error": 0.20496252718595137,
+  "scaled_std_error": 0.2049625271859511,
+  "base_v": 0.04200963755045185,
+  "scaled_v": 0.04200963755045174,
+  "estimate_scale_abs_diff": 4.884981308350689e-15,
+  "variance_scale_abs_diff": 1.1102230246251565e-16
+}

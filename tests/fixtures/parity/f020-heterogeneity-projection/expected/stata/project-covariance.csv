@@ -1,0 +1,5 @@
+row_term,col_term,value
+tau_cons,tau_cons, .0088888888888885263
+tau_cons,tau_x, 7.86407975776132e-17
+tau_x,tau_cons, 7.86407975776132e-17
+tau_x,tau_x, 9.31657910986523e-31

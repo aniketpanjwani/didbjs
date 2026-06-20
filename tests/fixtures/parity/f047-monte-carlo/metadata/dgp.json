@@ -1,0 +1,27 @@
+{
+  "description": "Balanced panel with one treated cohort and never-treated controls; untreated outcome is unit FE plus time FE plus iid normal noise.",
+  "estimator_call": "did_imputation(panel, \"Y\", \"unit\", \"t\", \"Ei\", aw = \"w\", cluster = \"unit\", minn = 0)",
+  "fixture_id": "F047",
+  "panel": {
+    "n_periods": 6,
+    "n_units": 60,
+    "never_treated_units": 30,
+    "rows_per_replication": 360,
+    "treat_time": 4,
+    "treated_units": 30
+  },
+  "parameters": {
+    "analytic_weight": 1.0,
+    "cluster": "unit",
+    "epsilon_sd": 1.0,
+    "known_effect_truth": 1.0,
+    "minn": 0,
+    "time_fe_sd": 0.5,
+    "unit_fe_sd": 1.0,
+    "zero_effect_truth": 0.0
+  },
+  "rng": {
+    "engine": "R set.seed default Mersenne-Twister",
+    "seed_column": "replications.csv:seed"
+  }
+}

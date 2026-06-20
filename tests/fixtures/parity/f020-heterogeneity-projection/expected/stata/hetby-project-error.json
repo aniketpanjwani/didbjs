@@ -1,0 +1,7 @@
+{
+  "status": "error",
+  "command": "did_imputation Y unit t Ei, minn(0) cluster(unit) hetby(group) project(x)",
+  "return_code":       184,
+  "error_message": "Options project and hetby cannot be combined.",
+  "stata_return_checked": true
+}

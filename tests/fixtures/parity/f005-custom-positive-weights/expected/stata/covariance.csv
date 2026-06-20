@@ -1,0 +1,5 @@
+row_term,col_term,value
+tau_wtr_uniform,tau_wtr_uniform,  .012288888888888797
+tau_wtr_uniform,tau_wtr_late,  .012288888888888792
+tau_wtr_late,tau_wtr_uniform,  .012288888888888792
+tau_wtr_late,tau_wtr_late,  .012288888888888785

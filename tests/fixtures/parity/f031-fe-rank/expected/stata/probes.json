@@ -1,0 +1,8 @@
+{
+  "nested_fe": {"status": "reference_success", "return_code":                     0},
+  "duplicate_fe": {"status": "reference_success", "return_code":                     0},
+  "singleton_fe": {"status": "reference_success", "return_code":                     0},
+  "disconnected_fe": {"status": "reference_success", "return_code":                     0},
+  "absorbed_control": {"status": "reference_success", "return_code":                     0},
+  "untreated_rank": {"status": "reference_error", "return_code":                   481}
+}

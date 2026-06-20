@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "base_command": "did_imputation Y unit t Ei [aw=w], wtr(wtr_base) minn(0) cluster(unit)",
+  "scaled_command": "did_imputation Y unit t Ei [aw=w], wtr(wtr_scaled) minn(0) cluster(unit)",
+  "base_estimate":      2.32971014492753392,
+  "scaled_estimate":      2.32971014492753481,
+  "untreated_support_estimate":      2.32971014492753481,
+  "missing_estimate":      2.37295082378737821,
+  "multiple_estimates": [     2.32971014911879282,     2.36403509189058791],
+  "sum_zero_estimate":      0.12000000000000061,
+  "zero_estimate":      0.00000000000000000,
+  "estimate_scale_abs_diff":      0.00000000000000089,
+  "untreated_support_abs_diff":      0.00000000000000089,
+  "missing_row_id": "2_3",
+  "missing_row_excluded":                     1,
+  "sum_zero_raw_weight_sum":      0.00000000000000000,
+  "sum_zero_raw_abs_weight_sum":      0.96000000000000008
+}

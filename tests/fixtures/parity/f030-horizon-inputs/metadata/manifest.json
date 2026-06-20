@@ -1,0 +1,49 @@
+{
+  "commands": {
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f030-horizon-inputs/kyle-export.R tests/fixtures/parity/f030-horizon-inputs/inputs/panel.csv tests/fixtures/parity/f030-horizon-inputs/expected/kyle",
+    "python": ".venv/bin/python tools/parity/generators/f030-horizon-inputs/python_export.py tests/fixtures/parity/f030-horizon-inputs/inputs/panel.csv tests/fixtures/parity/f030-horizon-inputs/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv expected-stata ${STATA_ADO_ROOT}"
+  },
+  "decision_record_id": "D004+D023",
+  "fixture_id": "F030",
+  "generated_at": "2026-06-20T07:07:49Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f030-horizon-inputs/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f030-horizon-inputs/expected/kyle/diagnostics.json": "424ff7aae41369d459f47815886454500e788b6c86461f19bced332a3b4b0eca",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/kyle/estimates.csv": "a73590a59d3857e6265bc559d0cc61884545f4623ce1eb7970e71fd0b2a09b9d",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/kyle/output-schema.json": "35ff44a912d5dbfee5cd2028f2bcc89b6098355441adb31caa137f9cd46ecbfd",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/kyle/probes.json": "4196cbb84077cc5d6550ff2b136f0ba8e843f213d3cb48a99a84a21dea4745bb",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/kyle/run.log": "e703b31fe9950dafe416f28533056814015d6f219e3fbcc7e11ff594dbfbab69",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/python/covariance.csv": "0c3ab0289a2ccae30aa21aedcf43f73e881969362c90efa5abd8ad2f013a55ff",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/python/diagnostics.json": "0b2c1279b786c4347a32354dc73bd863b3aad5f9a8004c234d2e879e646ee9ea",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/python/estimates.csv": "ac02d067cae9074890ade069b5c7fd5cc59f383a3e4eaeef5a5e86d38cab5888",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/python/object-schema.json": "1e1914b7452849d00fd910a95ef9ee9daeb3625a5cc084b140731ad0ccefdae4",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/python/probes.json": "dadb9aad7f4c0db83112fee7cba4f2895edf23fac999610493a599e535ac4a33",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/python/run.log": "749fe88b4968456b35ae0c093a93b10002d7014ea779f23bbbe05e28d9aaf5ba",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/stata/covariance.csv": "c70de24800d426465a18d6a828acd37f5ede42a6bf61b81406417b368c7d8f56",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/stata/diagnostics.json": "90d9d67eaf64d8f50f125e39ffe9edf8b3657620f7c1d61ba2313f82019b501b",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/stata/estimates.csv": "765b42e1c9bc855bca4f1aaaab7ba0f9548cee24cc020fa09a8e16aa28588470",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/stata/probes.json": "5d04543c386ffde5889b78d57ef429e59259a536b62e8e5301d8988e3efb0b11",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/stata/run.log": "8603e86b3f9aa13f7382e118bddd6e8602cb05b87fea3a0b555c104308573ae2",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/stata/sample-mask-absent.csv": "ee17a005e9b9e4cfca54aecd4c3fc1a8cf68ca7d199b902be1acd9e29a80a881",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/stata/sample-mask-empty.csv": "29e8196525020187096fdc9072341eec8dd701f7e2693bb8153f7d796a5bba3d",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/stata/sample-mask-sparse.csv": "e9e8e371bed99a9356b67c3e8a1592126c0bbcc4012b286860a4c073710f7af0",
+    "tests/fixtures/parity/f030-horizon-inputs/expected/stata/sample-mask-unsorted.csv": "e9e8e371bed99a9356b67c3e8a1592126c0bbcc4012b286860a4c073710f7af0",
+    "tests/fixtures/parity/f030-horizon-inputs/inputs/panel.csv": "c6f0c3bfcf99a7238d1ec8f666e644a566be94e4fb2570e6d0999b8421cb9e37",
+    "tools/parity/generators/f030-horizon-inputs/kyle-export.R": "18e89b45783992ab6dc936ba0794796ba24dce9ea6f27d16d3127af3bc91bdb5",
+    "tools/parity/generators/f030-horizon-inputs/python_export.py": "3f37f4d1e75797c1e56324b9674254c4604ce6c6ac54412eb2f513ca493f8b9c",
+    "tools/parity/generators/f030-horizon-inputs/stata-export.do": "b5097aa7aedf00de25b3a95d2c5a2bcf522678c266c8f11e0d74c504976503e6"
+  },
+  "terminal_status": {
+    "kyle": "success_with_reference_errors_and_d023_divergence_evidence",
+    "python": "success_with_reference_errors_and_d023_divergence_evidence",
+    "stata": "success_with_reference_errors_and_d023_divergence_evidence"
+  }
+}

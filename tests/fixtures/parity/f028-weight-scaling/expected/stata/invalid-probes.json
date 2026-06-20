@@ -1,0 +1,7 @@
+{
+  "zero_weight": {"status": "reference_success", "return_code":                     0},
+  "negative_weight": {"status": "reference_error", "return_code":                   402},
+  "all_zero_weight": {"status": "reference_error", "return_code":                   459},
+  "iweight": {"status": "reference_error", "return_code":                   101},
+  "fweight": {"status": "reference_error", "return_code":                   101}
+}

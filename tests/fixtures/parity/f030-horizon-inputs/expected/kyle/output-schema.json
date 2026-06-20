@@ -1,0 +1,44 @@
+{
+  "unsorted": {
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 2,
+    "public_call_status": "success"
+  },
+  "sparse": {
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 2,
+    "public_call_status": "success"
+  },
+  "absent": {
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 2,
+    "public_call_status": "success"
+  },
+  "duplicate": {
+    "class": "error",
+    "public_call_status": "reference_error",
+    "error_class": ["simpleError", "error", "condition"],
+    "error_message": "Can't assign to the same column twice in the same query (duplicates detected)."
+  },
+  "negative": {
+    "class": "error",
+    "public_call_status": "reference_error",
+    "error_class": ["simpleError", "error", "condition"],
+    "error_message": "Some items of .SDcols are not column names: [zz000wtr]"
+  },
+  "empty": {
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 3,
+    "public_call_status": "success"
+  },
+  "all_horizons_true": {
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 3,
+    "public_call_status": "success"
+  }
+}

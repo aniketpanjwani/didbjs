@@ -1,0 +1,5 @@
+{
+  "duplicate_names": {"status": "reference_error", "return_code":                   110},
+  "zero_treated_weight": {"status": "reference_success", "return_code":                     0},
+  "negative_without_sum": {"status": "reference_error", "return_code":                     9}
+}

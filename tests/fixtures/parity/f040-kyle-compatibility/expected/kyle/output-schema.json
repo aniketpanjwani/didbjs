@@ -1,0 +1,63 @@
+{
+  "named_default": {
+    "status": "success",
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 1,
+    "terms": "treat",
+    "lhs": {}
+  },
+  "positional_dynamic_pretrends": {
+    "status": "success",
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 4,
+    "terms": ["-2", "-1", "0", "1"],
+    "lhs": {}
+  },
+  "first_stage_formula": {
+    "status": "success",
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 1,
+    "terms": "treat",
+    "lhs": {}
+  },
+  "first_stage_string": {
+    "status": "success",
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 1,
+    "terms": "treat",
+    "lhs": {}
+  },
+  "wtr": {
+    "status": "success",
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 2,
+    "terms": ["wtr_early", "wtr_late"],
+    "lhs": {}
+  },
+  "multi": {
+    "status": "success",
+    "class": ["data.table", "data.frame"],
+    "names": ["lhs", "term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 2,
+    "terms": ["treat", "treat"],
+    "lhs": ["Y", "Y2"]
+  },
+  "id_collision": {
+    "status": "reference_error",
+    "class": ["simpleError", "error", "condition"],
+    "error_message": "subscript out of bounds"
+  },
+  "id_collision_alias": {
+    "status": "success",
+    "class": ["data.table", "data.frame"],
+    "names": ["term", "estimate", "std.error", "conf.low", "conf.high"],
+    "nrow": 1,
+    "terms": "treat",
+    "lhs": {}
+  }
+}

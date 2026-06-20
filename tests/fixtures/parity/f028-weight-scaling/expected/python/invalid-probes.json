@@ -1,0 +1,30 @@
+{
+  "missing_weight": {
+    "status": "reference_success",
+    "estimate": 2.3665373432008843,
+    "std_error": 0.20856769206616702,
+    "n_obs": 23
+  },
+  "zero_weight": {
+    "status": "reference_success",
+    "estimate": 2.37500623622464,
+    "std_error": 0.1882256110875906,
+    "n_obs": 24
+  },
+  "negative_weight": {
+    "status": "reference_success",
+    "estimate": 2.4479179270978637,
+    "std_error": 0.18683553520854432,
+    "n_obs": 24
+  },
+  "infinite_weight": {
+    "status": "reference_error",
+    "type": "RuntimeError",
+    "message": "Failed to converge after 1000000 iterations."
+  },
+  "all_zero_weight": {
+    "status": "reference_error",
+    "type": "RuntimeError",
+    "message": "Failed to converge after 1000000 iterations."
+  }
+}

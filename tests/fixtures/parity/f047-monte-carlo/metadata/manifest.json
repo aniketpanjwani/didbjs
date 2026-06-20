@@ -1,0 +1,29 @@
+{
+  "commands": {
+    "fixture": "python3 tools/parity/generators/f047-monte-carlo/make-fixture.py tests/fixtures/parity/f047-monte-carlo",
+    "focused_test": "R_LIBS_USER=.r-lib Rscript -e 'testthat::test_local(filter = \"f047\", reporter = \"summary\", stop_on_failure = TRUE)'"
+  },
+  "decision_record_ids": [
+    "D015"
+  ],
+  "designs": [
+    "known_effect",
+    "zero_effect"
+  ],
+  "fixture_id": "F047",
+  "generated_at": "2026-06-20T11:10:29Z",
+  "host": "local development host",
+  "profile": "conformance-profile-v1",
+  "replications_per_design": 1000,
+  "sha256": {
+    "tests/fixtures/parity/f047-monte-carlo/metadata/bands.json": "8a55ece28751d5c2e1026ff86459fe08e9a8b9d12e94a615b95e7874321f6058",
+    "tests/fixtures/parity/f047-monte-carlo/metadata/dgp.json": "edaf66833d518141365e4dc7b63f1a826c90bed16c02721a8a90d25dbb59ce6b",
+    "tests/fixtures/parity/f047-monte-carlo/metadata/execution-plan.json": "d003fddda1b681d54410c62ce3c6b16d78a2cf7778ded95dd308845235facef6",
+    "tests/fixtures/parity/f047-monte-carlo/metadata/replications.csv": "70debed256b020d6cef4eb14bdd90dbf8a5539a7b1c3a9024673aae35d862747",
+    "tests/testthat/test-f047-monte-carlo.R": "804c507741ad421bec4c40356fda73b639ead11452ddc3f309d72bf24a9e1de2",
+    "tools/parity/generators/f047-monte-carlo/make-fixture.py": "7a14e93267ee04d33c42c1e160b5649c745205477441f0eb0663d790053173c9"
+  },
+  "terminal_status": {
+    "focused_test": "success"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "models": [
+    {
+      "name": "Model 1",
+      "estimates": {
+        "m1pre3": -0.3,
+        "m1pre2": -0.2,
+        "m1pre1": -0.1,
+        "m1tau0": 1.0,
+        "m1tau1": 1.5,
+        "m1tau2": 2.0
+      },
+      "std_errors": {
+        "m1pre3": 0.03,
+        "m1pre2": 0.04,
+        "m1pre1": 0.05,
+        "m1tau0": 0.1,
+        "m1tau1": 0.15,
+        "m1tau2": 0.2
+      }
+    },
+    {
+      "name": "Model 2",
+      "estimates": {
+        "lead_3": -0.6,
+        "lead_2": -0.4,
+        "lead_1": -0.2,
+        "lag_0": 2.0,
+        "lag_1": 2.5,
+        "lag_2": 3.0
+      },
+      "std_errors": {
+        "lead_3": 0.06,
+        "lead_2": 0.08,
+        "lead_1": 0.1,
+        "lag_0": 0.2,
+        "lag_1": 0.25,
+        "lag_2": 0.3
+      }
+    }
+  ],
+  "stub_lag": ["m1tau#", "lag_#"],
+  "stub_lead": ["m1pre#", "lead_#"],
+  "trimlag": [1, 1],
+  "trimlead": [2, 2],
+  "shift": [0, 1],
+  "perturb": [0, 0.25],
+  "significance_level": 0.05
+}

@@ -1,0 +1,26 @@
+{
+  "profile": "conformance-profile-v1",
+  "r_version": "4.4.1",
+  "packages": {
+    "data.table": "1.18.2.1",
+    "fixest": "0.14.0",
+    "testthat": "3.3.2",
+    "haven": "2.5.5",
+    "broom": "1.0.12",
+    "jsonlite": "2.0.0",
+    "curl": "7.0.0",
+    "bench": "1.1.4",
+    "vdiffr": "1.0.9",
+    "roxygen2": "7.3.3",
+    "remotes": "2.5.0",
+    "withr": "3.0.2",
+    "callr": "3.7.6",
+    "pkgbuild": "1.4.8",
+    "pkgload": "1.5.0",
+    "rmarkdown": "2.30",
+    "knitr": "1.51",
+    "didimputation": "0.5.0"
+  },
+  "reference_package_source": "<reference-clone-root>/didimputation_r_kyle",
+  "notes": "Use this lock for parity planning. A future implementation may replace it with renv.lock if the package scaffold adopts renv."
+}

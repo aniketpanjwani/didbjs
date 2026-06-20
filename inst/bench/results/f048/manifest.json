@@ -1,0 +1,22 @@
+{
+  "fixture_id": "F048",
+  "profile": "conformance-profile-v1",
+  "generated_at": "2026-06-20T11:46:00Z",
+  "host": "local macOS R benchmark environment from bench/budgets.yml",
+  "commands": {
+    "benchmark": "R_LIBS_USER=.r-lib Rscript tools/bench/run-f048.R"
+  },
+  "result_files": ["bench/results/f048/results.csv", "bench/results/f048/diagnostics.json"],
+  "sha256": {
+    "bench/results/f048/results.csv": "91c59a83bb7b7d1ba09485ee172e72c8ad816d9696af77f2da0b81799647671c",
+    "bench/results/f048/diagnostics.json": "0403a2ee1e9c45f443d085ce7c5be33cdb21f65ac38a99766f19a34c2b8d30a4",
+    "inst/bench/results/f048/results.csv": "91c59a83bb7b7d1ba09485ee172e72c8ad816d9696af77f2da0b81799647671c",
+    "inst/bench/results/f048/diagnostics.json": "0403a2ee1e9c45f443d085ce7c5be33cdb21f65ac38a99766f19a34c2b8d30a4",
+    "tools/bench/run-f048.R": "4e6328e881ec4494916d1e17b3b8306659284be94b6c0744e185a8c22bbae73b",
+    "tools/bench/f048-child.R": "5cdbb142f5c6d8c799d8b6caabd69626ca3ee28f9ec5a4f58d692e2d504d1549",
+    "tests/testthat/test-f048-performance-pathology-schema.R": "b440afceeca7f4b12fe82e3ae475040c8a838e20c2a173e4768515979f69de64"
+  },
+  "terminal_status": {
+    "benchmark": "success"
+  }
+}

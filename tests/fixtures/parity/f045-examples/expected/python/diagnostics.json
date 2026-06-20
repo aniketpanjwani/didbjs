@@ -1,0 +1,23 @@
+{
+  "examples": [
+    "readme_static",
+    "readme_allhorizons",
+    "readme_horizons_0_5",
+    "readme_sparse_horizons",
+    "readme_pretrends_3",
+    "readme_event_plot"
+  ],
+  "generator_sha256": "71349f523aa8e7d8e674ca5e010814eeb6bb0c90fe23713a18f227a7b75e190e",
+  "input_sha256": "d616153306dbe7451884834adfb4b60657a23ff070affce7ac4518da46fe9957",
+  "readme_examples_inventory": {
+    "complex_fe_region_triple_diff_and_wtr": "covered by earlier dedicated fixtures F008/F010/F011/F029 rather than duplicated here",
+    "did_imputation_static": "run",
+    "dynamic_allhorizons": "run",
+    "dynamic_horizons_range": "run",
+    "dynamic_sparse_horizons": "run",
+    "event_plot_results_obj": "run",
+    "pretrends": "run"
+  },
+  "source": "pinned Python README usage examples",
+  "status": "success"
+}

@@ -1,0 +1,9 @@
+scenario,row_term,col_term,value
+nested_fe,tau,tau,     0.00000000000000003
+duplicate_fe,tau,tau,     0.03313477556269030
+singleton_fe,tau,tau,     0.04393597659728651
+disconnected_fe,tau,tau,     0.00000000000000000
+absorbed_control,tau,tau,     0.03313477576505523
+absorbed_control,tau,x_absorbed,     0.00000000000000000
+absorbed_control,x_absorbed,tau,     0.00000000000000000
+absorbed_control,x_absorbed,x_absorbed,     0.00000000000000000

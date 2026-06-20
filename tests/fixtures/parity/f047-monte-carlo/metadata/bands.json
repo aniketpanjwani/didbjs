@@ -1,0 +1,20 @@
+{
+  "ci_critical_value": 1.96,
+  "fixture_id": "F047",
+  "known_effect": {
+    "abs_bias_max": 0.05,
+    "coverage_max": 0.98,
+    "coverage_min": 0.9,
+    "truth": 1.0
+  },
+  "replications_per_design": 1000,
+  "tolerance_id": "TOL007",
+  "zero_effect": {
+    "abs_bias_max": 0.05,
+    "coverage_max": 0.98,
+    "coverage_min": 0.9,
+    "rejection_max": 0.075,
+    "rejection_min": 0.025,
+    "truth": 0.0
+  }
+}

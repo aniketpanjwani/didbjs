@@ -1,0 +1,9 @@
+{
+  "status": "expected_divergence",
+  "command": "did_imputation Y unit t Ei, minn(0) cluster(unit) hetby(group)",
+  "return_code":       149,
+  "error_message": "The hetby variable takes too many (over 30) values",
+  "root_cause": "Stata 14.2 levelsof returns r(levels) but not r(r), while the pinned ado checks r(r)>30.",
+  "oracle_command": "did_imputation Y unit t Ei, minn(0) cluster(unit) wtr(g0 g1)",
+  "stata_return_checked": true
+}

@@ -1,0 +1,51 @@
+{
+  "commands": {
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f027-irregular-unbalanced/kyle-export.R tests/fixtures/parity/f027-irregular-unbalanced/inputs/irregular.csv tests/fixtures/parity/f027-irregular-unbalanced/inputs/duplicates.csv tests/fixtures/parity/f027-irregular-unbalanced/expected/kyle",
+    "python": ".venv/bin/python tools/parity/generators/f027-irregular-unbalanced/python_export.py tests/fixtures/parity/f027-irregular-unbalanced/inputs/irregular.csv tests/fixtures/parity/f027-irregular-unbalanced/inputs/duplicates.csv tests/fixtures/parity/f027-irregular-unbalanced/expected/python",
+    "stata": "/usr/local/bin/stata -b do stata-export.do irregular.csv duplicates.csv expected-stata ${STATA_ADO_ROOT} on licensed-stata-host"
+  },
+  "fixture_id": "F027",
+  "generated_at": "2026-06-20T06:26:45Z",
+  "host": "licensed Stata host Stata 14.2 plus local macOS R 4.4.1 and Python 3.12.11 reference jobs",
+  "input_files": [
+    "tests/fixtures/parity/f027-irregular-unbalanced/inputs/irregular.csv",
+    "tests/fixtures/parity/f027-irregular-unbalanced/inputs/duplicates.csv"
+  ],
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/kyle/diagnostics.json": "44dc9d546eb4a7d3bff670aa37650acb7ed6dcb184379c3fb81d655e47dbd7b8",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/kyle/duplicate-probe.json": "87b8e820207684770f5899d4b10a36902d274d3431e092aea2d9d3eacf0ee682",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/kyle/estimates.csv": "1347ef3dbfb45dd69daa9c30386948514f91e6dc03b0bdb2c819a99f5d03546e",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/kyle/output-schema.json": "638bb53b07fcb450c26b186af402475a5ea161ca7537d47593f83595a846e704",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/kyle/run.log": "ac30047aecf028b17053dc60e6c63bed0c8f2c1883b97f970bc0d20102ca7d11",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/python/covariance.csv": "0774c535b46e315a1414890b485018e9be3aa7d5dd2de8544a833fe0e5b9dc81",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/python/diagnostics.json": "d6fabac9620a093dd09e8cbbdeb0e1fd237abf2ee1a7436078daa0a22b798b1d",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/python/duplicate-probe.json": "b74cf1b0720a758f9f24fcff42370d1c456f6e48b00a2fb17b288bfab08d27e2",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/python/estimates.csv": "5da3134002599cb29a4c2894f2e9c33d8a7074bcacdf624b5651ced17bc45b5d",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/python/object-schema.json": "8030fe9e09d063a8c821cb9fe4cefee6a16d34dbbcb657523c705a8b7e1e6550",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/python/run.log": "107ec310ebbac5107803335248339a3f56a0040082b98f027aa8cabadc16b3e7",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/stata/covariance.csv": "6c4d6954fe4be4e0a7001090118368f76014e047bcba8be40694c2b2eac6cea4",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/stata/diagnostics.json": "8a9c7d296da5287d9721be4d03d01eb69ea5e837df601b9157cb6ef479112789",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/stata/duplicate-probe.json": "25f756995a41132bca65e387987edbe97d89b8c2eb1cc9161ba68111a027a65c",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/stata/estimates.csv": "bb539a9ffd2c579f3eaf50a4c8c4f42caea1d758ac4c7ba917107812f539ec24",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/stata/panel-structure.csv": "8c95ef10734ed3c53ee393014cbf324885849411cf3ff92bb7877d2c81897f8e",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/stata/run.log": "e5eb20344f7c1d8d182073b7f75a1e8e3cd7d253b93b4c354cebb63f78e1a051",
+    "tests/fixtures/parity/f027-irregular-unbalanced/expected/stata/sample-mask.csv": "149b092a75872220458368ef603041a2201854ccdc55e8f4c905d4df7ef1f1c3",
+    "tests/fixtures/parity/f027-irregular-unbalanced/inputs/duplicates.csv": "a0654a1dbbe7b6c1b94ecb78c9f2090647bfea551e26c86ad8125ad647182fc3",
+    "tests/fixtures/parity/f027-irregular-unbalanced/inputs/irregular.csv": "4b027111a307994dd1a618bd139490ef3d3c1517c3bad14174d340b0ea84a65a",
+    "tests/testthat/test-f027-irregular-unbalanced.R": "a21314cfc148dc75f016018b3b5bf786c455e46bcb1778780ccd5607de8fc00a",
+    "tools/parity/generators/f027-irregular-unbalanced/kyle-export.R": "95f0f0c90a1ca0505a1a0694d2065030061d91d88a90012772efffb008414a03",
+    "tools/parity/generators/f027-irregular-unbalanced/python_export.py": "df9e29840ef7a1e22a2bee850c585e82a70a9597ae5b3c7c9d374e516654acf9",
+    "tools/parity/generators/f027-irregular-unbalanced/stata-export.do": "357afac972efbab24140f3b3e2344254b51ce7d3f9ad0b786df438030524dd3c"
+  },
+  "terminal_status": {
+    "kyle": "success",
+    "python": "success",
+    "stata": "success"
+  }
+}

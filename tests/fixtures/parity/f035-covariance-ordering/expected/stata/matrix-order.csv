@@ -1,0 +1,13 @@
+scenario,position,b_term,v_row_term,v_col_term
+full_order,                    1,tau0,tau0,tau0
+full_order,                    2,tau1,tau1,tau1
+full_order,                    3,pre1,pre1,pre1
+full_order,                    4,pre2,pre2,pre2
+full_order,                    5,x1,x1,x1
+full_order,                    6,x2,x2,x2
+singular_pretrend,                    1,tau0,tau0,tau0
+singular_pretrend,                    2,tau1,tau1,tau1
+singular_pretrend,                    3,pre1,pre1,pre1
+singular_pretrend,                    4,pre2,pre2,pre2
+singular_pretrend,                    5,x1,x1,x1
+singular_pretrend,                    6,x2,x2,x2

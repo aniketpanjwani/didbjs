@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"i\", t=\"t\", Ei=\"Ei\", fe=[\"i\", \"t\"], aw=\"w\", minn=0)",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "7347dc8bfdbcd6238fcd79befa571d67a789a480ab2f0f5e0979f9e248986cf8",
+  "generator_sha256": "d1ee5a1d2b4cc82ff9a22b80075cd0a525a2221d693e740e63f4671757bf6a01",
+  "warning_text": "F001_PYTHON_INPUT=tests/fixtures/parity/f001-static-att/inputs/panel.csv\nF001_PYTHON_OUTPUT=tests/fixtures/parity/f001-static-att/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities is too small for some cohorts. Standard Errors may be wrong, consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF001_PYTHON_EXPORT_OK=1\n",
+  "algebraic_static_att": 2.0,
+  "tol001_abs": 1e-10,
+  "estimate": 2.0000003632157988,
+  "std_error": 0.06324555320347301,
+  "covariance": 0.004000000000013336,
+  "algebraic_abs_diff": 3.632157987709661e-07,
+  "tol001_pass": false,
+  "root_cause_probe": "Pinned Python reference uses recover_fixed_effects_iterative() with max_iter=100 and tol=1e-6; local tightening probes reduce but do not eliminate F001 point-estimate drift under TOL001."
+}

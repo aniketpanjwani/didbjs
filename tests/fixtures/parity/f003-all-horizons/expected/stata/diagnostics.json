@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "command": "did_imputation Y unit t Ei [aw=w], allhorizons minn(0) cluster(unit)",
+  "stata_version": "14.2",
+  "discovered_terms": ["tau0", "tau1", "tau2"],
+  "n_obs":                    60,
+  "n_control":                    45,
+  "n_treated_tau0":                     5,
+  "n_treated_tau1":                     5,
+  "n_treated_tau2":                     5
+}

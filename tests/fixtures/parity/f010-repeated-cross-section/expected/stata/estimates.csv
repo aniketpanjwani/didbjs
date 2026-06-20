@@ -1,0 +1,2 @@
+term,estimate,std_error,conf_low,conf_high,n_obs,n_control,n_treated
+tau,   1.2583333389807609,  .055590266933859697,    1.149378417899428,   1.3672882600620939,                   48,                   36,                   12

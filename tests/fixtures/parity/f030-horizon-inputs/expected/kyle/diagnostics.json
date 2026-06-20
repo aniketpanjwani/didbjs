@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "r_version": "4.4.1",
+  "didimputation_version": "0.5.0",
+  "data_table_version": "1.18.2.1",
+  "matrix_version": "1.7.0",
+  "fixest_version": "0.14.0",
+  "input_sha256": "c6f0c3bfcf99a7238d1ec8f666e644a566be94e4fb2570e6d0999b8421cb9e37",
+  "generator_sha256": "18e89b45783992ab6dc936ba0794796ba24dce9ea6f27d16d3127af3bc91bdb5",
+  "scenario_status": {
+    "unsorted": "reference_success",
+    "sparse": "reference_success",
+    "absent": "reference_success",
+    "duplicate": "reference_error",
+    "negative": "reference_error",
+    "empty": "reference_success",
+    "all_horizons_true": "reference_success"
+  },
+  "source": "pinned Kyle didimputation horizon boundary probes"
+}

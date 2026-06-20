@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "hetby_command": "did_imputation Y unit t Ei, minn(0) cluster(unit) hetby(group)",
+  "hetby_oracle_command": "did_imputation Y unit t Ei, minn(0) cluster(unit) wtr(g0 g1)",
+  "direct_hetby_return_code":       149,
+  "project_command": "did_imputation Y unit t Ei, minn(0) cluster(unit) project(x)",
+  "hetby_terms": ["tau_0", "tau_1"],
+  "project_terms": ["tau_cons", "tau_x"],
+  "n_obs":                    30,
+  "n_control":                    21
+}

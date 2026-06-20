@@ -1,0 +1,14 @@
+scenario,row_term,col_term,value
+unsorted,tau2,tau2,     0.00400000000000003
+unsorted,tau2,tau0,     0.00400000000000001
+unsorted,tau0,tau2,     0.00400000000000001
+unsorted,tau0,tau0,     0.00400000000000000
+sparse,tau0,tau0,     0.00400000000000000
+sparse,tau0,tau2,     0.00400000000000006
+sparse,tau2,tau0,     0.00400000000000006
+sparse,tau2,tau2,     0.00400000000000011
+absent,tau0,tau0,     0.00400000000000000
+absent,tau0,tau3,     0.00000000000000000
+absent,tau3,tau0,     0.00000000000000000
+absent,tau3,tau3,     0.00000000000000000
+empty,tau,tau,     0.00400000000000002

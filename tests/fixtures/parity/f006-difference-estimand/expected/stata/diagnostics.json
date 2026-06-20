@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "command": "did_imputation Y unit t Ei [aw=w], wtr(wtr_diff) sum minn(0) cluster(unit)",
+  "stata_version": "14.2",
+  "terms": ["tau"],
+  "raw_weight_sum":                     0,
+  "raw_abs_weight_sum":                     2,
+  "raw_negative_weight_sum":                    -1,
+  "raw_positive_weight_sum":                     1,
+  "algebraic_difference":                     2,
+  "n_obs":                    49,
+  "n_control":                    39,
+  "n_treated_tau":                    10
+}

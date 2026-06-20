@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "command": "did_imputation Y ig t Eig, fe(ig county#t g#t) minn(0) cluster(county) saveweights",
+  "unit_var": "ig",
+  "fe": ["ig", "county#t", "g#t"],
+  "cluster": "county",
+  "total_rows":                    48,
+  "unique_composite_units":                    12,
+  "unique_counties":                     4,
+  "unique_groups":                     3,
+  "algebraic_att":   2.50000000000000000,
+  "tau_estimate":   2.50000000000000000,
+  "tau_std_error":   0.17677669529663689,
+  "algebraic_gap":   0.00000000000000000,
+  "n_obs":                    48,
+  "n_control":                    44,
+  "n_treated":                     4
+}

@@ -1,0 +1,69 @@
+{
+  "no_untreated": {
+    "status": "reference_error",
+    "n_input_rows": 12,
+    "fe": [
+      "unit",
+      "t"
+    ],
+    "horizons": null,
+    "stdout": "",
+    "error": "ValueError: Fixed effect IDs should not have more columns than rows."
+  },
+  "no_treated": {
+    "status": "reference_error",
+    "n_input_rows": 12,
+    "fe": [
+      "unit",
+      "t"
+    ],
+    "horizons": null,
+    "stdout": "",
+    "error": "TypeError: object of type 'NoneType' has no len()"
+  },
+  "one_cohort": {
+    "status": "reference_error",
+    "n_input_rows": 16,
+    "fe": [
+      "unit",
+      "t"
+    ],
+    "horizons": null,
+    "stdout": "Cannot impute for 8 observations. Autosample used.",
+    "error": "TypeError: object of type 'NoneType' has no len()"
+  },
+  "all_post_treated": {
+    "status": "reference_error",
+    "n_input_rows": 16,
+    "fe": [
+      "unit",
+      "t"
+    ],
+    "horizons": null,
+    "stdout": "Cannot impute for 8 observations. Autosample used.",
+    "error": "TypeError: object of type 'NoneType' has no len()"
+  },
+  "no_supported_horizon": {
+    "status": "reference_success",
+    "n_input_rows": 12,
+    "fe": [
+      "unit",
+      "t"
+    ],
+    "horizons": [
+      1
+    ],
+    "stdout": "The number of treated entities for 'wtr1' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.",
+    "terms": [
+      "tau1"
+    ],
+    "estimates": {
+      "tau1": 0.0
+    },
+    "std_errors": {
+      "tau1": 0.0
+    },
+    "n_obs": 10,
+    "V": 0.0
+  }
+}

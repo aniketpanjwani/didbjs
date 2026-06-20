@@ -1,0 +1,21 @@
+{
+  "commands": {
+    "inputs": "python3 tools/api/generators/f038-data-types/make-inputs.py tests/fixtures/parity/f001-static-att/inputs/panel.csv tests/fixtures/api/f038-data-types/inputs"
+  },
+  "decision_record_id": "D002",
+  "fixture_id": "F038",
+  "generated_at": "2026-06-20T08:44:13Z",
+  "host": "local development host",
+  "input_dir": "tests/fixtures/api/f038-data-types/inputs",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {},
+  "sha256": {
+    "tests/fixtures/api/f038-data-types/inputs/base.csv": "9552570da1b2096554de84bc251a8ae5ba4762ac728928bd87c7e1d2d49c9b88",
+    "tests/fixtures/api/f038-data-types/inputs/nonsyntactic.csv": "3793f0e53cfe7103c5d7e41df025db905dd0b554f5e2da6e30ed489bcad3caea",
+    "tests/testthat/test-f038-data-types.R": "b2db7bff442a17533ee59b8f7b0e17d5d0c5505fd79de80dc2d5f6eba93d8c46",
+    "tools/api/generators/f038-data-types/make-inputs.py": "6e35a077ebc3e9ef24b431ba0e97315f87fd172b56491683dcff0d2a864598ec"
+  },
+  "terminal_status": {
+    "inputs": "success"
+  }
+}

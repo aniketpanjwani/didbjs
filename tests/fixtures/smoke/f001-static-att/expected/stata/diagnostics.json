@@ -1,0 +1,8 @@
+{
+  "status": "success",
+  "command": "did_imputation Y i t Ei [aw=w], minn(0) cluster(i)",
+  "stata_version": "14.2",
+  "n_obs":                    60,
+  "n_control":                    45,
+  "n_treated":                    15
+}

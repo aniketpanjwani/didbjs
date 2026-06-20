@@ -1,0 +1,18 @@
+{
+  "fixture_id": "F046",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "source_boundary": {
+    "kyle": "Runs pinned Kyle didimputation public calls over the same panels for Kyle wrapper parity.",
+    "python": "Runs pinned Python did_imputation over the same panels for Python-compatible API parity; D017 governs known numerical drift versus Stata.",
+    "stata": "Runs pinned Stata did_imputation over all seeded randomized panels as the governing core oracle."
+  },
+  "source_sha256": {
+    "kyle_estimator": "b7cd088c3ba3c72f092841a06110ec514ca802b6bf603083024fc0dc6137dc14",
+    "python_estimator": "8193919ebf201b6d524ce87a394f9a9316dc66d165fb273c8098023e36b2779a",
+    "stata_did_imputation": "107d923b53375b88fc88044f7e56fd4853a76e2e3901abcc7277e16138a944e7"
+  }
+}

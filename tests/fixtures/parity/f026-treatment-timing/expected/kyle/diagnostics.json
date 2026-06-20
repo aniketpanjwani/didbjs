@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = \"w\", cluster_var = \"unit\")",
+  "r_version": "4.4.1",
+  "didimputation_version": "0.5.0",
+  "data_table_version": "1.18.2.1",
+  "matrix_version": "1.7.0",
+  "fixest_version": "0.14.0",
+  "input_sha256": "2af0713ebe8f12fffcfcfa1d89bdea0d00263ff1af63d74939c282801c2a8770",
+  "generator_sha256": "fb0a04babce7c85961ab47637cba7140bf34490f0a0660d4b80200d28db2e907",
+  "rows_input": 60,
+  "zero_timing_rows": 6,
+  "terms": "treat"
+}

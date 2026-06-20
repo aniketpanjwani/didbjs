@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "bedb7f1fb3272415366e26d44498356a3bb4bcb65185d5eeb0dcae25ef7ae225",
+  "generator_sha256": "b2589ae6f6a8ba873d629625e7aea6d611321264f2034ecb5e8659a7cfa5302f",
+  "scenario_status": {
+    "nested_fe": "reference_success",
+    "duplicate_fe": "reference_success",
+    "singleton_fe": "reference_success",
+    "disconnected_fe": "reference_success",
+    "absorbed_control": "reference_error",
+    "untreated_rank": "reference_error"
+  },
+  "source": "pinned Python did_imputation FE rank probes"
+}

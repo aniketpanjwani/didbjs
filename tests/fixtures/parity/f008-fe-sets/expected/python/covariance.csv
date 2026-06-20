@@ -1,0 +1,5 @@
+spec,row_term,col_term,value
+constant_only,python_V_total,python_V_total,0.18368788888888901
+unit_only,python_V_total,python_V_total,0.010012500000000025
+time_only,python_V_total,python_V_total,0.447764814814815
+arbitrary,python_V_total,python_V_total,0.17878614814814819

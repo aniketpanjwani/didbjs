@@ -1,0 +1,17 @@
+{
+  "status": "reference_error",
+  "command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"i\", wname = \"w\", cluster_var = \"i\")",
+  "alias_probe_command": "did_imputation(data = within(transform(panel, unit_id = i), rm(i)), yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit_id\", wname = \"w\", cluster_var = \"unit_id\")",
+  "alias_probe_status": "success",
+  "r_version": "4.4.1",
+  "didimputation_version": "0.5.0",
+  "data_table_version": "1.18.2.1",
+  "matrix_version": "1.7.0",
+  "fixest_version": "0.14.0",
+  "input_sha256": "7347dc8bfdbcd6238fcd79befa571d67a789a480ab2f0f5e0979f9e248986cf8",
+  "generator_sha256": "e66f87e023e5dbf1496c3fbeeb76ac6d3f073a9037cb8e9f89628c37439c1dd6",
+  "error_class": ["simpleError", "error", "condition"],
+  "error_message": "subscript out of bounds",
+  "root_cause": "Kyle didimputation se_inner() uses for-loop variable i inside data.table NSE; F001 also has a data column named i, so v_star[, i] resolves i as the unit-id column rather than the loop counter.",
+  "root_cause_probe": "Renaming the Kyle id/cluster column from i to unit_id and removing the original i column removes the NSE name collision while preserving the same rows, outcome, treatment timing, time, and weights."
+}

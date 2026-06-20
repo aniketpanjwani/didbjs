@@ -1,0 +1,7 @@
+{
+  "status": "error",
+  "command": "did_imputation Y unit t Ei, minn(0) cluster(unit) hetby(bad_group)",
+  "return_code":       411,
+  "error_message": "The hetby variable cannot take negative values.",
+  "stata_return_checked": true
+}

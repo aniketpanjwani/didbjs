@@ -1,0 +1,12 @@
+# Frozen for conformance-profile-v1
+# Runtime: Python 3.12.11
+# Reference package must resolve from the pinned commit before dependencies are checked.
+did_imputation @ git+https://github.com/gmarinichev/did_imputation@c7765a9fb2dcc48dc745b356784b4e9ce8b1d376
+pandas==3.0.3
+numpy==2.4.6
+pyhdfe==0.2.0
+statsmodels==0.14.6
+scipy==1.18.0
+matplotlib==3.11.0
+pytest==9.1.1
+jupyter==1.1.1

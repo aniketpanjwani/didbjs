@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "command": "did_imputation Y unit t Ei [aw=w], fe(.) minn(0) cluster(unit) maxit(1000)",
+  "stata_version": "14.2",
+  "n_obs":                    30,
+  "n_control":                    20,
+  "n_treated":                    10,
+  "missing_never_rows":                    10,
+  "after_sample_rows":                     5,
+  "before_sample_negative_rows":                     5
+}

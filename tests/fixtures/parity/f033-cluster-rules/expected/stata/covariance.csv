@@ -1,0 +1,6 @@
+scenario,row_term,col_term,value
+two,tau,tau,     0.01320312635600569
+alt,tau,tau,     0.01320312635600576
+singleton,tau,tau,     0.01580062500000008
+nested,tau,tau,     0.03374218676984318
+missing,tau,tau,     0.02187534874658845

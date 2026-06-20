@@ -1,0 +1,43 @@
+{
+  "status": "success",
+  "command": "did_imputation(panel, y=\"Y\", i=\"unit\", t=\"t\", Ei=\"Ei\", fe=[\"unit\", \"t\"], aw=\"w\", allhorizons=True, minn=0)",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "c6f0c3bfcf99a7238d1ec8f666e644a566be94e4fb2570e6d0999b8421cb9e37",
+  "generator_sha256": "c904076bea2938dde5dae2e938fcc40fd3091cbac0989f767f514586b3cbb54a",
+  "warning_text": "F003_PYTHON_INPUT=tests/fixtures/parity/f003-all-horizons/inputs/panel.csv\nF003_PYTHON_OUTPUT=tests/fixtures/parity/f003-all-horizons/expected/python\nPYTHON_VERSION=3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]\nThe number of treated entities for 'wtr0.0' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr1.0' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nThe number of treated entities for 'wtr2.0' is too small for some cohorts. Standard Errors may be wrong; consider using avgeffectsby option, averaging the the effect by treated X post variable.\nF003_PYTHON_EXPORT_OK=1\n",
+  "algebraic_horizon_att": {
+    "tau0": 1.0,
+    "tau1": 2.0,
+    "tau2": 3.0
+  },
+  "tol001_abs": 1e-10,
+  "discovered_terms": [
+    "tau0",
+    "tau1",
+    "tau2"
+  ],
+  "estimates": {
+    "tau0": 1.0000003632157988,
+    "tau1": 2.0000003632157988,
+    "tau2": 3.0000003632157988
+  },
+  "std_errors": {
+    "tau0": 0.06324555320347301,
+    "tau1": 0.06324555320347301,
+    "tau2": 0.06324555320347301
+  },
+  "V": 0.012000000000040006,
+  "algebraic_abs_diff": {
+    "tau0": 3.632157987709661e-07,
+    "tau1": 3.632157987709661e-07,
+    "tau2": 3.632157987709661e-07
+  },
+  "tol001_pass_by_term": {
+    "tau0": false,
+    "tau1": false,
+    "tau2": false
+  },
+  "tol001_pass": false,
+  "root_cause_probe": "Same fixed-effect recovery drift as D017/F001/F002: pinned Python recover_fixed_effects_iterative() leaves discovered horizon estimates outside TOL001 while preserving public allhorizons object shape."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "source": "pinned Stata did_imputation alpha option and ereturn display semantics",
+  "command_default": "did_imputation Y unit t Ei, minn(0) cluster(cluster_two)",
+  "command_alpha10": "did_imputation Y unit t Ei, minn(0) cluster(cluster_two) alpha(0.10)",
+  "alpha_option": "alpha(real 0.05)",
+  "confidence_level_formula": "100 * (1 - alpha)",
+  "ci_distribution": "normal",
+  "ci_degrees_of_freedom": "Inf",
+  "normal_critical_95":    1.9599639845400536,
+  "normal_critical_90":    1.6448536269514715,
+  "scenario_count": 2
+}

@@ -1,0 +1,40 @@
+{
+  "commands": {
+    "python": ".venv/bin/python tools/parity/generators/f032-identification-failures/python_export.py tests/fixtures/parity/f032-identification-failures/inputs/panel.csv tests/fixtures/parity/f032-identification-failures/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv expected-stata ${STATA_ADO_ROOT}"
+  },
+  "decision_record_id": "D006+D025",
+  "fixture_id": "F032",
+  "generated_at": "2026-06-20T07:41:28Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f032-identification-failures/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f032-identification-failures/expected/python/covariance.csv": "0c80b86a10f887b8a3a81e282a5d4a0a3f534fd6cc0fd2f4ca37e2fa9d9cd5d0",
+    "tests/fixtures/parity/f032-identification-failures/expected/python/diagnostics.json": "812d5bdbc2fa2212836d214ecffb370e79a91a06476bbcbdf8e9ff7e5fb6aee5",
+    "tests/fixtures/parity/f032-identification-failures/expected/python/estimates.csv": "ae13688f196adade95be0a0c3e5e71ca51aa09381724876eaa0168c8035e53e6",
+    "tests/fixtures/parity/f032-identification-failures/expected/python/object-schema.json": "0c56729fbf13896db7d76e05dbfd6f59fe9375b6446eeac4f055b542d85952d5",
+    "tests/fixtures/parity/f032-identification-failures/expected/python/probes.json": "d2db16fa357e5b110788cd621cd29de364a2e16a8d2d2553219284ea491f2fd1",
+    "tests/fixtures/parity/f032-identification-failures/expected/python/run.log": "36ee34fac99a4563c3a2400a9612ad80bfc5c3205851dec6bcdabfc701dcddd4",
+    "tests/fixtures/parity/f032-identification-failures/expected/stata/cannot-all-post.csv": "520c9089e1c0265ad17e11286c0a4b140276ad4d4c7928167f80da191ddbd39e",
+    "tests/fixtures/parity/f032-identification-failures/expected/stata/cannot-one.csv": "61f8a92ca4f458e1f69354b0958a0e4a08591cde0ad99a65c27a497dd1b2a3c9",
+    "tests/fixtures/parity/f032-identification-failures/expected/stata/covariance.csv": "5d0569fb0def5351a2da1c1c098b746e01db685730255b284f8c3103d69ded9d",
+    "tests/fixtures/parity/f032-identification-failures/expected/stata/diagnostics.json": "1926b7f7804e2506bcf990ee2a226c78883a3247ee91191da92fef5b528310c9",
+    "tests/fixtures/parity/f032-identification-failures/expected/stata/estimates.csv": "8be4644a6c9059344f2645807a682a1e950a2809bc15465c4267763e0d166c29",
+    "tests/fixtures/parity/f032-identification-failures/expected/stata/probes.json": "10bd617e675c0d649bf8cbbf24ee08902fc0471b37ddf74cfc3248eb49218335",
+    "tests/fixtures/parity/f032-identification-failures/expected/stata/run.log": "8b98c26db4c6a48af14ef620ab5f23a82f5a382592387334d9b74034d4eea69b",
+    "tests/fixtures/parity/f032-identification-failures/expected/stata/sample-no-h1.csv": "0d5bde880526d7cce031aebbac13ee7fb2b196d8a8474fa2ca7b3f972ac9423c",
+    "tests/fixtures/parity/f032-identification-failures/expected/stata/sample-no-treated.csv": "28a0d2ebe41bf6981416bfba92dd475dded8025bd3c95a6596ed3e8620ae6e52",
+    "tests/fixtures/parity/f032-identification-failures/inputs/panel.csv": "74aa6feed0363f4ef34ae287d5b9a197bc4552059bf366ac2543e38a3f5b4f15",
+    "tools/parity/generators/f032-identification-failures/python_export.py": "4f0f2fce3f224c0c7a5acc83e1d5bf265e4ee0008b51b0e0f3b149266ac6cb90",
+    "tools/parity/generators/f032-identification-failures/stata-export.do": "04369d3060d6553847e4fe49084b287de983ba0b0230ae2ec3f7e32438bf1674"
+  },
+  "terminal_status": {
+    "python": "success_with_reference_errors_and_d025_divergence_evidence",
+    "stata": "success_with_reference_errors_and_d025_divergence_evidence"
+  }
+}

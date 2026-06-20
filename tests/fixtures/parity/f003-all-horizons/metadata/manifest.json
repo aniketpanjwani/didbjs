@@ -1,0 +1,34 @@
+{
+  "commands": {
+    "python": ".venv/bin/python tools/parity/generators/f003-all-horizons/python_export.py tests/fixtures/parity/f003-all-horizons/inputs/panel.csv tests/fixtures/parity/f003-all-horizons/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F003",
+  "generated_at": "2026-06-20T02:32:49Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f003-all-horizons/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f003-all-horizons/expected/python/covariance.csv": "55e8f314ec901a61b47ef8a1a646551f10844cc0c6843dcb499d937fc2379f60",
+    "tests/fixtures/parity/f003-all-horizons/expected/python/diagnostics.json": "8aa1f54d3d32dcb3638e22fbfa6be2bf352b1e158b6fcd400a507aa45eb1a2af",
+    "tests/fixtures/parity/f003-all-horizons/expected/python/estimates.csv": "428692a6a337df6e889c7339023e809552d329c165133bc00363e5fcab33b9be",
+    "tests/fixtures/parity/f003-all-horizons/expected/python/object-schema.json": "8030fe9e09d063a8c821cb9fe4cefee6a16d34dbbcb657523c705a8b7e1e6550",
+    "tests/fixtures/parity/f003-all-horizons/expected/python/run.log": "5a68395db0afeb417117a1386676a9b3675033edc54e2f982e0263d8f98c5f32",
+    "tests/fixtures/parity/f003-all-horizons/expected/stata/covariance.csv": "ae3b6ea9ef2d6e104172822c9acaf7de80c8efda0db4ff6f92b38b48075d30d1",
+    "tests/fixtures/parity/f003-all-horizons/expected/stata/diagnostics.json": "184bbb5ee58159dd90a37d236f1f763a99cd69f6f3e66261563ef4b69366d7c7",
+    "tests/fixtures/parity/f003-all-horizons/expected/stata/estimates.csv": "94adb240938f9edbc1a9fce0180613df23742839e052ae1fc769cc3f3eced3aa",
+    "tests/fixtures/parity/f003-all-horizons/expected/stata/run.log": "65946c136efc057faea9705af20cb6ec5323a7569630850953ea312cbae459b9",
+    "tests/fixtures/parity/f003-all-horizons/expected/stata/sample-mask.csv": "29e8196525020187096fdc9072341eec8dd701f7e2693bb8153f7d796a5bba3d",
+    "tests/fixtures/parity/f003-all-horizons/inputs/panel.csv": "c6f0c3bfcf99a7238d1ec8f666e644a566be94e4fb2570e6d0999b8421cb9e37",
+    "tools/parity/generators/f003-all-horizons/python_export.py": "c904076bea2938dde5dae2e938fcc40fd3091cbac0989f767f514586b3cbb54a",
+    "tools/parity/generators/f003-all-horizons/stata-export.do": "5210f19829f26e9b963052deb58646bde396082beee019f09323e39aad1d61f3"
+  },
+  "terminal_status": {
+    "python": "success_tol001_false",
+    "stata": "success"
+  }
+}

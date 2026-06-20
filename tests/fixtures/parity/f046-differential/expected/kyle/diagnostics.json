@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "command": "did_imputation(data = panel, yname = \"Y\", gname = \"Ei\", tname = \"t\", idname = \"unit\", wname = <scenario>, horizon = <scenario>, cluster_var = \"unit\")",
+  "r_version": "4.4.1",
+  "didimputation_version": "0.5.0",
+  "data_table_version": "1.18.2.1",
+  "matrix_version": "1.7.0",
+  "fixest_version": "0.14.0",
+  "scenario_count": 200,
+  "static_count": 100,
+  "dynamic_count": 100,
+  "weighted_count": 200,
+  "estimate_rows": 400,
+  "failure_count": 0,
+  "input_sha256": {
+    "panels": "23217a867ac2041b48f047b0426949322dfd5bcd1a3bf83fe9b2db628483ef24",
+    "scenarios": "3609dbb51e3cf685530447daa720f7d7c35ab546e438b984bc858aab2ada0860"
+  },
+  "generator_sha256": "6f7044ffa4f29bf12955030e8eda15b59c461f0d10740e9ba25edcae0a25c856"
+}

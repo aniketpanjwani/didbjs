@@ -1,0 +1,8 @@
+scenario,row_term,col_term,value
+base,tau_ate,tau_ate,0.0040000000000133358
+row_permuted,tau_ate,tau_ate,0.004000000000013269
+unit_relabel,tau_ate,tau_ate,0.0040000000000133358
+time_shift,tau_ate,tau_ate,0.0040000000000133358
+outcome_scaled,tau_ate,tau_ate,0.049000000000007177
+constant_shift,tau_ate,tau_ate,0.0040000000000133158
+weight_scaled,tau_ate,tau_ate,0.0040000000000133358

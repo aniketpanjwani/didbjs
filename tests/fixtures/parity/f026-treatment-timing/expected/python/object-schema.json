@@ -1,0 +1,50 @@
+{
+  "class": "DIDImputationOutput",
+  "fields": {
+    "pretrends_estimates": {
+      "present": true,
+      "type": "NoneType",
+      "is_null": true
+    },
+    "pretrends_std_errors": {
+      "present": true,
+      "type": "NoneType",
+      "is_null": true
+    },
+    "estimates": {
+      "present": true,
+      "type": "dict",
+      "is_null": false
+    },
+    "std_errors": {
+      "present": true,
+      "type": "dict",
+      "is_null": false
+    },
+    "controls_estimates": {
+      "present": true,
+      "type": "NoneType",
+      "is_null": true
+    },
+    "controls_std_errors": {
+      "present": true,
+      "type": "NoneType",
+      "is_null": true
+    },
+    "n_obs": {
+      "present": true,
+      "type": "int",
+      "is_null": false
+    },
+    "weights": {
+      "present": true,
+      "type": "NoneType",
+      "is_null": true
+    },
+    "V": {
+      "present": true,
+      "type": "float64",
+      "is_null": false
+    }
+  }
+}

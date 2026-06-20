@@ -1,0 +1,33 @@
+{
+  "commands": {
+    "python": ".venv/bin/python tools/parity/generators/f022-event-plot-basic/python_export.py tests/fixtures/parity/f022-event-plot-basic/inputs/manual.json tests/fixtures/parity/f022-event-plot-basic/expected/python",
+    "stata": "/usr/local/bin/stata -b do stata-export.do stata ${STATA_ADO_ROOT} on licensed-stata-host"
+  },
+  "fixture_id": "F022",
+  "generated_at": "2026-06-20T05:12:41Z",
+  "host": "local macOS R 4.4.1 plus licensed Stata host Stata 14.2",
+  "input_file": "tests/fixtures/parity/f022-event-plot-basic/inputs/manual.json",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f022-event-plot-basic/expected/python/diagnostics.json": "e1579b2b19776a0864cd055cff7c5a4c4a453606906be3a1a9e862312d44af9a",
+    "tests/fixtures/parity/f022-event-plot-basic/expected/python/manual-rarea.png": "77ae2eb0744c34f5e671bf01a52b77fc3cc7c5182c29c4848d965bccfc282e0a",
+    "tests/fixtures/parity/f022-event-plot-basic/expected/python/manual-rcap.png": "9a85da00567b24afdcc04162bfeae828f14f62dfd2083323828837c17a5c2623",
+    "tests/fixtures/parity/f022-event-plot-basic/expected/python/output-schema.json": "5d45cd765c0a60f368e219f7d71d7a451dc210c7017dc96bd297b669dfb0dd61",
+    "tests/fixtures/parity/f022-event-plot-basic/expected/python/plot-data.csv": "fd79bd39da0581df29827ce211b3a1f3d7fb3956a2080809ac1b4eabfa396c31",
+    "tests/fixtures/parity/f022-event-plot-basic/expected/stata/diagnostics.json": "5ffa15653723d54d37793e5f4e4407a7bb8e61eed7f96d57b03cb8e3d8fe8ea5",
+    "tests/fixtures/parity/f022-event-plot-basic/expected/stata/plot-data.csv": "99411e74c005179ffc5fef4e2e1bea182967878d4cf5ad69b527c8ef1fbd6ae5",
+    "tests/fixtures/parity/f022-event-plot-basic/expected/stata/run.log": "e6644650de67de2e6675818d789251a3579647e6cb6a25d0ea8a2ff85e1eca57",
+    "tests/fixtures/parity/f022-event-plot-basic/inputs/manual.json": "c1e20ac8f483f5f175eaf00de45b92782d0bc174fb3e9e874a289cf4f06a96d4",
+    "tests/testthat/test-f022-event-plot-basic.R": "1261886a128589417c7f4d212e399579bde3ad999f312637a35d65643f4b3399",
+    "tools/parity/generators/f022-event-plot-basic/python_export.py": "f18d3b35b13be70259b05c32d716b36258ce6d332bc3bad286a46d26f66ea91b",
+    "tools/parity/generators/f022-event-plot-basic/stata-export.do": "32414ab9155a29f536f4e5c739027166df351ad04aad27d0923cf5edc94ab6f4"
+  },
+  "terminal_status": {
+    "python": "success",
+    "stata": "success"
+  }
+}

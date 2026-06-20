@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "python_version": "3.12.11 (main, Jun  3 2025, 15:41:47) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "input_sha256": "c6f0c3bfcf99a7238d1ec8f666e644a566be94e4fb2570e6d0999b8421cb9e37",
+  "generator_sha256": "3f37f4d1e75797c1e56324b9674254c4604ce6c6ac54412eb2f513ca493f8b9c",
+  "scenario_status": {
+    "unsorted": "reference_success",
+    "sparse": "reference_success",
+    "absent": "reference_success",
+    "duplicate": "reference_error",
+    "negative": "reference_success",
+    "empty": "reference_success",
+    "horizons_allhorizons": "reference_error"
+  },
+  "source": "pinned Python did_imputation horizon boundary probes"
+}

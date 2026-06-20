@@ -1,0 +1,9 @@
+{
+  "unsorted": {"status": "reference_success", "return_code":                     0},
+  "sparse": {"status": "reference_success", "return_code":                     0},
+  "absent": {"status": "reference_success", "return_code":                     0},
+  "duplicate": {"status": "reference_error", "return_code":                   110},
+  "negative": {"status": "reference_error", "return_code":                   125},
+  "empty": {"status": "reference_success", "return_code":                     0},
+  "horizons_allhorizons": {"status": "reference_error", "return_code":                   184}
+}

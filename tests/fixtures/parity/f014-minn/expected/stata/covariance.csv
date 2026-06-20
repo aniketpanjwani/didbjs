@@ -1,0 +1,5 @@
+row_term,col_term,value
+tau0,tau0, 4.08286234245015e-29
+tau0,tau1,                    0
+tau1,tau0,                    0
+tau1,tau1,                    0

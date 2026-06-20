@@ -1,0 +1,25 @@
+{
+  "commands": {
+    "benchmark": "R_LIBS_USER=.r-lib Rscript tools/bench/run-f024.R"
+  },
+  "fixture_id": "F024",
+  "generated_at": "2026-06-20T05:37:15Z",
+  "host": "local macOS R 4.4.1 benchmark environment from bench/budgets.yml",
+  "profile": "conformance-profile-v1",
+  "result_files": [
+    "bench/results/f024/results.csv",
+    "bench/results/f024/diagnostics.json"
+  ],
+  "sha256": {
+    "bench/results/f024/diagnostics.json": "58f3a4c37b0baf62e28ab3783716d0526d9b8f6aff84d8ae05ae7895690ca182",
+    "bench/results/f024/results.csv": "241b66b68a124784d020637acd599e36c94e3e9ed4667f71e778093565882a9d",
+    "inst/bench/results/f024/diagnostics.json": "58f3a4c37b0baf62e28ab3783716d0526d9b8f6aff84d8ae05ae7895690ca182",
+    "inst/bench/results/f024/results.csv": "241b66b68a124784d020637acd599e36c94e3e9ed4667f71e778093565882a9d",
+    "tests/testthat/test-f024-benchmark-schema.R": "402526776373069a39a85302660fa9f7c5cb25d5d85e2c829c9958f236c27a5c",
+    "tools/bench/f024-child.R": "804a1d57741858319264a9555624db03bf3dc79f423fc57dbb3a97041418746a",
+    "tools/bench/run-f024.R": "69afc1bdc40c2641ba83504104a8fd09d362a309906b73b7a45e528f2c1b7714"
+  },
+  "terminal_status": {
+    "benchmark": "success"
+  }
+}

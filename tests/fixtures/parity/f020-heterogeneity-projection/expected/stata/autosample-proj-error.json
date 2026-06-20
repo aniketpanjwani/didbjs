@@ -1,0 +1,7 @@
+{
+  "status": "error",
+  "command": "did_imputation Y unit t Ei, minn(0) cluster(unit) autosample project(x)",
+  "return_code":       184,
+  "error_message": "Autosample cannot be combined with project. Please specify the sample explicitly",
+  "stata_return_checked": true
+}

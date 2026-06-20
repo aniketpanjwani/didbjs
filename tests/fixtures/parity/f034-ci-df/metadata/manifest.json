@@ -1,0 +1,38 @@
+{
+  "commands": {
+    "kyle": "R_LIBS_USER=.r-lib Rscript tools/parity/generators/f034-ci-df/kyle-export.R tests/fixtures/parity/f034-ci-df/inputs/panel.csv tests/fixtures/parity/f034-ci-df/expected/kyle",
+    "stata": "ssh <licensed-stata-host>; /usr/local/bin/stata -b do stata-export.do panel.csv output ${STATA_ADO_ROOT}"
+  },
+  "decision_record_id": "D009",
+  "fixture_id": "F034",
+  "generated_at": "2026-06-20T08:06:08Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f034-ci-df/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "kyle": "69b4f8dfe16b007474721fc5610859b56a80cdc6",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f034-ci-df/expected/kyle/diagnostics.json": "b647a270e1c2f62beb54279c0a1606bd10bf2cf1a63977c41cab00681faa4219",
+    "tests/fixtures/parity/f034-ci-df/expected/kyle/estimates.csv": "64c4099c4eb254917721d14664022be809cd3e40009c11a23bd4272ea2cf7315",
+    "tests/fixtures/parity/f034-ci-df/expected/kyle/output-schema.json": "638bb53b07fcb450c26b186af402475a5ea161ca7537d47593f83595a846e704",
+    "tests/fixtures/parity/f034-ci-df/expected/kyle/run.log": "896b1289f5a508343a2bc12233614484a40235ebbae64e7343c1c1cc2ea47380",
+    "tests/fixtures/parity/f034-ci-df/expected/stata/ci-grid.csv": "5770e22027f48e0f99890be66b56c5f5c938a4b151e0a80786434e97c5941f80",
+    "tests/fixtures/parity/f034-ci-df/expected/stata/covariance.csv": "6c09379f6639b388b27e633c49856f4dc7ea8960ebcf390e3224f37673c44ab5",
+    "tests/fixtures/parity/f034-ci-df/expected/stata/diagnostics.json": "1984b8adf97e465e5831dcf4767e2c13e16ff4c510546256e2018cf429ff03ac",
+    "tests/fixtures/parity/f034-ci-df/expected/stata/estimates.csv": "b78c88992b1132511040ce6aa7603ac4b529c0221f5d08285543733d1193782a",
+    "tests/fixtures/parity/f034-ci-df/expected/stata/probes.json": "390b177ff2e69044e71ebc6698181aeb2430eaa51a411bf15a4ee4afa4623a05",
+    "tests/fixtures/parity/f034-ci-df/expected/stata/run.log": "3aa7ec713b72de1b1518f6607d5db06b572bcd341b375bbbf58f31c6c627adc4",
+    "tests/fixtures/parity/f034-ci-df/expected/stata/sample-alpha10.csv": "051c040033f852a0cd9b90fd086c932694cf0110315da3343127dec9ab5758c7",
+    "tests/fixtures/parity/f034-ci-df/expected/stata/sample-default.csv": "051c040033f852a0cd9b90fd086c932694cf0110315da3343127dec9ab5758c7",
+    "tests/fixtures/parity/f034-ci-df/inputs/panel.csv": "68d9166ba72117032c2ccb4299a6628aefb0b608eaa7f0d5cf60286d91ebaad6",
+    "tests/testthat/test-f034-ci-df.R": "c384286ccd4e1557d1ed6a4cafb40b4f33ee34d547c1b51614402f9ab3d779f0",
+    "tools/parity/generators/f034-ci-df/kyle-export.R": "2aed44438ba43cb78ea36c9c5bde4ade35610b4dc583b5ccff156e252946b90c",
+    "tools/parity/generators/f034-ci-df/stata-export.do": "4acb4a04a3d57ec98c1c3405db44c25e418f309eb33926dc397a49db1472f0d3"
+  },
+  "terminal_status": {
+    "kyle": "success",
+    "stata": "success_with_alpha_boundary_reference_errors"
+  }
+}

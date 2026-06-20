@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "command": "did_imputation Y unit t Ei [aw=w optional], horizons(0/2 optional) minn(0) cluster(unit)",
+  "stata_version": "14.2",
+  "scenario_count": 200,
+  "static_count": 100,
+  "dynamic_count": 100,
+  "weighted_count": 200,
+  "estimate_rows": 400,
+  "failure_count": 0
+}

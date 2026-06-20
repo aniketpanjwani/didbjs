@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "stata_version": "14.2",
+  "command": "did_imputation Y unit t Ei, horizons(0/2) shift(2) delta(2) minn(0) cluster(unit) saveweights",
+  "terms": ["tau0", "tau1", "tau2"],
+  "shift": 2,
+  "delta": 2,
+  "estimates": {
+    "tau0":   0.69999999999998508,
+    "tau1":   1.69999999999999996,
+    "tau2":   2.69999999999999307
+  },
+  "std_errors": {
+    "tau0":   0.06324555320336780,
+    "tau1":   0.06324555320336760,
+    "tau2":   0.06324555320336740
+  },
+  "n_obs":                    40,
+  "n_control":                    25,
+  "n_treated": [                    5,                     5,                     5],
+  "invalid_delta_return_code":                   198
+}

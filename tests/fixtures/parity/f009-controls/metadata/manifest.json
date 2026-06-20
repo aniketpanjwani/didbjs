@@ -1,0 +1,38 @@
+{
+  "commands": {
+    "python": ".venv/bin/python tools/parity/generators/f009-controls/python_export.py tests/fixtures/parity/f009-controls/inputs/panel.csv tests/fixtures/parity/f009-controls/expected/python",
+    "stata": "stata -b do stata-export.do panel.csv stata ${STATA_ADO_ROOT}"
+  },
+  "fixture_id": "F009",
+  "generated_at": "2026-06-20T02:03:25Z",
+  "host": "local development host + licensed Stata host",
+  "input_file": "tests/fixtures/parity/f009-controls/inputs/panel.csv",
+  "profile": "conformance-profile-v1",
+  "reference_commits": {
+    "python": "c7765a9fb2dcc48dc745b356784b4e9ce8b1d376",
+    "stata": "767c8d6670a751170910d419bbafd323df92ef08"
+  },
+  "sha256": {
+    "tests/fixtures/parity/f009-controls/expected/python/collinearity.json": "fc5ac5310b758b10184c6cf3835e99e101f6709d9b0b9fa3eacd13fddb09b077",
+    "tests/fixtures/parity/f009-controls/expected/python/controls.csv": "6653778201494ee0a5e794a8b9ebe95de06936e1d41f1e073ee5d681c48c891b",
+    "tests/fixtures/parity/f009-controls/expected/python/covariance.csv": "410da87f39f72ab8ca56d63d988727933e4df8bf88d68ce804df92193e51fd1b",
+    "tests/fixtures/parity/f009-controls/expected/python/diagnostics.json": "afa5915f0e5f25ed4db7b0f2ac2764d4759f4fa0489529ca09af1241f71bb01e",
+    "tests/fixtures/parity/f009-controls/expected/python/estimates.csv": "e0dc26d8229fed4c4609c0d4baa166e4b6e3345bd5414dcdfb7c3cc3e9b7149e",
+    "tests/fixtures/parity/f009-controls/expected/python/object-schema.json": "2f87aa5136237f6b32b0a51b5a497654aeb6cb2aed344a0589e1d31e567ab2b0",
+    "tests/fixtures/parity/f009-controls/expected/python/run.log": "8d8248f427d73f47f45598458c4b51ca4718d4a2dbf4d3652a316f25d83277fd",
+    "tests/fixtures/parity/f009-controls/expected/stata/collinearity.json": "abbbf43b8ded4d2a04fe606fa02dcd3adb1526e807f161bfba38471c069b4047",
+    "tests/fixtures/parity/f009-controls/expected/stata/covariance.csv": "6370bcb65787b2dd54e6ad384dd25275519ad6b804dd6e60d91d18975a529ffc",
+    "tests/fixtures/parity/f009-controls/expected/stata/diagnostics.json": "1bc5208f87511827c1c26371a6ca858a82dec6060c6bfe9deef7ec15b0e95b84",
+    "tests/fixtures/parity/f009-controls/expected/stata/estimates.csv": "c83a0934387397229d415e8ebbe0b7fe1c5b72cb454ef9b9983553a413fbc0db",
+    "tests/fixtures/parity/f009-controls/expected/stata/imputation-weights.csv": "0e3688b06425b076cbf331227a7b1d08ca40a6c21b0cbda6d2da06c0c0457a9b",
+    "tests/fixtures/parity/f009-controls/expected/stata/run.log": "622a48a4a84749128858003c9cf137fef9edff325f92731c1c483963ec68d0f5",
+    "tests/fixtures/parity/f009-controls/expected/stata/sample-mask.csv": "2a7d437f582918ba9b85c5e54a3f0b6fe3418e30b64ef44992acd6b0e55b86b6",
+    "tests/fixtures/parity/f009-controls/inputs/panel.csv": "ea9b8cf4ecfd991177d4183e478290764e6ad7ef231a52614bd11c9f6f2f0249",
+    "tools/parity/generators/f009-controls/python_export.py": "1988fa58af3a5a421ecc62330b905b200d9b59da57e84aac9ee574165ad05c0b",
+    "tools/parity/generators/f009-controls/stata-export.do": "b9e210ae1f73045b028ff1f8bddf12cd68c73b3156a5028578eba820565abbd3"
+  },
+  "terminal_status": {
+    "python": "success",
+    "stata": "success"
+  }
+}
