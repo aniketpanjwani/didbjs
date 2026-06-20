@@ -237,6 +237,7 @@ did_imputation <- function(data,
     !(isTRUE(autosample) & dt$.didbjs_cannot_impute)
   analysis_dt <- dt[sample_mask == TRUE]
   analysis_row_id <- row_id[sample_mask]
+  # Keep this lookup out of data.table j so a literal column named "y" cannot shadow the y argument.
   data.table::set(
     analysis_dt,
     j = ".didbjs_tau",
