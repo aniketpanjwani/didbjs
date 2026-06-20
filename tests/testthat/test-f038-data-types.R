@@ -83,6 +83,31 @@ test_that("F038 nonsyntactic R-native column names are accepted without mutation
   expect_equal(panel, before)
 })
 
+test_that("F038 lowercase y outcome column does not shadow the y argument", {
+  panel <- f038_base_panel()
+  names(panel)[names(panel) == "Y"] <- "y"
+
+  native <- f038_run(panel, y = "y")
+  f038_expect_static_result(native)
+
+  python <- did_imputation_python(
+    df = panel,
+    y = "y",
+    i = "i",
+    t = "t",
+    Ei = "Ei",
+    fe = c("i", "t"),
+    aw = "w",
+    cluster = "i",
+    minn = 0
+  )
+
+  expect_s3_class(python, "DIDImputationOutput")
+  expect_equal(python$estimates$tau_ate, native$estimates$estimate[[1]], tolerance = 1e-10)
+  expect_equal(python$std_errors$tau_ate, native$estimates$std.error[[1]], tolerance = 1e-8)
+  expect_equal(python$n_obs, native$estimates$n_obs[[1]])
+})
+
 test_that("F038 row names do not replace explicit or generated row identifiers", {
   base <- f038_base_panel()
   explicit <- base

@@ -237,7 +237,11 @@ did_imputation <- function(data,
     !(isTRUE(autosample) & dt$.didbjs_cannot_impute)
   analysis_dt <- dt[sample_mask == TRUE]
   analysis_row_id <- row_id[sample_mask]
-  analysis_dt[, .didbjs_tau := analysis_dt[[y]] - .didbjs_y_hat]
+  data.table::set(
+    analysis_dt,
+    j = ".didbjs_tau",
+    value = analysis_dt[[y]] - analysis_dt[[".didbjs_y_hat"]]
+  )
   if (anyNA(analysis_dt$.didbjs_tau)) {
     stop_contract("Could not impute treated observations after applying the sample mask.")
   }
