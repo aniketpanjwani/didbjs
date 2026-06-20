@@ -8,6 +8,8 @@ Description: Implements the Borusyak-Jaravel-Spiess difference-in-differences
     smoke fixtures and keeps a larger parity suite in the source repository for
     reproducible reference validation.
 License: MIT + file LICENSE
+URL: https://github.com/aniketpanjwani/didbjs
+BugReports: https://github.com/aniketpanjwani/didbjs/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3

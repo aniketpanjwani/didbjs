@@ -21,7 +21,7 @@ The package is built around a public verification contract:
 
 ```r
 install.packages("pak")
-pak::pak(".")
+pak::pak("aniketpanjwani/didbjs")
 ```
 
 or, from a built source package:
@@ -86,3 +86,10 @@ not copied or translated into this package; Stata is used only as a licensed
 black-box reference to generate expected behavior. MIT-licensed Python and Kyle
 R references are used for compatibility, with adapted or derived material
 recorded in `PROVENANCE.md`.
+
+## Feedback
+
+This is a pre-CRAN public feedback release. Please open issues at
+`https://github.com/aniketpanjwani/didbjs/issues`, especially for parity cases,
+API ergonomics, documentation gaps, and replication workflows that should be
+tested before a CRAN submission.
